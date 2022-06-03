@@ -3,6 +3,8 @@ public class primero {
     public static void main(String[] args) {
         //Ejercicio 1 - Hola Mundo
 
+        System.out.println("HOLA MUNDO");
+
         // Ejercicio 2 - Ingrese dos numeros y muestre el resultado de la suma
 
         //  Ejercico 3 - Ingrese tres numeros y  muestre el mayor
