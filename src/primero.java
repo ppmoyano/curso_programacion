@@ -1,14 +1,52 @@
+import java.util.Scanner;
+
 public class primero {
 
     public static void main(String[] args) {
+
+        /*Comento esto para seguir con el tercero
         //Ejercicio 1 - Hola Mundo
             System.out.println("Hola Mundo");
         // Ejercicio 2 - Ingrese dos numeros y muestre el resultado de la suma
             int Numero1 = 9 ;
             int Numero2 = 7 ;
             System.out.println(Numero1 + Numero2);
-        //  Ejercico 3 - Ingrese tres numeros y  muestre el mayor
+        Y acá dejo de comentar esto */
 
+        //  Ejercicio 3 - Ingrese tres numeros y  muestre el mayor
+        /*String Teclado;
+        Scanner EntradaScanner = new Scanner (System.in);
+        System.out.println ("Ingrese el primer número");
+        Teclado = EntradaScanner.nextLine ();
+        System.out.println ("Ingrese el segundo número");
+        Teclado = EntradaScanner.nextLine ();
+        System.out.println ("Ingrese el tercer número");
+        Teclado = EntradaScanner.nextLine ();*/
+
+        int Numero1;
+        int Numero2;
+        int Numero3;
+
+        Scanner EntradaScanner = new Scanner (System.in);
+        System.out.println ("Ingrese el primer número");
+        Numero1 = EntradaScanner.nextInt ();
+        System.out.println ("Ingrese el segundo número");
+        Numero2 = EntradaScanner.nextInt ();
+        System.out.println ("Ingrese el tercer número");
+        Numero3 = EntradaScanner.nextInt ();
+
+        int NumeroMayor = Numero1;
+
+        if (Numero2 > NumeroMayor) {
+            NumeroMayor = Numero2;
+        }
+        if (Numero3 > NumeroMayor) {
+            NumeroMayor = Numero3;
+        }
+        System.out.println("El número mayor es "+NumeroMayor);
+
+    //No se si me fui muy largo con la info o si el "int" está bien usado, robé info de internet
+        // y de un curso que estuve mirando en Youtube, así que si algo de la fórmula está mal, le echamos la culpa a él
     }
     /*
      TIPO DE VARIABLES:
