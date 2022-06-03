@@ -2,10 +2,13 @@ public class primero {
 
     public static void main(String[] args) {
         //Ejercicio 1 - Hola Mundo
-
+            System.out.println("Hola Mundo");
         // Ejercicio 2 - Ingrese dos numeros y muestre el resultado de la suma
-
+            int Numero1 = 9 ;
+            int Numero2 = 7 ;
+            System.out.println(Numero1 + Numero2);
         //  Ejercico 3 - Ingrese tres numeros y  muestre el mayor
+
     }
     /*
      TIPO DE VARIABLES:
