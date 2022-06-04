@@ -7,17 +7,17 @@ public class primero {
         Scanner EntradaScanner = new Scanner(System.in);
         int maximo;
         int num;
-        int mayor = 0;
+        int mayor = 0; //si mayor ya tiene un vaalor supongo que puedo avanzar con el resto
         int cont;
 
         System.out.println("Inserte el máximo de números");
         maximo = EntradaScanner.nextInt();
 
-        for (cont = 0; cont < maximo; cont++) {
-            System.out.println("Inserte un número");
+        for (cont = 0; cont < maximo; cont++) { //Pensé que tenía que poner mayor o igual, pero a prueba y error... me di cuenta que no
+            System.out.println("Inserte un número"); //Así no me podés pedir "ahora para 20" jeje
             num = EntradaScanner.nextInt();
             if (num > mayor) {
-                mayor = num;
+                mayor = num; //Esta forma que ví en internet me parece aún más simple de la forma que le robé a tu hermano en el ejercicio anterior
             }
         }
         System.out.println("El número mayor es " +mayor);
