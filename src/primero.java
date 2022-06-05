@@ -6,16 +6,20 @@ public class primero {
         //Estoy comentandotodo porque no se como empezar una hoja nueva
         Scanner EntradaScanner = new Scanner(System.in);
         int maximo;
-        double num;
-        double mayor = -1;
-        double cont;
+        int num;
+        int mayor;
+        int cont;
 
         System.out.println("Inserte el máximo de números");
         maximo = EntradaScanner.nextInt();
 
-        for (cont = 0; cont < maximo; cont++) { //Pensé que tenía que poner mayor o igual, pero a prueba y error... me di cuenta que no
+        System.out.println("Inserte un número");
+        mayor = EntradaScanner.nextInt(); // La idea es que el primer número mayor sea este.
+
+        for (cont = 0; cont < maximo -1; cont++) { //Le puse -1 porque el primer número ya está es el "mayor"
             System.out.println("Inserte un número"); //Así no me podés pedir "ahora para 20" jeje
-            num = EntradaScanner.nextDouble();
+            num = EntradaScanner.nextInt();
+
             if (num > mayor) {
                 mayor = num; //Esta forma que ví en internet me parece aún más simple de la forma que le robé a tu hermano en el ejercicio anterior
             }
