@@ -8,7 +8,7 @@ public class primero {
       /*  System.out.println("HOLA MUNDO");*/
 
     // Ejercicio 2 - Ingrese dos numeros y muestre el resultado de la suma
-/*
+/*s
         int numero1;
         int numero2;
         int resultado;
@@ -29,7 +29,7 @@ public class primero {
 
 
      //  Ejercico 3 - Ingrese tres numeros y  muestre el mayor
-
+/*
         int numeroA;
         int numeroB;
         int numeroC;
@@ -46,6 +46,69 @@ public class primero {
        if (numeroA>numeroB & numeroA>numeroC) System.out.println ("el mayor numero ingreado es:" + numeroA);
        if (numeroB>numeroA & numeroB>numeroC) System.out.println("el mayor numero ingreado es:"+ numeroB);
        if (numeroC>numeroA & numeroC>numeroB) System.out.println("el mayor numero ingreado es:"+ numeroC);
+    */
+        int numeroA;
+        int numeroB;
+        int numeroC;
+        int numeroD;
+        int numeroE;
+        int numeroF;
+        int numeroG;
+        int numeroH;
+        int numeroI;
+        int numeroJ;
+        int numeroMayor;
+        Scanner teclado = new Scanner(System.in);
+
+        System.out.println("Ingrese UN Numero: ");
+        numeroA= teclado.nextInt();
+        System.out.println("Ingrese UN SEGUNDO Numero: ");
+        numeroB= teclado.nextInt();
+        System.out.println("Ingrese UN TERCER Numero: ");
+        numeroC= teclado.nextInt();
+        System.out.println("Ingrese UN 4TO: ");
+        numeroD= teclado.nextInt();
+        System.out.println("Ingrese UN 5TO: ");
+        numeroE= teclado.nextInt();
+        System.out.println("Ingrese UN 6TO: ");
+        numeroF= teclado.nextInt();
+        System.out.println("Ingrese UN 7MO: ");
+        numeroG= teclado.nextInt();
+        System.out.println("Ingrese UN 8VO: ");
+        numeroH= teclado.nextInt();
+        System.out.println("Ingrese UN 9NO: ");
+        numeroI= teclado.nextInt();
+        System.out.println("Ingrese UN 10MO: ");
+        numeroJ= teclado.nextInt();
+
+        numeroMayor= numeroA;
+        if (numeroB>numeroA)  numeroMayor=numeroB;
+        if(numeroC>numeroMayor) numeroMayor=numeroC;
+        if(numeroD>numeroMayor) numeroMayor=numeroD;
+        if(numeroE>numeroMayor) numeroMayor=numeroE;
+        if(numeroF>numeroMayor) numeroMayor=numeroF;
+        if(numeroG>numeroMayor) numeroMayor=numeroG;
+        if(numeroH>numeroMayor) numeroMayor=numeroH;
+        if(numeroI>numeroMayor) numeroMayor=numeroI;
+        if(numeroJ>numeroMayor) numeroMayor=numeroJ;
+
+
+        System.out.println("el mayor numero ingreado es:"+ numeroMayor);
+
+
+
+        if (numeroMayor == numeroA)  System.out.println("EL NUMERO MAYOR HA SIDO INGRESADO EN PRIMER LUGAR");
+        if (numeroMayor == numeroB)  System.out.println("EL NUMERO MAYOR HA SIDO INGRESADO EN SEGUNDO LUGAR");
+        if (numeroMayor == numeroC)  System.out.println("EL NUMERO MAYOR HA SIDO INGRESADO EN TERCER LUGAR");
+        if (numeroMayor == numeroD)  System.out.println("EL NUMERO MAYOR HA SIDO INGRESADO EN CUARTO LUGAR");
+        if (numeroMayor == numeroE)  System.out.println("EL NUMERO MAYOR HA SIDO INGRESADO EN QUINTO LUGAR");
+        if (numeroMayor == numeroF)  System.out.println("EL NUMERO MAYOR HA SIDO INGRESADO EN SEXTO LUGAR");
+        if (numeroMayor == numeroG)  System.out.println("EL NUMERO MAYOR HA SIDO INGRESADO EN SEPTIMO LUGAR");
+        if (numeroMayor == numeroH)  System.out.println("EL NUMERO MAYOR HA SIDO INGRESADO EN OCTAVO LUGAR");
+        if (numeroMayor == numeroI)  System.out.println("EL NUMERO MAYOR HA SIDO INGRESADO EN NOVENO LUGAR");
+        if (numeroMayor == numeroJ)  System.out.println("EL NUMERO MAYOR HA SIDO INGRESADO EN DECIMO LUGAR");
+
+
     }
 
 
