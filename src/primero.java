@@ -18,27 +18,84 @@ public class primero {
         resultado = (byte) (n1 + n2);
         System.out.print("La suma es " + resultado);
     } */
-        //  Ejercico 3 - Ingrese tres numeros y  muestre el mayor
+        /*  Ejercico 3 - Ingrese tres numeros y  muestre el mayor
 
         int n1;
         int n2;
         int n3;
-        Scanner scanner = new Scanner(System.in);
+
+        Scanner teclado = new Scanner(System.in);
 
         System.out.println("Ingrese el primer numero: ");
-        n1 = scanner.nextInt();
+        n1 = teclado.nextInt();
         System.out.println("Ingrese el segundo numero: ");
-        n2 = scanner.nextInt();
+        n2 = teclado.nextInt();
         System.out.println("Ingrese el tercer numero: ");
-        n3 = scanner.nextInt();
+        n3 = teclado.nextInt();
+
         int numeroMayor = n1;
+
         if (n2 > numeroMayor)
-            System.out.print("El numero mayor es "+n2);
+        numeroMayor=n2;
+
         if (n3 > numeroMayor)
-            System.out.print("El numero mayor es "+n3);
+        numeroMayor=n3;
+
+        System.out.println("El numero mayor es igual a " + numeroMayor);
+
+
+
+            }*/
+
+// Ejercicio 3 para 10 numeros:
+
+        int n1;
+        int n2;
+        int n3;
+        int n4;
+        int n5;
+        int n6;
+        int n7;
+        int n8;
+        int n9;
+        int n10;
+
+        Scanner teclado = new Scanner(System.in);
+
+        System.out.println("Ingrese el primer numero: ");
+        n1 = teclado.nextInt();
+        System.out.println("Ingrese el segundo numero: ");
+        n2 = teclado.nextInt();
+        System.out.println("Ingrese el tercer numero: ");
+        n3 = teclado.nextInt();
+        System.out.println("Ingrese el cuarto numero");
+        n4 = teclado.nextInt();
+        System.out.println("Ingrese el quinto numero: ");
+        n5 = teclado.nextInt();
+        System.out.println("Ingrese el sexto numero: ");
+        n6 = teclado.nextInt();
+        System.out.println("Ingrese el septimo numero: ");
+        n7 = teclado.nextInt();
+        System.out.println("Ingrese el octavo numero");
+        n8 = teclado.nextInt();
+        System.out.println("Ingrese el noveno numero: ");
+        n9 = teclado.nextInt();
+        System.out.println("Ingrese el decimo numero");
+        n10 = teclado.nextInt();
+
+        int numeroMayor =n1;
+        if (n2 > numeroMayor)  numeroMayor =n2;
+        if (n3 > numeroMayor)  numeroMayor=n3;
+        if (n4 > numeroMayor)  numeroMayor=n4;
+        if (n5 > numeroMayor)  numeroMayor=n5;
+        if (n6 > numeroMayor)  numeroMayor=n6;
+        if (n7 > numeroMayor)  numeroMayor=n7;
+        if (n8 > numeroMayor)  numeroMayor=n8;
+        if (n9 > numeroMayor)  numeroMayor=n9;
+        if (n10 > numeroMayor)  numeroMayor=n10;
+
+        System.out.println("El numero mayor es "+ numeroMayor);
     }
-
-
 
      /* TIPO DE VARIABLES:
      * Primitivas:
