@@ -83,20 +83,41 @@ public class primero {
         System.out.println("Ingrese el decimo numero");
         n10 = teclado.nextInt();
 
-        int numeroMayor =n1;
-        if (n2 > numeroMayor)  numeroMayor =n2;
-        if (n3 > numeroMayor)  numeroMayor=n3;
-        if (n4 > numeroMayor)  numeroMayor=n4;
-        if (n5 > numeroMayor)  numeroMayor=n5;
-        if (n6 > numeroMayor)  numeroMayor=n6;
-        if (n7 > numeroMayor)  numeroMayor=n7;
-        if (n8 > numeroMayor)  numeroMayor=n8;
-        if (n9 > numeroMayor)  numeroMayor=n9;
-        if (n10 > numeroMayor)  numeroMayor=n10;
+        int numeroMayor = n1;
+        if (n2 > numeroMayor) numeroMayor = n2;
+        if (n3 > numeroMayor) numeroMayor = n3;
+        if (n4 > numeroMayor) numeroMayor = n4;
+        if (n5 > numeroMayor) numeroMayor = n5;
+        if (n6 > numeroMayor) numeroMayor = n6;
+        if (n7 > numeroMayor) numeroMayor = n7;
+        if (n8 > numeroMayor) numeroMayor = n8;
+        if (n9 > numeroMayor) numeroMayor = n9;
+        if (n10 > numeroMayor) numeroMayor = n10;
 
-        System.out.println("El numero mayor es "+ numeroMayor);
+        System.out.println("El numero mayor es " + numeroMayor);
+
+        if (numeroMayor == n1) System.out.println("El numero mayor fue ingresado en primer lugar");
+
+        if (numeroMayor == n2) System.out.println("El numero mayor fue ingresado en segundo lugar");
+
+        if (numeroMayor == n3) System.out.println("El numero mayor fue ingresado en tercer lugar");
+
+        if (numeroMayor == n4) System.out.println("El numero mayor fue ingresado en cuarto lugar");
+
+        if (numeroMayor == n5) System.out.println("El numero mayor fue ingresado en quinto lugar");
+
+        if (numeroMayor == n6) System.out.println("El numero mayor fue ingresado en sexto lugar");
+
+        if (numeroMayor == n7) System.out.println("El numero mayor fue ingresado en septimo lugar");
+
+        if (numeroMayor == n8) System.out.println("El numero mayor fue ingresado en octavo lugar");
+
+        if  (numeroMayor == n9) System.out.println("El numero mayor fue ingresado en noveno lugar"); ;
+
+       if (numeroMayor == n10) System.out.println("El numero mayor fue ingresado en decimo lugar"); ;
+
+
     }
-
      /* TIPO DE VARIABLES:
      * Primitivas:
      - Numerico
