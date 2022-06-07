@@ -3,10 +3,40 @@ import java.util.Scanner;
 
 public class primero {
     public static void main(String[] args) {
-        //Nuevo ejercicio, voy a tratar de hacer una lista con arrays a ver si puedo conseguir que
-        //digan en que puesto está el número mayor
 
 
+
+
+
+        //SABER SI LOS NÚMEROS INGRESADOS SON PAR, IMPAR Y CUÁNTOS SE CARGARON DE CADA UNO
+        Scanner EntradaScanner = new Scanner(System.in);
+
+        int maximo;
+        int num;
+        int mayor;
+        int IndicePar = 0;
+        int IndiceImpar = 0;
+
+        System.out.println("Inserte el máximo de números");
+        maximo = EntradaScanner.nextInt();
+
+        for (int i = 0; i < maximo; i++) {
+            System.out.println("Inserte un número"); //Así no me podés pedir "ahora para 20" jeje
+            num = EntradaScanner.nextInt();
+            if (num % 2 == 0){
+                IndicePar = IndicePar + 1;
+                System.out.println("el número es par");
+            }
+            else {
+                IndiceImpar = IndiceImpar + 1;
+                System.out.println("el número es impar");
+            }
+        }
+        System.out.println("La cantidad de números pares escritos fueron:" + IndicePar);
+        System.out.println("La cantidad de números impares escritos fueron:" + IndiceImpar);
+
+
+/*  ACÁ DICE QUE NÚMERO MAYOR APARECE PRIMERO.
         Scanner EntradaScanner = new Scanner(System.in);
 
         int maximo;

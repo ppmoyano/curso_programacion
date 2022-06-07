@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1b0db52c-3d49-46c8-9491-fbeaea55c38e" name="Changes" comment="">
+    <list default="true" id="1b0db52c-3d49-46c8-9491-fbeaea55c38e" name="Changes" comment="Ejercicio 1, 2 y 3&#10;Más el mayor de 10 números&#10;Ahora también te dice la primera posición donde se escribió el mayor">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/curso_programacion/primero.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/curso_programacion/primero.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/primero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/primero.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -10,6 +12,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -20,14 +27,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="primero" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="primero" />
@@ -51,6 +58,56 @@
       <option name="presentableId" value="Default" />
       <updated>1654195767211</updated>
     </task>
+    <task id="LOCAL-00001" summary="Ejercicio 1 y 2">
+      <created>1654274787791</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1654274787791</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Ejercicio 1, 2 y 3">
+      <created>1654278405389</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1654278405389</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Ejercicio 1, 2 y 3&#10;Más el mayor de 10 números">
+      <created>1654330594870</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1654330594870</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Ejercicio 1, 2 y 3&#10;Más el mayor de 10 números">
+      <created>1654330767897</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1654330767897</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Ejercicio 1, 2 y 3&#10;Más el mayor de 10 números">
+      <created>1654331808031</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1654331808031</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Ejercicio 1, 2 y 3&#10;Más el mayor de 10 números">
+      <created>1654441997086</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1654441997086</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Ejercicio 1, 2 y 3&#10;Más el mayor de 10 números&#10;Ahora también te dice la primera posición donde se escribió el mayor">
+      <created>1654607977323</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1654607977323</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -64,19 +121,11 @@
       </map>
     </option>
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/primero.java</url>
-          <line>3</line>
-          <properties class="primero" method="main">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Ejercicio 1 y 2" />
+    <MESSAGE value="Ejercicio 1, 2 y 3" />
+    <MESSAGE value="Ejercicio 1, 2 y 3&#10;Más el mayor de 10 números" />
+    <MESSAGE value="Ejercicio 1, 2 y 3&#10;Más el mayor de 10 números&#10;Ahora también te dice la primera posición donde se escribió el mayor" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ejercicio 1, 2 y 3&#10;Más el mayor de 10 números&#10;Ahora también te dice la primera posición donde se escribió el mayor" />
   </component>
 </project>
