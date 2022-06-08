@@ -3,35 +3,52 @@ import java.util.Scanner;
 public class primero {
 
     public static void main(String[] args) {
+        //  Ejercico 3 - Ingrese X numeros y  muestre el mayor
         Scanner teclado = new Scanner(System.in);
 
-        int notaA;
-        int notaB;
-        int promedio;
+        int cantidadDeNumeros;
+        int mayor = 0;
 
-        System.out.println("Ingrese la primer nota: ");
-        notaA = teclado.nextInt();
-        System.out.println("Ingrese la segunda nota: ");
-        notaB = teclado.nextByte();
+        cantidadDeNumeros = elegirLargoDelArray();
 
-        promedio = (notaA + notaB) / 2;
+        int[] numeros = new int[cantidadDeNumeros];
 
-        if ( promedio >= 6) {
-            System.out.println("APROBADO");
-        } else {
-            System.out.println("DESAPROBADO");
+        cargarNumerosEnArray(numeros);
+        mayor = calcularMayorNumeroEnArray(numeros);
+
+        System.out.println("El mayor numero es: "+mayor);
+
+    }
+
+    private static int elegirLargoDelArray() {
+        int largoDeArray = 0;
+        Scanner teclado = new Scanner(System.in);
+        do {
+            System.out.println("Ingrese la cantidad de numeros que desea ingresar:");
+            largoDeArray = teclado.nextInt();
+        }while(largoDeArray < 1);
+        return largoDeArray;
+    }
+
+    private static int calcularMayorNumeroEnArray(int[] arrayX) {
+        int mayor = 0;
+        for (int i = 0; i < arrayX.length; i++) {
+            if ( i == 0) {
+                mayor = arrayX[i];
+            }
+            if (arrayX[i]> mayor) {
+                mayor = arrayX[i];
+            }
         }
-        System.out.println("El promedio es "+promedio);
+        return mayor;
+    }
 
-
-
-//        String userName = myObj.nextLine();  // Read user input
-
-        //Ejercicio 1 - Hola Mundo
-
-        // Ejercicio 2 - Ingrese dos numeros y muestre el resultado de la suma
-
-        //  Ejercico 3 - Ingrese tres numeros y  muestre el mayor
+    public static void cargarNumerosEnArray(int[] arrayX) {
+        Scanner teclado = new Scanner(System.in);
+        for (int i = 0; i < arrayX.length; i++) {
+            System.out.println("Ingrese el numero de la posicion " + i);
+            arrayX[i] = teclado.nextInt();
+        }
     }
     /*
      TIPO DE VARIABLES - ocupa un espacio de memoria:
