@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b0db52c-3d49-46c8-9491-fbeaea55c38e" name="Changes" comment="Ejercicio 1, 2 y 3&#10;Más el mayor de 10 números&#10;Ahora también te dice la primera posición donde se escribió el mayor">
+    <list default="true" id="1b0db52c-3d49-46c8-9491-fbeaea55c38e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/segundo/notas.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/segundo/segundoA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/segundo/segundoB.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/curso_programacion/primero.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/curso_programacion/primero.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/primero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/primero.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="main" />
-      </map>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
     </option>
+  </component>
+  <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -32,7 +39,9 @@
     &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/projects/curso_programacion&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
 }</component>
   <component name="RunManager">
@@ -58,56 +67,6 @@
       <option name="presentableId" value="Default" />
       <updated>1654195767211</updated>
     </task>
-    <task id="LOCAL-00001" summary="Ejercicio 1 y 2">
-      <created>1654274787791</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1654274787791</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Ejercicio 1, 2 y 3">
-      <created>1654278405389</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1654278405389</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Ejercicio 1, 2 y 3&#10;Más el mayor de 10 números">
-      <created>1654330594870</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1654330594870</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Ejercicio 1, 2 y 3&#10;Más el mayor de 10 números">
-      <created>1654330767897</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1654330767897</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Ejercicio 1, 2 y 3&#10;Más el mayor de 10 números">
-      <created>1654331808031</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1654331808031</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Ejercicio 1, 2 y 3&#10;Más el mayor de 10 números">
-      <created>1654441997086</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1654441997086</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Ejercicio 1, 2 y 3&#10;Más el mayor de 10 números&#10;Ahora también te dice la primera posición donde se escribió el mayor">
-      <created>1654607977323</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1654607977323</updated>
-    </task>
-    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -120,12 +79,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Ejercicio 1 y 2" />
-    <MESSAGE value="Ejercicio 1, 2 y 3" />
-    <MESSAGE value="Ejercicio 1, 2 y 3&#10;Más el mayor de 10 números" />
-    <MESSAGE value="Ejercicio 1, 2 y 3&#10;Más el mayor de 10 números&#10;Ahora también te dice la primera posición donde se escribió el mayor" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ejercicio 1, 2 y 3&#10;Más el mayor de 10 números&#10;Ahora también te dice la primera posición donde se escribió el mayor" />
   </component>
 </project>
