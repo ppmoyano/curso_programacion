@@ -4,11 +4,9 @@ public class primero {
 
     public static void main(String[] args) {
         //Ejercicio 1 - Hola Mundo
-
-      /*  System.out.println("HOLA MUNDO");*/
-
-    // Ejercicio 2 - Ingrese dos numeros y muestre el resultado de la suma
-/*s
+        /*  System.out.println("HOLA MUNDO");*/
+        // Ejercicio 2 - Ingrese dos numeros y muestre el resultado de la suma
+/*
         int numero1;
         int numero2;
         int resultado;
@@ -26,9 +24,7 @@ public class primero {
         System.out.println ("el resultado es " + resultado);
 
 */
-
-
-     //  Ejercico 3 - Ingrese tres numeros y  muestre el mayor
+        //  Ejercico 3 - Ingrese tres numeros y  muestre el mayor
 /*
         int numeroA;
         int numeroB;
@@ -46,7 +42,7 @@ public class primero {
        if (numeroA>numeroB & numeroA>numeroC) System.out.println ("el mayor numero ingreado es:" + numeroA);
        if (numeroB>numeroA & numeroB>numeroC) System.out.println("el mayor numero ingreado es:"+ numeroB);
        if (numeroC>numeroA & numeroC>numeroB) System.out.println("el mayor numero ingreado es:"+ numeroC);
-    */
+*/
         int numeroA;
         int numeroB;
         int numeroC;
@@ -92,24 +88,26 @@ public class primero {
         if(numeroI>numeroMayor) numeroMayor=numeroI;
         if(numeroJ>numeroMayor) numeroMayor=numeroJ;
 
-
         System.out.println("el mayor numero ingreado es:"+ numeroMayor);
 
+        boolean pos = ( numeroMayor==numeroA & numeroMayor == numeroB & numeroMayor == numeroC & numeroMayor == numeroD
+                & numeroMayor == numeroE & numeroMayor == numeroF & numeroMayor == numeroG
+                & numeroMayor == numeroH & numeroMayor == numeroI & numeroMayor == numeroJ);
+
+        if (pos=true) System.out.println("el numero mayor ha sido ingresado mas de una vez");
+
+        else if (numeroMayor == numeroA)  System.out.println("EL NUMERO MAYOR HA SIDO INGRESADO EN PRIMER LUGAR");
+        else if (numeroMayor == numeroB)  System.out.println("EL NUMERO MAYOR HA SIDO INGRESADO EN SEGUNDO LUGAR");
+        else if (numeroMayor == numeroC)  System.out.println("EL NUMERO MAYOR HA SIDO INGRESADO EN TERCER LUGAR");
+        else if (numeroMayor == numeroD)  System.out.println("EL NUMERO MAYOR HA SIDO INGRESADO EN CUARTO LUGAR");
+        else if (numeroMayor == numeroE)  System.out.println("EL NUMERO MAYOR HA SIDO INGRESADO EN QUINTO LUGAR");
+        else if (numeroMayor == numeroF)  System.out.println("EL NUMERO MAYOR HA SIDO INGRESADO EN SEXTO LUGAR");
+        else if (numeroMayor == numeroG)  System.out.println("EL NUMERO MAYOR HA SIDO INGRESADO EN SEPTIMO LUGAR");
+        else if (numeroMayor == numeroH)  System.out.println("EL NUMERO MAYOR HA SIDO INGRESADO EN OCTAVO LUGAR");
+        else if (numeroMayor == numeroI)  System.out.println("EL NUMERO MAYOR HA SIDO INGRESADO EN NOVENO LUGAR");
+        else if (numeroMayor == numeroJ)  System.out.println("EL NUMERO MAYOR HA SIDO INGRESADO EN DECIMO LUGAR");
 
 
-        if (numeroMayor == numeroA)  System.out.println("EL NUMERO MAYOR HA SIDO INGRESADO EN PRIMER LUGAR");
-        if (numeroMayor == numeroB)  System.out.println("EL NUMERO MAYOR HA SIDO INGRESADO EN SEGUNDO LUGAR");
-        if (numeroMayor == numeroC)  System.out.println("EL NUMERO MAYOR HA SIDO INGRESADO EN TERCER LUGAR");
-        if (numeroMayor == numeroD)  System.out.println("EL NUMERO MAYOR HA SIDO INGRESADO EN CUARTO LUGAR");
-        if (numeroMayor == numeroE)  System.out.println("EL NUMERO MAYOR HA SIDO INGRESADO EN QUINTO LUGAR");
-        if (numeroMayor == numeroF)  System.out.println("EL NUMERO MAYOR HA SIDO INGRESADO EN SEXTO LUGAR");
-        if (numeroMayor == numeroG)  System.out.println("EL NUMERO MAYOR HA SIDO INGRESADO EN SEPTIMO LUGAR");
-        if (numeroMayor == numeroH)  System.out.println("EL NUMERO MAYOR HA SIDO INGRESADO EN OCTAVO LUGAR");
-        if (numeroMayor == numeroI)  System.out.println("EL NUMERO MAYOR HA SIDO INGRESADO EN NOVENO LUGAR");
-        if (numeroMayor == numeroJ)  System.out.println("EL NUMERO MAYOR HA SIDO INGRESADO EN DECIMO LUGAR");
-
-
-    }
 
 
     /* TIPO DE VARIABLES:
@@ -135,5 +133,7 @@ public class primero {
           ...
           else
           ....
-     */
-    }
+     */}
+
+
+}
