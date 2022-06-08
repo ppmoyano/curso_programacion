@@ -10,5 +10,10 @@ public class segundoB {
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
 
+        String nombre = "Pepe";
+
+        System.out.println(nombre.length()); //devuelve el largo
+        System.out.println(nombre.charAt(0));
+
     }
 }
