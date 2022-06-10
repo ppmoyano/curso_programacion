@@ -1,5 +1,6 @@
 package segundo;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class segundoA {
@@ -11,6 +12,21 @@ c) Una vez que el programa finalice pregunte si quiere volver a realizarlo, y qu
 
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
+        int numero = 0;
 
+        System.out.println("Ingrese un numero");
+        numero = teclado.nextInt();
+
+        for (int i = 0; i <= numero; i++) {
+            System.out.println(i);
+        }
+
+
+
+
+
+
+
+//dos cierres finales, ni hay que tocarlos
     }
 }
