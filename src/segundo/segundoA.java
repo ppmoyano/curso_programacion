@@ -14,12 +14,20 @@ c) Una vez que el programa finalice pregunte si quiere volver a realizarlo, y qu
         Scanner teclado = new Scanner(System.in);
         int numero = 0;
 
-        System.out.println("Ingrese un numero");
+        System.out.println("Ingrese un numero mayor a 0");
         numero = teclado.nextInt();
 
-        for (int i = 0; i <= numero; i++) {
-            System.out.println(i);
+        if (numero <= 0) {
+            do {
+                System.out.println("El numero ingresado no es correcto, ingrese un numero mayor a 0");
+                numero = teclado.nextInt();
+            }
+            while (numero <= 0);
         }
+            for (int i = 0; i <= numero; i++) {
+                System.out.println(i);
+            }
+
 
 
 
