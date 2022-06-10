@@ -43,6 +43,7 @@ public class primero {
        if (numeroB>numeroA & numeroB>numeroC) System.out.println("el mayor numero ingreado es:"+ numeroB);
        if (numeroC>numeroA & numeroC>numeroB) System.out.println("el mayor numero ingreado es:"+ numeroC);
 */
+        /*
         int numeroA;
         int numeroB;
         int numeroC;
@@ -107,7 +108,7 @@ public class primero {
         else if (numeroMayor == numeroI)  System.out.println("EL NUMERO MAYOR HA SIDO INGRESADO EN NOVENO LUGAR");
         else if (numeroMayor == numeroJ)  System.out.println("EL NUMERO MAYOR HA SIDO INGRESADO EN DECIMO LUGAR");
 
-
+*/
 
 
     /* TIPO DE VARIABLES:
