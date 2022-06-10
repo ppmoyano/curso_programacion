@@ -53,6 +53,7 @@ public class segundoA {
 
             do {System.out.println("INGRESE OTRO NUMERO O CERO PARA FINALIZAR");
                 opcion = teclado.nextInt();
+                if ( opcion<0 ) System.out.println("ERROR");
                 for  (int i =opcion; i >=0 ; i--) {
                     System.out.println(i);  }
             }while(opcion!=0);
