@@ -12,7 +12,7 @@ c) Una vez que el programa finalice pregunte si quiere volver a realizarlo, y qu
 
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
-        int numero = 0;
+        int numero;
 
         System.out.println("Ingrese un numero mayor a 0");
         numero = teclado.nextInt();
