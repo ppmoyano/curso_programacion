@@ -3,6 +3,10 @@ package segundo;
 import java.util.Scanner;
 
 public class segundoA {
+
+
+}
+
     /*
     a)Realice un programa donde ingrese un numero y se muestre todo los numeros desde 0 hasta el mismo numero inclusive.
     por ejemplo si ingreso 3, que muestre 0, 1 , 2 y 3.
@@ -38,7 +42,7 @@ public class segundoA {
     que lo haga hasta que el usuario ingrese 0.
      */
 
-    public static void main(String[] args) {
+   /*public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
         int NUMERO;
         int opcion;
@@ -63,7 +67,8 @@ public class segundoA {
 
     }
 }
-   /* private static void cargarNumerosEnArray(int[] arrayX) { //entre parentesis el metodo recibe un parametro
+  */
+/* private static void cargarNumerosEnArray(int[] arrayX) { //entre parentesis el metodo recibe un parametro
         //nosotros decimos de que tipo va a ser el parametro que recibe en este caso int[] y le ponemos un nombre para usar dentro del
         //metodo. Es decir cuando nosotros llamemos al metodo le vamos a pasar un array de ints, no sabemos como se llama el que les pasa
         //pero cuando esta aca se comporta en este caso como arrayX
