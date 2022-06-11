@@ -7,16 +7,16 @@ import java.util.Scanner;
 public class segundoB {
     public static void main(String[] args) {
         String nombreLargo;
-        String nombreCorto;
-        String nombresConA;
+
         int cantidadDeNombres;
-        cantidadDeNombres= largoDelArray();
-        String[] nombres = new String [cantidadDeNombres];
+        cantidadDeNombres = largoDelArray();
+        String[] nombres = new String[cantidadDeNombres];
         cargarNombresEnArray(nombres);
         nombreLargo = calcularEnElArrayElMasLargo(nombres);
-        nombreCorto = calcularEnElArrayElMasCorto (nombres);
-        nombresConA = calcularEnElArrayNombresConA (nombres);
-}
+        System.out.println("El nombre mas largo es : " + nombreLargo);
+        System.out.println("El nombre mas corto es : " + calcularEnElArrayElMasCorto(nombres));
+        calcularEnElArrayNombresConA(nombres);
+    }
 
     public static int largoDelArray() {
         int largodelArray = 0;
@@ -24,9 +24,10 @@ public class segundoB {
         do {
             System.out.println("Ingrese la cantidad de alumnos en el curso:");
             largodelArray = teclado.nextInt();
-        }while(largodelArray < 1);
+        } while (largodelArray < 1);
         return largodelArray;
     }
+
     private static void cargarNombresEnArray(String[] nombres) {
         Scanner teclado = new Scanner(System.in);
         for (int i = 0; i < nombres.length; i++) {
@@ -35,38 +36,43 @@ public class segundoB {
         }
 
     }
-   private static String calcularEnElArrayElMasLargo(String[] nombres) {
-        int mayorCantidadDeLetras = 0;
+
+    private static String calcularEnElArrayElMasLargo(String[] nombres) {
+        int mayorCantidadDeLetras = nombres[0].length();
         String nombreLargo = "";
+        nombreLargo = nombres[0];
         for (int i = 0; i < nombres.length; i++) {
-            if (i == 0) { mayorCantidadDeLetras = nombres[i].length(); }
             if (nombres[i].length() > mayorCantidadDeLetras) {
-                nombreLargo = nombres[i] ;}
+                nombreLargo = nombres[i];
+            }
         }
-        System.out.print("El nombre mas largo es " + nombreLargo+ ".  ");
         return nombreLargo;
     }
-   private static String calcularEnElArrayElMasCorto(String[] nombres) {
-        int menorCantidadDeLetras = 0;
+
+    private static String calcularEnElArrayElMasCorto(String[] nombres) {
+        int menorCantidadDeLetras = nombres[0].length();
         String nombreCorto = "";
+        nombreCorto = nombres[0];
         for (int i = 0; i < nombres.length; i++) {
-            if (i == 0) { menorCantidadDeLetras = nombres[i].length(); }
             if (nombres[i].length() < menorCantidadDeLetras) {
-                nombreCorto = nombres[i] ;}
+                nombreCorto = nombres[i];
+            }
         }
-        System.out.print("El nombre mas corto es " + nombreCorto);
         return nombreCorto;
-        
+
     }
-    private static String calcularEnElArrayNombresConA(String[] nombres) {
+
+    private static void calcularEnElArrayNombresConA(String[] nombres) {
         char primerLetra;
-        primerLetra= 'A';
+        primerLetra = 'A';
+        System.out.println("Los nombres comenzados con A son :");
         for (int i = 0; i < nombres.length; i++) {
-           if (nombres[i].charAt(0) == primerLetra)
-           { System.out.print(" Los nombres comenzados con A son :" + nombres[i]);}
+            if (nombres[i].charAt(0) == primerLetra) {
+                System.out.println (nombres[i]);
+            }
+        }
+
     }
-return "";
-}
 
 }
 
