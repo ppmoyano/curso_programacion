@@ -28,7 +28,7 @@ public class segundoA {
         }  // No se porque si pongo 0, tambien me muestra 0 y ERROR
 
     }
-*/
+
 
     //c) Una vez que el programa finalice pregunte si quiere volver a realizarlo, y que lo haga hasta que el usuario ingrese 0.
 
@@ -49,4 +49,5 @@ public class segundoA {
     }while(opcion != 0);
 // Lo maximo que pude lograr despues de muchos intentos jaja
 
-}}
+}
+*/}
