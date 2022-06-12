@@ -14,11 +14,25 @@ public class segundoB {
         String nombreMasLargo;
         String[] nombres = new String[6];
         String nombreMasCorto;
+        String nombresConA;
+
         cargarNombresEnArray(nombres);
         nombreMasLargo = calcularEnElArrayElMasLargo(nombres);
         nombreMasCorto = calcularEnArrayElMasCorto(nombres);
+        nombresConA = calcularEnArrayNombresConA(nombres);
         System.out.println("El nombre mas largo es: " + nombreMasLargo);
         System.out.println("El nombre mas corto es: " + nombreMasCorto);
+        System.out.println("Los nombres con A son: " + nombresConA);
+    }
+
+   /* private static String calcularEnArrayNombresConA(String[] nombres) {
+        String nombresConA="";
+        int A = nombres[0].charAt();
+        for (int i=0; i < nombres.length; i++) {
+            if (nombres [i].charAt(0) = A){
+                nombresConA = nombres [i];
+            }
+        }
     }
 
     private static String calcularEnArrayElMasCorto(String[] nombres) {
