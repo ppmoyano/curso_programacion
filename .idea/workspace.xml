@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b0db52c-3d49-46c8-9491-fbeaea55c38e" name="Changes" comment="Ejercicios clase 1 mas agregado de 10 numeros y la posicion del mayor">
+    <list default="true" id="1b0db52c-3d49-46c8-9491-fbeaea55c38e" name="Changes" comment="segundo a y b">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/curso_programacion/primero.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/curso_programacion/primero.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/primero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/primero.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/segundo/segundoA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/segundo/segundoA.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -88,6 +86,14 @@
       <option name="presentableId" value="Default" />
       <updated>1654195767211</updated>
     </task>
+    <task id="LOCAL-00001" summary="segundo a y b">
+      <created>1655039904066</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1655039904066</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -100,5 +106,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="segundo a y b" />
+    <option name="LAST_COMMIT_MESSAGE" value="segundo a y b" />
   </component>
 </project>
