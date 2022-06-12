@@ -49,8 +49,7 @@ public class primero {
 
 // Ejercicio 3 para 10 numeros:
 
-        int n1;
-        int n2;
+/*        int n2;
         int n3;
         int n4;
         int n5;
@@ -118,7 +117,7 @@ public class primero {
 
 
     }
-     /* TIPO DE VARIABLES:
+      TIPO DE VARIABLES:
      * Primitivas:
      - Numerico
         - enteros
@@ -142,4 +141,4 @@ public class primero {
           else
           ....
      */
-}
+}}
