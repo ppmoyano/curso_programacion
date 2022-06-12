@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b0db52c-3d49-46c8-9491-fbeaea55c38e" name="Changes" comment="Te odio Pepe">
-      <change afterPath="$PROJECT_DIR$/src/segundo/Pruebas.java" afterDir="false" />
+    <list default="true" id="1b0db52c-3d49-46c8-9491-fbeaea55c38e" name="Changes" comment="Por fin el SegundoB terminado">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/curso_programacion/segundo/segundoA.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/curso_programacion/segundo/segundoA.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/curso_programacion/segundo/segundoB.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/curso_programacion/segundo/segundoB.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/segundo/segundoA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/segundo/segundoA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/curso_programacion/segundo/segundoB.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/segundo/segundoB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/segundo/segundoB.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -163,7 +160,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654857085022</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Por fin el SegundoB terminado">
+      <created>1654963884782</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1654963884784</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -183,7 +187,8 @@
     <MESSAGE value="Ejercicio SegundoA completo, creo.&#10;Pero eche moco y quise crear un método y ahora me quedó ahí abajo, no se como llamarlo y si lo borro rop todo :)" />
     <MESSAGE value="Primera Prueba del B" />
     <MESSAGE value="Te odio Pepe" />
-    <option name="LAST_COMMIT_MESSAGE" value="Te odio Pepe" />
+    <MESSAGE value="Por fin el SegundoB terminado" />
+    <option name="LAST_COMMIT_MESSAGE" value="Por fin el SegundoB terminado" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

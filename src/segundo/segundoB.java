@@ -18,6 +18,7 @@ public class segundoB {
         String nombre = null;
         String nombreLargo= null;
         String nombreCorto= null;
+        String nombreConA= null;
         ArrayList empiezanconA = new ArrayList();
 
         System.out.println("Cuántos alumnos desea ingresar?");
@@ -36,8 +37,11 @@ public class segundoB {
                 empiezanconA.add(nombre);
             }
         }
-        System.out.println(nombreLargo + "es el nombre mas largo");
-        System.out.println(nombreCorto + "es el nombre mas corto");
-        System.out.println(empiezanconA.get(0));
+        System.out.println(nombreLargo + " es el nombre mas largo");
+        System.out.println(nombreCorto + " es el nombre mas corto");
+
+        for(int i = 0; i < empiezanconA.size(); i++) {
+            System.out.println(empiezanconA.get(i));
+        }
     } //public static void main(String[] args)
-} // class Pruebas
+} // class segundoB
