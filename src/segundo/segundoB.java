@@ -7,7 +7,7 @@ import java.util.Scanner;
 - Nos muestre todos los nombres que empiezan con la letra A
  */
 public class segundoB {
-    public static void main(String[] args) {
+  /*  public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
 
         String cargarNombres;
@@ -36,5 +36,5 @@ public class segundoB {
             }
         }        return nombreMasLargo;
     }
-}
+}*/
 //no esta terminado
