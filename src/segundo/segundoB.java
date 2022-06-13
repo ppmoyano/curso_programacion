@@ -26,13 +26,14 @@ public class segundoB {
     }
 
    /* private static String calcularEnArrayNombresConA(String[] nombres) {
-        String nombresConA="";
-        int A = nombres[0].charAt();
-        for (int i=0; i < nombres.length; i++) {
-            if (nombres [i].charAt(0) = A){
-                nombresConA = nombres [i];
+        String nombresConA;
+        nombresConA= "A";
+
+        for (int i=0; i < nombres.length(); i++) {
+            if (nombres [i].charAt(0) = nombresConA ){
+                System.out.println(nombres[i]);
             }
-        }
+        }*/ //NO SALE =(
     }
 
     private static String calcularEnArrayElMasCorto(String[] nombres) {
