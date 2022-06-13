@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1b0db52c-3d49-46c8-9491-fbeaea55c38e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/segundo/segundoC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/segundo/segundoD.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/segundo/segundoB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/segundo/segundoB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/segundo/segundoC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/segundo/segundoC.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,15 +43,21 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.segundoC">
-    <configuration name="primero" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="primero" />
+  <component name="RunManager" selected="Application.segundoD">
+    <configuration name="segundoD" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="segundo.segundoD" />
       <module name="curso_programacion" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="segundo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="segundoA" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="segundo.segundoA" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="segundo.segundoA" />
       <module name="curso_programacion" />
       <extension name="coverage">
@@ -63,7 +70,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="segundoB" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="segundo.segundoB" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="segundo.segundoB" />
       <module name="curso_programacion" />
       <extension name="coverage">
@@ -76,7 +83,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="segundoC" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="segundo.segundoC" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="segundo.segundoC" />
       <module name="curso_programacion" />
       <extension name="coverage">
@@ -89,7 +96,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="segundoH" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="segundo.segundoH" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="segundo.segundoH" />
       <module name="curso_programacion" />
       <extension name="coverage">
@@ -104,11 +111,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.segundoC" />
-        <item itemvalue="Application.segundoB" />
-        <item itemvalue="Application.segundoH" />
-        <item itemvalue="Application.segundoA" />
-        <item itemvalue="Application.primero" />
+        <item itemvalue="Application.segundoD" />
+        <item itemvalue="Application.segundo.segundoC" />
+        <item itemvalue="Application.segundo.segundoB" />
+        <item itemvalue="Application.segundo.segundoH" />
+        <item itemvalue="Application.segundo.segundoA" />
       </list>
     </recent_temporary>
   </component>
@@ -149,7 +156,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654951850390</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="ejercico SEGUNDO C">
+      <created>1655140485679</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1655140485679</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -171,7 +185,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ejercico SEGUNDO" />
     <MESSAGE value="ejercico SEGUNDOb" />
-    <option name="LAST_COMMIT_MESSAGE" value="ejercico SEGUNDOb" />
+    <MESSAGE value="ejercico SEGUNDO C" />
+    <option name="LAST_COMMIT_MESSAGE" value="ejercico SEGUNDO C" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

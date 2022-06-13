@@ -6,7 +6,7 @@ import java.util.Scanner;
 /*
 - Realice un programa donde ingrese X numeros, muestre el promedio, y cual  el numero mas ingresado y cuantas veces se ingreso
  */
-    public class segundoC {
+  /*  public class segundoC {
 
         public static void main(String[] args) {
             Scanner teclado = new Scanner(System.in);
@@ -89,4 +89,5 @@ Ejemplo de ejecucion 2:
         4
         El promedio de los numeros ingresados es 3.33333
         El numero mas repetido es el 3 y se ha repetido 2 veces
- */
+
+*/
