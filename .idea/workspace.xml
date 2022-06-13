@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b0db52c-3d49-46c8-9491-fbeaea55c38e" name="Changes" comment="Por fin el SegundoB terminado">
+    <list default="true" id="1b0db52c-3d49-46c8-9491-fbeaea55c38e" name="Changes" comment="Correccion del texto">
+      <change afterPath="$PROJECT_DIR$/src/segundo/segundoC.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/curso_programacion/segundo/segundoB.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/segundo/segundoB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/segundo/segundoB.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +21,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="pato" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -47,33 +51,7 @@
       <recent name="segundo" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.segundoB">
-    <configuration name="Pruebas" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="segundo.Pruebas" />
-      <module name="curso_programacion" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="segundo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="mostrarNumeros" type="Application" factoryName="Application" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="segundo.mostrarNumeros" />
-      <module name="curso_programacion" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="segundo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager">
     <configuration name="primero" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="primero" />
       <module name="curso_programacion" />
@@ -81,37 +59,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="segundoA" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="segundo.segundoA" />
-      <module name="curso_programacion" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="segundo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="segundoB" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="segundo.segundoB" />
-      <module name="curso_programacion" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="Application.segundoB" />
-      <item itemvalue="Application.mostrarNumeros" />
-      <item itemvalue="Application.Pruebas" />
-      <item itemvalue="Application.primero" />
-      <item itemvalue="Application.segundoA" />
-    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Pruebas" />
-        <item itemvalue="Application.segundoA" />
         <item itemvalue="Application.primero" />
       </list>
     </recent_temporary>
@@ -125,49 +74,14 @@
       <option name="presentableId" value="Default" />
       <updated>1654195767211</updated>
     </task>
-    <task id="LOCAL-00001" summary="parte a del SegundoA">
-      <created>1654853927040</created>
+    <task id="LOCAL-00001" summary="Correccion del texto">
+      <created>1655062597679</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1654853927040</updated>
+      <updated>1655062597679</updated>
     </task>
-    <task id="LOCAL-00002" summary="parte a del SegundoA">
-      <created>1654853969897</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1654853969897</updated>
-    </task>
-    <task id="LOCAL-00003" summary="parte a y b del SegundoA">
-      <created>1654854888976</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1654854888976</updated>
-    </task>
-    <task id="LOCAL-00004" summary="parte a y b del SegundoA">
-      <created>1654854948127</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1654854948127</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Ejercicio SegundoA completo, creo.&#10;Pero eche moco y quise crear un método y ahora me quedó ahí abajo, no se como llamarlo y si lo borro rop todo :)">
-      <created>1654857085022</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1654857085022</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Por fin el SegundoB terminado">
-      <created>1654963884782</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1654963884784</updated>
-    </task>
-    <option name="localTasksCounter" value="7" />
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -182,22 +96,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="parte a del SegundoA" />
-    <MESSAGE value="parte a y b del SegundoA" />
-    <MESSAGE value="Ejercicio SegundoA completo, creo.&#10;Pero eche moco y quise crear un método y ahora me quedó ahí abajo, no se como llamarlo y si lo borro rop todo :)" />
-    <MESSAGE value="Primera Prueba del B" />
-    <MESSAGE value="Te odio Pepe" />
-    <MESSAGE value="Por fin el SegundoB terminado" />
-    <option name="LAST_COMMIT_MESSAGE" value="Por fin el SegundoB terminado" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <breakpoint enabled="true" type="java-exception">
-          <properties class="java.lang.StringIndexOutOfBoundsException" package="java.lang" />
-          <option name="timeStamp" value="1" />
-        </breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Correccion del texto" />
+    <option name="LAST_COMMIT_MESSAGE" value="Correccion del texto" />
   </component>
 </project>

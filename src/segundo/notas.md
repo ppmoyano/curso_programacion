@@ -12,7 +12,7 @@ Por ejemplo, un array donde guardamos muchos elementos del tipo int:
 ```
 Para usar arrays, tenemos que declarar el tamaño en un principio, o cargarlo desde el principio. 
 
-Cada  elemnto del array tiene una posicion. Que va desde el 0 hasta el ultimo elemento. 
+Cada  elemento del array tiene una posicion. Que va desde el 0 hasta el ultimo elemento. 
 Usando el segundo ejemplo seria:
 ```
 paises.get(0); // esto devuelve Argentina
