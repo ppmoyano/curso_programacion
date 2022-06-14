@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b0db52c-3d49-46c8-9491-fbeaea55c38e" name="Changes" comment="segundo b 2">
+    <list default="true" id="1b0db52c-3d49-46c8-9491-fbeaea55c38e" name="Changes" comment="segundo b corregido">
+      <change afterPath="$PROJECT_DIR$/src/segundo/segundoC.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/segundo/segundoB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/segundo/segundoB.java" afterDir="false" />
     </list>
@@ -19,6 +20,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="origin/main" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -41,7 +45,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.segundoB">
+  <component name="RunManager" selected="Application.segundoC">
     <configuration name="primero" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="primero" />
       <module name="curso_programacion" />
@@ -69,6 +73,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="segundoC" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="segundo.segundoC" />
+      <module name="curso_programacion" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="segundo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="segundo.segundoA" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="segundo.segundoA" />
       <module name="curso_programacion" />
@@ -84,6 +101,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.segundoC" />
         <item itemvalue="Application.segundoB" />
         <item itemvalue="Application.segundo.segundoA" />
         <item itemvalue="Application.segundoA" />
