@@ -4,7 +4,7 @@ Este es un programa para registar los alumnos para la escuela primaria Carlos Pa
 En la escuela vamos registatondo todos los niños que se vienen a anotar.
 Se anota el nombre, apellido, y la edad. El niño no puede tener menos de 6 años ni mas de 8 para inscribirse.
 Si no cumple con esta condicion se le dice Que no cumple con la edad necaria.
-Una vez inscripto de muestra el mensaje - NIÑO REGISTRADO mas la informacion del niño.
+Una vez inscripto se muestra el mensaje - NIÑO REGISTRADO mas la informacion del niño.
 Y tenemos un cupo maximo de 5 alumnos, asi que si se llena ese cupo el programa termina con el mensaje "CUPO COMPLETO"
 Al finalizar el programa mostrar el mensaje "FIN DEL PROGRAMA"
  */

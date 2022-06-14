@@ -52,3 +52,14 @@ Si hacemos:
 ```
 Perro miPrimerPerro = new Perro("firulais); nos crea un Objeto del tipo Perro que va a tener de nombre firulais 
 ```
+
+Para acceder a las propiedas tenemos dos tipos de metodos SETTERS - para asignar un valor a la propiedad -  y GETTERS - para obtener el valor de la propiedad.
+```
+public void setNombre(String nombre) {
+    this.nombre = nombre;  //como las dos variables se llaman igual hay que usar la palabra this para aclarar que pertenece a la clase
+}
+
+public String getNombre() {
+ return nombre;
+}
+```
