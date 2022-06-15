@@ -1,11 +1,11 @@
 package segundo;
 
 import java.util.Scanner;
-/*
-- Realice un programa donde ingrese todos los nombres de un curso y al final nos muestre el nombre mas largo*/
 
-/*public class segundoB {
- /*   public static void main(String[] args) {
+//- Realice un programa donde ingrese todos los nombres de un curso y al final nos muestre el nombre mas largo*/
+
+public class segundoB {
+   public static void main(String[] args) {
         String nombreLargo;
 
         int cantidadDeNombres;
@@ -77,13 +77,7 @@ import java.util.Scanner;
 }
 
 
-- Nos muestre el nombre mas corto
-- Nos muestre todos los nombres que empiezan con la letra A
+//- Nos muestre el nombre mas corto
+//- Nos muestre todos los nombres que empiezan con la letra A
 
-/*public class segundoB {
-    public static void main(String[] args) {
-        Scanner teclado = new Scanner(System.in);
 
-    }
-}
-*/

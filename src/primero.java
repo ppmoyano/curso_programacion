@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class primero {
 
-    public static void main(String[] args) {
+//    public static void main(String[] args) {
         //Ejercicio 1 - Hola Mundo
         /*  System.out.println("HOLA MUNDO");*/
         // Ejercicio 2 - Ingrese dos numeros y muestre el resultado de la suma
@@ -134,7 +134,6 @@ public class primero {
           ...
           else
           ....
-     */}
-
+  //   */// }
 
 }
