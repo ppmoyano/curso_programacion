@@ -13,29 +13,51 @@ Al finalizar el programa mostrar el mensaje "FIN DEL PROGRAMA"
  */
 public class Ejercicio3a {
 
-    private String setNombre;
-    private String setApellido;
-    private int setEdad;
 
     public static void main(String args[]) {
         Scanner teclado = new Scanner(System.in);
         Persona[] alumno = new Persona[5];
         int opcion = 0;
-
-            System.out.println("Desea ingresar un niño: 1 - Si / 2 - Salir");
-            opcion = teclado.nextInt();
-
         do {
-           for (int i = 0; i < 5 ; i++) {
-               alumno [i] = new Persona();
-               alumno[i].cargarAlumno();
-               alumno[i].mostrarAlumno();
-
+            for (int i = 0; i < 5 ; i++) {
+                System.out.println("Desea ingresar un niño: 1 - Si / 2 - Salir");
+                opcion = teclado.nextInt();
+                if (opcion == 2) {
+                    break;
+                }
+                alumno[i] = new Persona();
+                alumno[i].cargarAlumno();
+                if (alumno[i].getEdad() > 8 || alumno[i].getEdad() < 6) { //lo dejo asi nada mas para poder verificar despues si es 6 y 8 inclusive o si sólo pueden ir los de siete.
+                    System.out.println("El niño no cumple con la edad necesaria");
+                    i = i-1;
+                    continue;
+                }
+                alumno[i].mostrarAlumno();
+                if (i == 4) {
+                    System.out.println("CUPO COMPLETO");
+                    opcion=2;
                 }
             }
+        } // cierre del do
         while (opcion!=2);
 
-
+          /* for (int i = 0; i < 5 ; i++) {
+               System.out.println("Desea ingresar un niño: 1 - Si / 2 - Salir");
+               opcion = teclado.nextInt();
+               if (opcion == 2) {
+                   break;
+               }
+               alumno [i] = new Persona();
+               alumno[i].cargarAlumno();
+               if (alumno[i].getEdad() > 8 || alumno[i].getEdad() < 6) { //lo dejo asi nada mas para poder verificar despues si es 6 y 8 inclusive o si sólo pueden ir los de siete.
+                   System.out.println("El niño no cumple con la edad necesaria");
+                   continue;
+               }
+                   alumno[i].mostrarAlumno();
+               if (i == 4) {
+                   System.out.println("CUPO COMPLETO");
+               }
+            }*/
 
 
 

@@ -32,11 +32,5 @@ public class Persona {
     public int getEdad () {return edad;}
 
 
-    public boolean limiteEdad (int getEdad) {
-        return (getEdad > 8);
-        }
-
-
-
-    }
+} // class Persona
 
