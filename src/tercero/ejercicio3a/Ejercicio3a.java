@@ -1,4 +1,7 @@
 package tercero.ejercicio3a;
+
+import java.util.Scanner;
+
 /*
 Este es un programa para registar los alumnos para la escuela primaria Carlos Paz del año que viene.
 En la escuela vamos registatondo todos los niños que se vienen a anotar.
@@ -10,10 +13,30 @@ Al finalizar el programa mostrar el mensaje "FIN DEL PROGRAMA"
  */
 public class Ejercicio3a {
 
-    public static void main(String args[]) {
+    private String setNombre;
+    private String setApellido;
+    private int setEdad;
 
-    }
-}
+    public static void main(String args[]) {
+        Scanner teclado = new Scanner(System.in);
+        Persona[] alumno = new Persona[5];
+        int opcion = 0;
+
+            System.out.println("Desea ingresar un niño: 1 - Si / 2 - Salir");
+            opcion = teclado.nextInt();
+
+        do {
+           for (int i = 0; i < 5 ; i++) {
+               alumno [i] = new Persona();
+               alumno[i].cargarAlumno();
+               alumno[i].mostrarAlumno();
+
+                }
+            }
+        while (opcion!=2);
+
+
+
 
 
 
@@ -82,3 +105,8 @@ Desea ingresar un niño: 1 - Si 2 - Salir
 2
 Fin del programa
  */
+        
+        }
+
+}
+
