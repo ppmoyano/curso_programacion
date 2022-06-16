@@ -19,7 +19,7 @@ public class Ejercicio3a {
         Scanner teclado = new Scanner(System.in);
         Persona[] alumnos = new Persona[5];
         int opcion = 0;
-        int i=0;
+        int i = 0;
         do {
             System.out.println("Desea ingresar un alumno? 1: SI 2: SALIR");
             opcion = teclado.nextInt();
@@ -28,8 +28,11 @@ public class Ejercicio3a {
                 alumnos[i].cargarPersona();
                 if (alumnos[i].getEdad() < 6 || alumnos[i].getEdad() > 8) {
                     System.out.println("ALUMNO NO CUMPLE CON LOS REQUISITOS DE EDAD");
-                    i=i-1;
+                    i = i - 1;
                 }
+                else if (alumnos[i].getEdad() > 6 || alumnos[i].getEdad() < 8) {
+                System.out.println("ALUMNO REGISTRADO " + alumnos[i].getNombre() + " " + alumnos[i].getApellido() +
+                        " de "+ alumnos[i].getEdad() + " años."); }
             }
             i++;
         } while (i < 5 && opcion != 2);
@@ -38,9 +41,9 @@ public class Ejercicio3a {
         }
 
 
-       for (i = 0; i < 5; i++) {
-              alumnos[i].mostrarPersona();
-       }
+        for (i = 0; i < 5; i++) {
+            alumnos[i].mostrarPersona();
+        }
 
     }
 
