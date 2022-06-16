@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b0db52c-3d49-46c8-9491-fbeaea55c38e" name="Changes" comment="Correccion del texto">
+    <list default="true" id="1b0db52c-3d49-46c8-9491-fbeaea55c38e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/primero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/primero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/segundo/segundoB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/segundo/segundoB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/segundo/segundoA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/segundo/segundoA.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/tercero/ejercicio3a/Ejercicio3a.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tercero/ejercicio3a/Ejercicio3a.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/tercero/ejercicio3a/Persona.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tercero/ejercicio3a/Persona.java" afterDir="false" />
     </list>
@@ -112,7 +111,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655062597679</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="ejercio 3a">
+      <created>1655322697669</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1655322697669</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -128,6 +134,17 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Correccion del texto" />
-    <option name="LAST_COMMIT_MESSAGE" value="Correccion del texto" />
+    <MESSAGE value="ejercio 3a" />
+    <option name="LAST_COMMIT_MESSAGE" value="ejercio 3a" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

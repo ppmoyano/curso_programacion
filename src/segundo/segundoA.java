@@ -4,13 +4,10 @@ import java.util.Scanner;
 
 public class segundoA {
 
-
-}
-
     /*
     a)Realice un programa donde ingrese un numero y se muestre todo los numeros desde 0 hasta el mismo numero inclusive.
     por ejemplo si ingreso 3, que muestre 0, 1 , 2 y 3.
-
+*/
      public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
         int NUMERO;
@@ -21,7 +18,7 @@ public class segundoA {
             System.out.println(i); }
       }
 }
-     */
+
 
     /*b)Si el numero ingresado es menor a 0 mostrar un mensaje de error
 

@@ -16,21 +16,36 @@ Al finalizar el programa mostrar el mensaje "FIN DEL PROGRAMA"
 public class Ejercicio3a {
 
     public static void main(String args[]) {
-     int opcion;
-
         Scanner teclado = new Scanner(System.in);
         Persona[] alumnos = new Persona[5];
-               for (int i = 0; i < 5; i++) {
-                   alumnos[i] = new Persona();
-                   alumnos[i].cargarPersona();
+        int opcion = 0;
+        int i=0;
+        do {
+            System.out.println("Desea ingresar un alumno? 1: SI 2: SALIR");
+            opcion = teclado.nextInt();
+            if (opcion == 1) {
+                alumnos[i] = new Persona();
+                alumnos[i].cargarPersona();
+                if (alumnos[i].getEdad() < 6 || alumnos[i].getEdad() > 8) {
+                    System.out.println("ALUMNO NO CUMPLE CON LOS REQUISITOS DE EDAD");
+                    i=i-1;
+                }
+            }
+            i++;
+        } while (i < 5 && opcion != 2);
+        if (i == 5) {
+            System.out.println("CUPO COMPLETO");
+        }
 
-               }
-                   for (int i = 0; i < 5; i++) {
-                    alumnos[i].mostrarPersona();}
 
+       for (i = 0; i < 5; i++) {
+              alumnos[i].mostrarPersona();
+       }
 
     }
+
 }
+
 
 /*
 EJEMPLO DE EJECUCION 1:
