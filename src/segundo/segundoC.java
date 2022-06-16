@@ -1,14 +1,14 @@
-package segundo;
+/*package segundo;
 
 import java.util.Scanner;
 
 /*
 - Realice un programa donde ingrese X numeros, muestre el promedio, y cual  el numero mas ingresado y cuantas veces se ingreso
  */
-public class segundoC {
+//public class segundoC {
     //NO SE QUE PASO QUE NO ME LEE LOS METODOS QUE HABIAS CREADO VOS!!
 
-    public static void main(String[] args) {
+  /*  public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
 
         int cantidadDeNumeros = definirCantidadDeNumeros();
@@ -22,7 +22,7 @@ public class segundoC {
 
 
 
-
+/*
     private static int calcularNumeroRepetidoVeces(int[] numeros, int numeroMasRepetido) {
         Scanner teclado = new Scanner(System.in);
         int nRepetido[] = new int[numeros.length];
@@ -35,15 +35,12 @@ public class segundoC {
             } numeroRepetido = nRepetido[i];}
         /*
         Agregar logica paa calcular cuantas veces se repite el numero mas repetido.
-         */
                     return 0;
                 }
 
                 private static int calcularNumeroMasRepetido ( int[] numeros){
 
-        /*
-        Agregar logica para encontrar el numero mas repetido
-         */
+/*        Agregar logica para encontrar el numero mas repetido
                     int[] repetido = new int[numeros.length];
                     int numeroRepetido = 0;
                     for (int i = 0; i <= numeros.length - 1; i++) {
@@ -51,9 +48,9 @@ public class segundoC {
                             if (numeros[i] == numeros[x]) {
                                 numeroRepetido = numeros[i];
                             }
-                        }
+                        }*/
 
-                        return numeroRepetido;
+            /*            return numeroRepetido;
                     }
 
                     private static double calcularPromedio( int[] numeros){
@@ -75,10 +72,10 @@ public class segundoC {
          */
 
 
-
+/*
                     }
 
-                    private static int definirCantidadDeNumeros () {
+           //         private static int definirCantidadDeNumeros () {
 
         /*
         Agregar logica aqui para definir la cantidad de numeros
@@ -86,7 +83,7 @@ public class segundoC {
         Cuantos numeros desea ingresar:
         4
          */
-                        int cantidadDeNumeros = 0;
+                      /*  int cantidadDeNumeros = 0;
                         Scanner teclado = new Scanner(System.in);
                         do {
                             System.out.println("Escriba la cantidad de numeros a ingresar: ");
@@ -113,12 +110,12 @@ public class segundoC {
             8
             etc...
          */
-                        return numerosAuxiliar;
-                    }
-                }
-            }
+/*            return numerosAuxiliar;*/
+              //      }
+                //}
+            //}
 
-
+/*
 /*
 Ejemplo de ejecucion 1:
         Cuantos numeros desea ingresar:

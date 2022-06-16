@@ -1,5 +1,6 @@
 package segundo;
 
+import java.util.Objects;
 import java.util.Scanner;
 
 /*
@@ -19,20 +20,38 @@ public class segundoD {
     }
 
     private static void compararLosNombres(String nombreA, String nombreB) {
-    /*
+
+        if (Objects.equals(nombreA, nombreB)) {
+            System.out.println("No puede ingresar dos nombres iguales");}
+
+            else  if (nombreA.length()>nombreB.length()) {
+                System.out.println(nombreA + " es mas largo que "+nombreB);}
+                else if ( nombreA.length() < nombreB.length()) {
+                    System.out.println(nombreA + " es mas corto que " + nombreB);
+                }
+                else  if (nombreA.length()==nombreB.length()) {
+                    System.out.println(nombreA+" y " + nombreB+" tienen el mismo largo" );
+                }
+        }
+
+
+
+
+        /*
     Agregar logica para comparar los nombres
     Hay 4 posible mensajes.
      */
 
-    }
+
 
     private static String ingresarNombre() {
         Scanner teclado = new Scanner(System.in);
-        /*
+        System.out.println("Ingrese un nombre");
+
+        return teclado.nextLine();
+    }/*
         Agregar logica para ingresar nombre
          */
-        return "";
-    }
 }
 
 /*
