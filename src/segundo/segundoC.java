@@ -6,6 +6,8 @@ import java.util.Scanner;
 - Realice un programa donde ingrese X numeros, muestre el promedio, y cual  el numero mas ingresado y cuantas veces se ingreso
  */
 public class segundoC {
+    //NO SE QUE PASO QUE NO ME LEE LOS METODOS QUE HABIAS CREADO VOS!!
+
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
 
@@ -18,30 +20,65 @@ public class segundoC {
         System.out.println("El numero mas repetido es el "+ numeroMasRepetido + " y se ha repetido "+ calcularNumeroRepetidoVeces(numeros, numeroMasRepetido)+" veces");
     }
 
+
+
+
     private static int calcularNumeroRepetidoVeces(int[] numeros, int numeroMasRepetido) {
+        Scanner teclado = new Scanner(System.in);
+        int nRepetido[] = new int[numeros.length];
+
+        for (int i = 0; i <= numeros.length - 1; i++) {
+            for (int j = 0; j <= numeros.length - 1; j++) {
+                if (numeros[i] == numeros[j]) {
+                    nRepetido[i]++;
+                }
+            } numeroRepetido = nRepetido[i];}
         /*
         Agregar logica paa calcular cuantas veces se repite el numero mas repetido.
          */
-        return 0;
-    }
+                    return 0;
+                }
 
-    private static int calcularNumeroMasRepetido(int[] numeros) {
+                private static int calcularNumeroMasRepetido ( int[] numeros){
+
         /*
         Agregar logica para encontrar el numero mas repetido
          */
-        return 0;
-    }
+                    int[] repetido = new int[numeros.length];
+                    int numeroRepetido = 0;
+                    for (int i = 0; i <= numeros.length - 1; i++) {
+                        for (int x = 0; x < numeros.length - 1; x++) {
+                            if (numeros[i] == numeros[x]) {
+                                numeroRepetido = numeros[i];
+                            }
+                        }
 
-    private static double calcularPromedio(int[] numeros) {
-        /*
+                        return numeroRepetido;
+                    }
+
+                    private static double calcularPromedio( int[] numeros){
+                        Scanner teclado = new Scanner(System.in);
+                        int promedio = 0;
+                        int suma = 0;
+                        suma += numeros[i];
+                        for (i = 0; i < numeros.length - 1; i++) {
+                        }
+                        promedio = suma / numeros.length - 1;
+
+                        return promedio;
+
+
+
+
+            /*
         Hacer logica para calcular el promedio de los numeros ingresados
          */
-      double promedio;
 
-        return 0;
-    }
 
-    private static int definirCantidadDeNumeros() {
+
+                    }
+
+                    private static int definirCantidadDeNumeros () {
 
         /*
         Agregar logica aqui para definir la cantidad de numeros
@@ -49,23 +86,23 @@ public class segundoC {
         Cuantos numeros desea ingresar:
         4
          */
-        int cantidadDeNumeros=0;
-        Scanner teclado = new Scanner(System.in);
-        do {
-            System.out.println("Escriba la cantidad de numeros a ingresar: ");
-            cantidadDeNumeros = teclado.nextInt();
-        }while (cantidadDeNumeros<1);
+                        int cantidadDeNumeros = 0;
+                        Scanner teclado = new Scanner(System.in);
+                        do {
+                            System.out.println("Escriba la cantidad de numeros a ingresar: ");
+                            cantidadDeNumeros = teclado.nextInt();
+                        } while (cantidadDeNumeros < 1);
 
-            return cantidadDeNumeros;
-        }
+                        return cantidadDeNumeros;
+                    }
 
-    private static int[] cargarNumeros(int cantidad) {
-        Scanner teclado = new Scanner(System.in);
-        int[] numerosAuxiliar = new int[cantidad];
-        for (int i=1;i < cantidad; i++ ) {
-            System.out.println("Ingrese numero "+i);
-            numerosAuxiliar[i] = teclado.nextInt();
-        }
+                    private static int[] cargarNumeros ( int cantidad){
+                        Scanner teclado = new Scanner(System.in);
+                        int[] numerosAuxiliar = new int[cantidad];
+                        for (int i = 0; i <= cantidad - 1; i++) {
+                            System.out.println("Ingrese numero " + (i + 1));
+                            numerosAuxiliar[i] = teclado.nextInt();
+                        }
 
         /*
             Agregar logica para cargar los numeros.
@@ -76,9 +113,11 @@ public class segundoC {
             8
             etc...
          */
-        return  numerosAuxiliar;
-    }
-}
+                        return numerosAuxiliar;
+                    }
+                }
+            }
+
 
 /*
 Ejemplo de ejecucion 1:
