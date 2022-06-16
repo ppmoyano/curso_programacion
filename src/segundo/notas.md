@@ -12,7 +12,7 @@ Por ejemplo, un array donde guardamos muchos elementos del tipo int:
 ```
 Para usar arrays, tenemos que declarar el tamaño en un principio, o cargarlo desde el principio. 
 
-Cada posicion elemnto del array tiene una posicion. Que va desde el 0 hasta el ultimo elemento. 
+Cada  elemento del array tiene una posicion. Que va desde el 0 hasta el ultimo elemento. 
 Usando el segundo ejemplo seria:
 ```
 paises.get(0); // esto devuelve Argentina
@@ -30,11 +30,11 @@ int[][] notasPorMateria = new[5][2]; //tengo 5 materias y cada materia tiene dos
 Cuando queremos realizar una tarea repetidas veces tenemos distintos loops:
 ## LOOP FOR 
 ```
-for (desde; hasa; paso) {
+for (desde; mientras; paso) {
   ... codigo
 }
 
-for (int veces = 0; veces <= 5; veces++) {
+for (int veces = 0; veces <= 5; veces++) { //veces = veces +1;
   System.out.println(veces);
 }
 
