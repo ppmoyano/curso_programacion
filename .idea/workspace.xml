@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b0db52c-3d49-46c8-9491-fbeaea55c38e" name="Changes" comment="Por la mitad el Ejercicio3a">
+    <list default="true" id="1b0db52c-3d49-46c8-9491-fbeaea55c38e" name="Changes" comment="Supuestamente el 3a está terminado... rústico.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tercero/ejercicio3a/Ejercicio3a.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tercero/ejercicio3a/Ejercicio3a.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tercero/ejercicio3a/Persona.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tercero/ejercicio3a/Persona.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655296276124</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Supuestamente el 3a está terminado... rústico.">
+      <created>1655308216808</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1655308216808</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -162,6 +167,7 @@
     <MESSAGE value="Correccion del texto" />
     <MESSAGE value="El SegundD creo q está, al segundoC le falta aún" />
     <MESSAGE value="Por la mitad el Ejercicio3a" />
-    <option name="LAST_COMMIT_MESSAGE" value="Por la mitad el Ejercicio3a" />
+    <MESSAGE value="Supuestamente el 3a está terminado... rústico." />
+    <option name="LAST_COMMIT_MESSAGE" value="Supuestamente el 3a está terminado... rústico." />
   </component>
 </project>
