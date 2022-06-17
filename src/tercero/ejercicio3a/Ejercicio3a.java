@@ -12,13 +12,27 @@ Y tenemos un cupo maximo de 5 alumnos, asi que si se llena ese cupo el programa 
 Al finalizar el programa mostrar el mensaje "FIN DEL PROGRAMA"
  */
 public class Ejercicio3a {
-import java.util.Scanner;
+
 
     public static void main(String args[]) {
         Scanner teclado = new Scanner(System.in);
         Alumno[] Alumnos = new Alumno[5];
 
+        int opcion=0;
+    do { System.out.println("Desea ingresar un niño: 1 - Si 2 - Salir");
+        opcion = teclado.nextInt();
+        if ( opcion==1 ) {
+            Alumnos[i] = new Alumno();
+            Alumnos[i].cargarAlumno();
+            if  { Alumnos[i].getEdad() < 6 || Alumnos[i].getEdad() > 8
+                {System.out.println("El niño no cumple con la edad necesaria");
+                    i=i-1;
+        }
+        else if { Alumnos[i].getEdad() > 6 && Alumnos[i].getEdad() < 8 {
+            System.out.println("Alumno registrado ");
+                }
 
+    }
     }
 }
 

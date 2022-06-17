@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b0db52c-3d49-46c8-9491-fbeaea55c38e" name="Changes" comment="segundo c">
+    <list default="true" id="1b0db52c-3d49-46c8-9491-fbeaea55c38e" name="Changes" comment="tercero">
+      <change afterPath="$PROJECT_DIR$/src/tercero/ejercicio3a/Alumno.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/segundo/segundoD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/segundo/segundoD.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/tercero/ejercicio3a/Ejercicio3a.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tercero/ejercicio3a/Ejercicio3a.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/tercero/ejercicio3a/Persona.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tercero/ejercicio3a/Persona.java" afterDir="false" />
     </list>
@@ -49,6 +49,9 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="tercero.ejercicio3a" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="segundo" />
     </key>
@@ -104,7 +107,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655368776603</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="tercero">
+      <created>1655455584637</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1655455584637</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -121,6 +131,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Correccion del texto" />
     <MESSAGE value="segundo c" />
-    <option name="LAST_COMMIT_MESSAGE" value="segundo c" />
+    <MESSAGE value="tercero" />
+    <option name="LAST_COMMIT_MESSAGE" value="tercero" />
   </component>
 </project>
