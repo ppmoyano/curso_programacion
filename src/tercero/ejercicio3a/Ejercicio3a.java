@@ -1,4 +1,7 @@
 package tercero.ejercicio3a;
+
+import java.util.Scanner;
+
 /*
 Este es un programa para registar los alumnos para la escuela primaria Carlos Paz del año que viene.
 En la escuela vamos registatondo todos los niños que se vienen a anotar.
@@ -9,8 +12,12 @@ Y tenemos un cupo maximo de 5 alumnos, asi que si se llena ese cupo el programa 
 Al finalizar el programa mostrar el mensaje "FIN DEL PROGRAMA"
  */
 public class Ejercicio3a {
+import java.util.Scanner;
 
     public static void main(String args[]) {
+        Scanner teclado = new Scanner(System.in);
+        Alumno[] Alumnos = new Alumno[5];
+
 
     }
 }

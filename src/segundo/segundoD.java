@@ -8,7 +8,7 @@ import java.util.Scanner;
  o el nombre X y Y tienen el mismo largo.
  Si el nombre X es igual al nombre Y muestre un mensaje no puede ingresar dos veces el mismo nombre.
 
- */
+
 public class segundoD {
     public static void main(String[] args) {
 
@@ -40,7 +40,7 @@ public class segundoD {
         /*
     Agregar logica para comparar los nombres
     Hay 4 posible mensajes.
-     */
+
 
 
 
@@ -51,7 +51,7 @@ public class segundoD {
         return teclado.nextLine();
     }/*
         Agregar logica para ingresar nombre
-         */
+
 }
 
 /*
