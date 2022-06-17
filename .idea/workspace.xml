@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b0db52c-3d49-46c8-9491-fbeaea55c38e" name="Changes" comment="Supuestamente el 3a está terminado... rústico.">
+    <list default="true" id="1b0db52c-3d49-46c8-9491-fbeaea55c38e" name="Changes" comment="Correccion del texto">
+      <change afterPath="$PROJECT_DIR$/src/primero/ejercicios/EjercicioA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/primero/ejercicios/EjercicioB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/primero/ejercicios/EjercicioC.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/primero/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/primero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/primero/primero.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,69 +51,24 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/primero" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="segundo" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Ejercicio3a">
-    <configuration name="Ejercicio3a" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="tercero.ejercicio3a.Ejercicio3a" />
-      <module name="curso_programacion" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tercero.ejercicio3a.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="primero" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="primero" />
+  <component name="RunManager">
+    <configuration name="primero.primero" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="primero.primero" />
       <module name="curso_programacion" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="segundoC" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="segundo.segundoC" />
-      <module name="curso_programacion" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="segundo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="segundoD" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="segundo.segundoD" />
-      <module name="curso_programacion" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="segundo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="Application.Ejercicio3a" />
-      <item itemvalue="Application.segundoC" />
-      <item itemvalue="Application.segundoD" />
-      <item itemvalue="Application.primero" />
-    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Ejercicio3a" />
-        <item itemvalue="Application.segundoD" />
-        <item itemvalue="Application.segundoC" />
-        <item itemvalue="Application.primero" />
+        <item itemvalue="Application.primero.primero" />
       </list>
     </recent_temporary>
   </component>
@@ -128,28 +88,7 @@
       <option name="project" value="LOCAL" />
       <updated>1655062597679</updated>
     </task>
-    <task id="LOCAL-00002" summary="El SegundD creo q está, al segundoC le falta aún">
-      <created>1655237753523</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1655237753523</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Por la mitad el Ejercicio3a">
-      <created>1655296276124</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1655296276124</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Supuestamente el 3a está terminado... rústico.">
-      <created>1655308216808</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1655308216808</updated>
-    </task>
-    <option name="localTasksCounter" value="5" />
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -165,9 +104,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Correccion del texto" />
-    <MESSAGE value="El SegundD creo q está, al segundoC le falta aún" />
-    <MESSAGE value="Por la mitad el Ejercicio3a" />
-    <MESSAGE value="Supuestamente el 3a está terminado... rústico." />
-    <option name="LAST_COMMIT_MESSAGE" value="Supuestamente el 3a está terminado... rústico." />
+    <option name="LAST_COMMIT_MESSAGE" value="Correccion del texto" />
   </component>
 </project>
