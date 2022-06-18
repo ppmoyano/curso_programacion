@@ -5,8 +5,23 @@ import java.util.Scanner;
 /*
 Aqui tenemos que agregar los campos necesarios y un metodo para mostrar la informacion del niño
 */
-public class Alumno {
+public class Persona {
     String nombre;
+
+
+    String apellido;
+    int edad;
+
+    public void cargarAlumno() {
+        Scanner teclado = new Scanner(System.in);
+        System.out.println("Ingrese el nombre del alumno");
+        this.setNombre(teclado.nextLine());
+        System.out.println("Ingrese el apellido del alumno");
+        this.setApellido(teclado.nextLine());
+        System.out.println("Ingrese la edad del alumno");
+        this.setEdad(Integer.parseInt(teclado.nextLine()));
+
+    }
 
     public String getNombre() {
         return nombre;
@@ -32,35 +47,9 @@ public class Alumno {
         this.edad = edad;
     }
 
-    String apellido;
-    int edad;
-    public void cargarAlumno () {
-        Scanner teclado = new Scanner(System.in);
-        System.out.println("Ingrese el nombre del alumno");
-        this.setNombre(teclado.nextLine());
-        System.out.println("Ingrese el apellido del alumno");
-        this.setApellido(teclado.nextLine());
-        System.out.println("Ingrese la edad del alumno");
-        this.setEdad(Integer.parseInt(teclado.nextLine()));
-
-
-      public void mostrarAlumno() {
-            System.out.println("Nombre: "+this.nombre);
-            System.out.println("Apellido: "+this.apellido);
-            System.out.println("Edad: "+this.edad);
-
-        }
-
-
-
-
-
-
-
-
-
-
-
-
-
+    public void mostrarAlumno() {
+        System.out.println("Nombre: " + this.nombre);
+        System.out.println("Apellido: " + this.apellido);
+        System.out.println("Edad: " + this.edad);
+    }
 }

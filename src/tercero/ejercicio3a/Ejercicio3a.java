@@ -16,23 +16,38 @@ public class Ejercicio3a {
 
     public static void main(String args[]) {
         Scanner teclado = new Scanner(System.in);
-        Alumno[] Alumnos = new Alumno[5];
+        Persona[] Alumnos = new Persona[5];
 
-        int opcion=0;
-    do { System.out.println("Desea ingresar un niño: 1 - Si 2 - Salir");
-        opcion = teclado.nextInt();
-        if ( opcion==1 ) {
-            Alumnos[i] = new Alumno();
-            Alumnos[i].cargarAlumno();
-            if  { Alumnos[i].getEdad() < 6 || Alumnos[i].getEdad() > 8
-                {System.out.println("El niño no cumple con la edad necesaria");
-                    i=i-1;
-        }
-        else if { Alumnos[i].getEdad() > 6 && Alumnos[i].getEdad() < 8 {
-            System.out.println("Alumno registrado ");
+        int opcion = 0;
+        int i = 0;
+        do {
+            System.out.println("Desea ingresar un niño: 1 - Si 2 - Salir");
+            opcion = teclado.nextInt();
+            if (opcion == 1) {
+
+                Alumnos[i] = new Persona();
+                Alumnos[i].cargarAlumno();
+                if (Alumnos[i].getEdad() < 6 || Alumnos[i].getEdad() > 8) {
+                    System.out.println("El niño no cumple con la edad necesaria");
+                    i = i - 1;
+                } else if (Alumnos[i].getEdad() >= 6 && Alumnos[i].getEdad() <= 8) {
+                    System.out.println("NIÑO REGISTRADO " + Alumnos[i].getNombre() + " " + Alumnos[i].getApellido() + " de " + Alumnos[i].getEdad() + " años de edad");
                 }
+            }
+            i++;
+        } while (i < 5 && opcion != 2);
+        if (i == 5) {
+            System.out.println("CUPO COMPLETO");
+        }
+        if (opcion == 2) {
+            System.out.println("FIN DEL PROGRAMA");
+        }
+        for (i = 0; i < 5; i++) {
+            Alumnos[i].mostrarAlumno();
+        }
 
-    }
+
+
     }
 }
 
