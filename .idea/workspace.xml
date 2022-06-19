@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1b0db52c-3d49-46c8-9491-fbeaea55c38e" name="Changes" comment="Correccion del texto">
-      <change afterPath="$PROJECT_DIR$/src/primero/ejercicios/EjercicioA.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/primero/ejercicios/EjercicioB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/primero/ejercicios/EjercicioC.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/primero/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/primero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/primero/primero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/primero/ejercicios/EjercicioA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/primero/ejercicios/EjercicioA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/primero/ejercicios/EjercicioC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/primero/ejercicios/EjercicioC.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +55,33 @@
       <recent name="segundo" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.EjercicioA">
+    <configuration name="Ejercicio3a" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tercero.ejercicio3a.Ejercicio3a" />
+      <module name="curso_programacion" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tercero.ejercicio3a.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EjercicioA" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="primero.ejercicios.EjercicioA" />
+      <module name="curso_programacion" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="primero.ejercicios.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="primero.primero" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="primero.primero" />
       <module name="curso_programacion" />
@@ -68,6 +91,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.EjercicioA" />
+        <item itemvalue="Application.Ejercicio3a" />
         <item itemvalue="Application.primero.primero" />
       </list>
     </recent_temporary>
@@ -105,5 +130,20 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Correccion del texto" />
     <option name="LAST_COMMIT_MESSAGE" value="Correccion del texto" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/primero/ejercicios/EjercicioA.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

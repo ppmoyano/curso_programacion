@@ -11,6 +11,7 @@ Y si empataron, muestre un mensaje que diga EMPATE
 public class EjercicioC {
     public static void main(String[] args) {
 
+
     }
 }
 /*
