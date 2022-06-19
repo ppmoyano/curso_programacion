@@ -10,7 +10,7 @@ Si no cumple con esta condicion se le dice Que no cumple con la edad necaria.
 Una vez inscripto se muestra el mensaje - NIÑO REGISTRADO mas la informacion del niño.
 Y tenemos un cupo maximo de 5 alumnos, asi que si se llena ese cupo el programa termina con el mensaje "CUPO COMPLETO"
 Al finalizar el programa mostrar el mensaje "FIN DEL PROGRAMA"
- */
+/*
 public class Ejercicio3a {
 
 
