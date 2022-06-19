@@ -28,7 +28,7 @@ public class EjercicioA {
     }
 
 
-    private static void cargarNumerosEnArray(int[] numeros) {
+    static void cargarNumerosEnArray(int[] numeros) {
         Scanner teclado = new Scanner(System.in);
         for ( int i=0; i <= numeros.length-1 ; i++ ) {
             System.out.println("Ingrese el numero " + (i+1));
@@ -38,7 +38,7 @@ public class EjercicioA {
 
     }
 
-    private static int largoDelArray() {
+    static int largoDelArray() {
         int largoDelArray=0;
         Scanner teclado = new Scanner(System.in);
         do {
@@ -50,8 +50,7 @@ public class EjercicioA {
 
 
 
-
-}
+    }
 /*
 Ejemplo:
 Cuantos numeros desea ingresar?
