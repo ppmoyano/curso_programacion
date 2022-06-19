@@ -9,28 +9,49 @@ public class EjercicioB {
     public static void main(String[] args) {
         int cantidadDeNumeros;
         cantidadDeNumeros = largoDelArray();
-        int numeros[]=new int [cantidadDeNumeros];
-       cargarNumerosEnElArray(numeros);
-        // promedioDeNumerosPares();
-
+        int numeros[] = new int[cantidadDeNumeros];
+        cargarNumerosEnElArray(numeros);
+        promedioDeNumerosPares(numeros);
+        System.out.print( "el promedio de los numeros pares es: " + promedioDeNumerosPares(numeros));
     }
 
-    private static void cargarNumerosEnElArray(int[] numeros) {
-        Scanner teclado = new Scanner(System.in);
-        for (int i=0; i<numeros.length; i++){
-        System.out.println("Ingrese un numero : ");
-        numeros[i]=teclado.nextInt();}
+    private static int promedioDeNumerosPares(int[] numeros) {
+        int sumaNumerosPares = 0;
+        int divisorPromedio = 0;
+        int promedioDeNumerosPares = 0;
+        for (int i = 0; i <= numeros.length - 1; i++) {
+            if ((numeros[i] % 2) == 0) {
+                sumaNumerosPares += numeros[i];
+                if ((numeros[i] % 2) == 0) {
+                    divisorPromedio += 1;
+                }
+                promedioDeNumerosPares = sumaNumerosPares / divisorPromedio;
 
+            }
+        }
+        return promedioDeNumerosPares;
     }
 
-    private static int largoDelArray() {
-        int cantidadDeNumeros = 0 ;
-        Scanner teclado = new Scanner(System.in);
-        System.out.println("ingrese la cantidad de numeros q desea ingresar : ");
-        cantidadDeNumeros = teclado.nextInt();
-        return cantidadDeNumeros;
+        private static void cargarNumerosEnElArray ( int[] numeros){
+            Scanner teclado = new Scanner(System.in);
+            for (int i = 0; i < numeros.length; i++) {
+                System.out.println("Ingrese un numero : ");
+                numeros[i] = teclado.nextInt();
+            }
+
+        }
+
+        private static int largoDelArray () {
+            int cantidadDeNumeros = 0;
+            Scanner teclado = new Scanner(System.in);
+            do { System.out.println("ingrese la cantidad de numeros q desea ingresar : ");
+                cantidadDeNumeros = teclado.nextInt();
+                if (cantidadDeNumeros<1){System.out.println("no puede ingresar un numero menor a 1");}
+            }while (cantidadDeNumeros<1);
+
+            return cantidadDeNumeros;
+        }
     }
-}
 /*
 Ejemplo:
 Cuantos numeros desea ingresar?
