@@ -3,9 +3,32 @@ package primero.ejercicios;
 Realice un programa donde ingrese X numeros, y que nos muestre el promedio de todos los numeros pares
 */
 
+import java.util.Scanner;
+
 public class EjercicioB {
     public static void main(String[] args) {
+        int cantidadDeNumeros;
+        cantidadDeNumeros = largoDelArray();
+        int numeros[]=new int [cantidadDeNumeros];
+       cargarNumerosEnElArray(numeros);
+        // promedioDeNumerosPares();
 
+    }
+
+    private static void cargarNumerosEnElArray(int[] numeros) {
+        Scanner teclado = new Scanner(System.in);
+        for (int i=0; i<numeros.length; i++){
+        System.out.println("Ingrese un numero : ");
+        numeros[i]=teclado.nextInt();}
+
+    }
+
+    private static int largoDelArray() {
+        int cantidadDeNumeros = 0 ;
+        Scanner teclado = new Scanner(System.in);
+        System.out.println("ingrese la cantidad de numeros q desea ingresar : ");
+        cantidadDeNumeros = teclado.nextInt();
+        return cantidadDeNumeros;
     }
 }
 /*

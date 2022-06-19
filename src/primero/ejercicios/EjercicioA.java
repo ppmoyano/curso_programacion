@@ -28,7 +28,7 @@ public class EjercicioA {
 
     private static void cargarNumerosEnElArray(int[] numeros) {
         Scanner teclado = new Scanner(System.in);
-        for (int i = 0; i <= numeros.length - 1; i++) {
+        for (int i = 0; i < numeros.length; i++) {
             System.out.println("Ingrese un numero: ");
             numeros[i] = teclado.nextInt();
         }
