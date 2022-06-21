@@ -6,10 +6,10 @@ Realice un programa donde ingrese X numeros, y que nos muestre el promedio de to
 import java.util.Scanner;
 
 import static primero.ejercicios.EjercicioA.largoDelArray;
- */
+
 public class EjercicioB {
     public static void main(String[] args) {
-//NO ESTA TERMINADO NO ENCUENTRO TODAVIA COMO DIVIDIR EL TOTAL DE PARES SOLO POR LOS PARES. ME LOS DIVIDE POR TODO EL LARGO DEL ARRAY
+
         int cantidadDeNumeros = largoDelArray();
         int [] numeros = new  int [cantidadDeNumeros];
         cargarNumerosEnArray (numeros);
@@ -29,12 +29,16 @@ public class EjercicioB {
         Scanner teclado = new Scanner(System.in);
         double promedio = 0;
         double suma = 0;
+        double cantidadNumeroPar=0;
 
         for (int i = 0; i <= numeros.length - 1; i++) {
             if (numeros[i] % 2 == 0) {
                 suma += numeros[i];
+                if ( numeros[i] %2 ==0 ) {
+                    cantidadNumeroPar++;
+                }
             }
-                promedio = suma / numeros.length;
+                promedio = suma / cantidadNumeroPar ;
 
 
         }

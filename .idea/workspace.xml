@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b0db52c-3d49-46c8-9491-fbeaea55c38e" name="Changes" comment="tercero">
+    <list default="true" id="1b0db52c-3d49-46c8-9491-fbeaea55c38e" name="Changes" comment="Ejercico B">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/primero/ejercicios/EjercicioA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/primero/ejercicios/EjercicioA.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/primero/ejercicios/EjercicioB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/primero/ejercicios/EjercicioB.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -120,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655625011831</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Ejercico B">
+      <created>1655632387343</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1655632387343</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -137,6 +143,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Correccion del texto" />
     <MESSAGE value="tercero" />
-    <option name="LAST_COMMIT_MESSAGE" value="tercero" />
+    <MESSAGE value="Ejercico B" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ejercico B" />
   </component>
 </project>
