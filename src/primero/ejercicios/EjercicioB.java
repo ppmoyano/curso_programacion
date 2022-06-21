@@ -34,9 +34,9 @@ public class EjercicioB {
         for (int i = 0; i <= numeros.length - 1; i++) {
             if (numeros[i] % 2 == 0) {
                 suma += numeros[i];
-                if ( numeros[i] %2 ==0 ) {
+
                     cantidadNumeroPar++;
-                }
+
             }
                 promedio = suma / cantidadNumeroPar ;
 
