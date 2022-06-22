@@ -26,7 +26,12 @@ public class EjercicioA {
         }
 
         int sumaDeMenoresDe5 = Arrays.stream(numerosMenoresa5).sum(); // esto es 100% robado de internet
-        System.out.println("El resultado de la suma de los numeros menores a 5 = " + sumaDeMenoresDe5);
+        if (listaNumeros.length == 0) {
+            System.out.println("El resultado de la suma de los numeros menores a 5 = " + sumaDeMenoresDe5);
+        }
+        else {
+            System.out.println("No hay números menores de 5");
+        }
 
     }
     public static int inserteNumeros() {
