@@ -12,7 +12,6 @@ public class EjercicioA {
         int cantidadDeNumeros = largoDelArray();
         int[] numeros = new int[cantidadDeNumeros];
         cargarNumerosEnElArray(numeros);
-        sumaNumerosMenoresDe5(numeros);
         System.out.println("la suma de los numeros menores de 5 es : " + sumaNumerosMenoresDe5(numeros));
     }
 

@@ -32,10 +32,10 @@ public class Ejercicio3a {
                 if (alumnos[i].getEdad() < 6 || alumnos[i].getEdad() > 8) {
                     System.out.println("ALUMNO NO CUMPLE CON LOS REQUISITOS DE EDAD");
                     i = i - 1;
+                } else if (alumnos[i].getEdad() > 6 || alumnos[i].getEdad() < 8) {
+                    System.out.println("ALUMNO REGISTRADO " + alumnos[i].getNombre() + " " + alumnos[i].getApellido() +
+                            " de " + alumnos[i].getEdad() + " años.");
                 }
-                else if (alumnos[i].getEdad() > 6 || alumnos[i].getEdad() < 8) {
-                System.out.println("ALUMNO REGISTRADO " + alumnos[i].getNombre() + " " + alumnos[i].getApellido() +
-                        " de "+ alumnos[i].getEdad() + " años."); }
             }
             i++;
         } while (i < 5 && opcion != 2);
@@ -44,11 +44,26 @@ public class Ejercicio3a {
         }
 
 
+        int cantidadDeMasculino = 0;
         for (i = 0; i < 5; i++) {
-            alumnos[i].mostrarPersona();
+            if (alumnos[i].getGenero() == 'M') {
+                cantidadDeMasculino += 1;
+            }
         }
+        System.out.println("Se registraron " + cantidadDeMasculino + " alumnos (MASCULINOS)");
+
+        int cantidadDeFemenino = 0;
+        for (i = 0; i < 5; i++) {
+            if (alumnos[i].getGenero() == 'F') {
+                cantidadDeFemenino += 1;
+            }
+        }
+        System.out.println("Se registraron " + cantidadDeFemenino + " alumnas (FEMENINOS)");
+
 
     }
+
+
 
 }
 
