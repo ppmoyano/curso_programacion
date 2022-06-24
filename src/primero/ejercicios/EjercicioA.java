@@ -8,11 +8,12 @@ import java.util.Scanner;
 
 public class EjercicioA {
     public static void main(String[] args) {
+
         Scanner teclado = new Scanner(System.in);
         int sumaDeNumeros = inserteNumeros();
         int i = 0;
-        int listaNumeros[] = new int[sumaDeNumeros];
-        int numerosMenoresa5[] = new int[sumaDeNumeros];
+        int[] listaNumeros = new int[sumaDeNumeros];
+        int[] numerosMenoresa5 = new int[sumaDeNumeros];
         for (i = 0; i < listaNumeros.length; i++) {
             System.out.println("Ingrese el número " + (i + 1));
             listaNumeros[i] = teclado.nextInt();
@@ -27,7 +28,7 @@ public class EjercicioA {
 
         int sumaDeMenoresDe5 = Arrays.stream(numerosMenoresa5).sum(); // esto es 100% robado de internet
         if (listaNumeros.length == 0) {
-            System.out.println("El resultado de la suma de los numeros menores a 5 = " + sumaDeMenoresDe5);
+            System.out.println("El resultado de la suma de los numeros menores a 5 = ");
         }
         else {
             System.out.println("No hay números menores de 5");

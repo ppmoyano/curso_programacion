@@ -3,9 +3,41 @@ package primero.ejercicios;
 Realice un programa donde ingrese X numeros, y que nos muestre el promedio de todos los numeros pares
 */
 
+import java.util.Arrays;
+import java.util.Scanner;
+
 public class EjercicioB {
     public static void main(String[] args) {
+        Scanner teclado = new Scanner(System.in);
+        int numeros = inserteNumeros();
+        sumaNumeros(numeros);
 
+    }
+
+    public static int inserteNumeros() {
+        Scanner teclado = new Scanner(System.in);
+        System.out.println("Cuántos números desea ingresar?");
+        int numeros = teclado.nextInt();
+        return numeros;
+    }
+
+    public static void sumaNumeros(int numeros) {
+        Scanner teclado = new Scanner(System.in);
+        int[] sumaNumeros = new int[numeros];
+        int[] numerosPares = new int[numeros];
+        int i = 0;
+        for (i = 0; i < numeros; i++) {
+            System.out.println("Ingrese un número");
+            sumaNumeros[i] = teclado.nextInt();
+            if (sumaNumeros[i] < 1) {
+                System.out.println("No puede ingresar un valor menor a 1");
+                i--; //no me acuerdo una opción mejor para seguir sin que se termine el programa
+            } else if (sumaNumeros[i] % 2 == 0) {
+                numerosPares[i] = sumaNumeros[i];
+            }
+        }
+        double sumaPares = Arrays.stream(numerosPares).sum();
+        System.out.println("El promedio de los numeros pares es" + (sumaPares / numerosPares.length));
     }
 }
 /*

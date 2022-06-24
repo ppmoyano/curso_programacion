@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b0db52c-3d49-46c8-9491-fbeaea55c38e" name="Changes" comment="Primer ejercicio" />
+    <list default="true" id="1b0db52c-3d49-46c8-9491-fbeaea55c38e" name="Changes" comment="Primer ejercicio">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/primero/ejercicios/EjercicioA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/primero/ejercicios/EjercicioA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/primero/ejercicios/EjercicioB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/primero/ejercicios/EjercicioB.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,9 +55,22 @@
       <recent name="segundo" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.EjercicioA">
+  <component name="RunManager" selected="Application.EjercicioB">
     <configuration name="EjercicioA" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="primero.ejercicios.EjercicioA" />
+      <module name="curso_programacion" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="primero.ejercicios.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EjercicioB" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="primero.ejercicios.EjercicioB" />
       <module name="curso_programacion" />
       <extension name="coverage">
         <pattern>
@@ -74,10 +91,12 @@
     </configuration>
     <list>
       <item itemvalue="Application.EjercicioA" />
+      <item itemvalue="Application.EjercicioB" />
       <item itemvalue="Application.primero.primero" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.EjercicioB" />
         <item itemvalue="Application.EjercicioA" />
         <item itemvalue="Application.primero.primero" />
       </list>
@@ -113,7 +132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655834155524</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Primer ejercicio">
+      <created>1655898935452</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1655898935452</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
