@@ -8,11 +8,25 @@ import java.util.Scanner;
 
 public class EjercicioB {
     public static void main(String[] args) {
-        Scanner teclado = new Scanner(System.in);
         int numeros = inserteNumeros();
-        sumaNumeros(numeros);
-
+        sumaYPromedioPares(numeros, sumaNumeros(numeros));
     }
+
+    private static void sumaYPromedioPares(int numeros, int[] sumaNumeros) {
+        //Acá va a revisar los números cargados, sumar los que sean pares y mostrar el promedio
+        int i = 0;
+        int[] numerosPares = new int[numeros];
+        for (i = 0; i < numeros; i++) {
+            if (sumaNumeros[i] % 2 == 0) {
+                numerosPares[i] = sumaNumeros[i];
+            }
+        }
+        double sumaPares = Arrays.stream(numerosPares).sum();
+        System.out.println("El promedio de los numeros pares es "+(sumaPares /numerosPares.length));
+    }
+
+
+
 
     public static int inserteNumeros() {
         Scanner teclado = new Scanner(System.in);
@@ -21,10 +35,9 @@ public class EjercicioB {
         return numeros;
     }
 
-    public static void sumaNumeros(int numeros) {
+    public static int[] sumaNumeros(int numeros) {
         Scanner teclado = new Scanner(System.in);
         int[] sumaNumeros = new int[numeros];
-        int[] numerosPares = new int[numeros];
         int i = 0;
         for (i = 0; i < numeros; i++) {
             System.out.println("Ingrese un número");
@@ -32,12 +45,9 @@ public class EjercicioB {
             if (sumaNumeros[i] < 1) {
                 System.out.println("No puede ingresar un valor menor a 1");
                 i--; //no me acuerdo una opción mejor para seguir sin que se termine el programa
-            } else if (sumaNumeros[i] % 2 == 0) {
-                numerosPares[i] = sumaNumeros[i];
             }
         }
-        double sumaPares = Arrays.stream(numerosPares).sum();
-        System.out.println("El promedio de los numeros pares es" + (sumaPares / numerosPares.length));
+        return sumaNumeros;
     }
 }
 /*
