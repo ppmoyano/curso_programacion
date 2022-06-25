@@ -1,7 +1,5 @@
 package tercero.ejercicio3a;
 
-import tercero.ejemplo.Pelicula;
-
 import java.util.Scanner;
 
 /*
@@ -21,6 +19,28 @@ public class Ejercicio3a {
     public static void main(String args[]) {
         Scanner teclado = new Scanner(System.in);
         Persona[] alumnos = new Persona[5];
+        cargarAlumnos(alumnos);
+        caluclarCantidadSegunGenero(alumnos);
+    }
+
+    private static int caluclarCantidadSegunGenero(Persona[] alumnos) {
+        int cantidadDeMasculino = 0;
+        int cantidadDeFemenino = 0;
+        int i = 0;
+        for (i = 0; i < 5; i++) {
+            if (alumnos[i].getGenero() == 'M') {
+                cantidadDeMasculino += 1;
+            } else if (alumnos[i].getGenero() == 'F') {
+                cantidadDeFemenino += 1;
+            }
+        }
+        System.out.println("Se registraron " + cantidadDeMasculino + " alumnos (MASCULINOS)");
+        System.out.println("Se registraron " + cantidadDeFemenino + " alumnas (FEMENINOS)");
+        return 0;
+    }
+
+    private static void cargarAlumnos(Persona[] alumnos) {
+        Scanner teclado = new Scanner(System.in);
         int opcion = 0;
         int i = 0;
         do {
@@ -42,27 +62,7 @@ public class Ejercicio3a {
         if (i == 5) {
             System.out.println("CUPO COMPLETO");
         }
-
-
-        int cantidadDeMasculino = 0;
-        for (i = 0; i < 5; i++) {
-            if (alumnos[i].getGenero() == 'M') {
-                cantidadDeMasculino += 1;
-            }
-        }
-        System.out.println("Se registraron " + cantidadDeMasculino + " alumnos (MASCULINOS)");
-
-        int cantidadDeFemenino = 0;
-        for (i = 0; i < 5; i++) {
-            if (alumnos[i].getGenero() == 'F') {
-                cantidadDeFemenino += 1;
-            }
-        }
-        System.out.println("Se registraron " + cantidadDeFemenino + " alumnas (FEMENINOS)");
-
-
     }
-
 
 
 }

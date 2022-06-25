@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1b0db52c-3d49-46c8-9491-fbeaea55c38e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/primero/ejercicios/EjercicioC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/primero/ejercicios/EjercicioC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tercero/ejercicio3a/Ejercicio3a.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tercero/ejercicio3a/Ejercicio3a.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +54,7 @@
       <recent name="segundo" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.EjercicioC">
+  <component name="RunManager" selected="Application.Ejercicio3a">
     <configuration name="Ejercicio3a" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="tercero.ejercicio3a.Ejercicio3a" />
       <module name="curso_programacion" />
@@ -116,8 +116,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.EjercicioC" />
         <item itemvalue="Application.Ejercicio3a" />
+        <item itemvalue="Application.EjercicioC" />
         <item itemvalue="Application.EjercicioB" />
         <item itemvalue="Application.EjercicioA" />
         <item itemvalue="Application.primero.primero" />
@@ -175,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656002057737</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="ejercicio C">
+      <created>1656147503239</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1656147503239</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
