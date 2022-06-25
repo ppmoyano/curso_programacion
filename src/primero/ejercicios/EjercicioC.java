@@ -20,13 +20,19 @@ public class EjercicioC {
         gananParesOImpares(numeros);
     }
     private static String gananParesOImpares(int[] numeros) {
-        if (sumaDeNumerosPares(numeros) > sumaDeNumerosImpares(numeros)) {
+
+        int numerosPares =0;
+        numerosPares = sumaDeNumerosPares(numeros);
+        int numerosImpares=0;
+        numerosImpares=sumaDeNumerosImpares(numeros);
+
+        if (numerosPares > numerosImpares) {
             System.out.println("GANARON LOS PARES");
         }
-        if (sumaDeNumerosPares(numeros) < sumaDeNumerosImpares(numeros)) {
+        if (numerosPares < numerosImpares) {
             System.out.println("GANARON LOS IMPARES");
         }
-        if (sumaDeNumerosPares(numeros) == sumaDeNumerosImpares(numeros)) {
+        if (numerosPares == numerosImpares) {
             System.out.println("EMPATE");
         }
         return "";
