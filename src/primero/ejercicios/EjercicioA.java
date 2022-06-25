@@ -10,10 +10,17 @@ public class EjercicioA {
     public static void main(String[] args) {
 
         Scanner teclado = new Scanner(System.in);
-        int sumaDeNumeros = inserteNumeros();
+        int cantidadNumeros = numerosPorCargar();
+        int[] numerosMenoresa5 = new int[cantidadNumeros];
+        sumaDeMenoresDe5(cargaDeNumeros(cantidadNumeros));
+    }
+
+    private static int[] cargaDeNumeros(int cantidadNumeros) {
+        /* Este sirve para cargar los números, la cantidad se decide antes, con numerosPorCargar. No deja cargar valores menores de 1*/
+        Scanner teclado = new Scanner(System.in);
         int i = 0;
-        int[] listaNumeros = new int[sumaDeNumeros];
-        int[] numerosMenoresa5 = new int[sumaDeNumeros];
+        int[] listaNumeros = new int[cantidadNumeros];
+        int[] numerosMenoresa5 = new int[cantidadNumeros];
         for (i = 0; i < listaNumeros.length; i++) {
             System.out.println("Ingrese el número " + (i + 1));
             listaNumeros[i] = teclado.nextInt();
@@ -25,22 +32,30 @@ public class EjercicioA {
                 numerosMenoresa5[i] = listaNumeros[i];
             }
         }
+        return numerosMenoresa5;
+    }
 
+    public static int[] sumaDeMenoresDe5(int[] numerosMenoresa5) {
+        /* Acá solamente va a sumar los números menores de 5, e ignorar el resto */
         int sumaDeMenoresDe5 = Arrays.stream(numerosMenoresa5).sum(); // esto es 100% robado de internet
-        if (listaNumeros.length == 0) {
-            System.out.println("El resultado de la suma de los numeros menores a 5 = ");
+        if (numerosMenoresa5.length != 0) {
+            System.out.println("El resultado de la suma de los numeros menores a 5 = "+ sumaDeMenoresDe5);
         }
         else {
             System.out.println("No hay números menores de 5");
         }
-
+return numerosMenoresa5;
     }
-    public static int inserteNumeros() {
+
+    public static int numerosPorCargar() {
+        /* Aca se va a decidir la cantidad de numeros a cargar y los devuelve con el int numeros*/
         Scanner teclado = new Scanner(System.in);
         System.out.println("Cuántos números desea ingresar?");
         int numeros = teclado.nextInt();
         return numeros;
     }
+
+
 }
 /*
 Ejemplo:

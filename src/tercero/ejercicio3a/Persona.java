@@ -9,6 +9,7 @@ public class Persona {
     String nombre;
     String apellido;
     int edad;
+    String genero;
 
     public void cargarAlumno() {
         Scanner teclado = new Scanner(System.in);
@@ -16,8 +17,15 @@ public class Persona {
         this.setNombre(teclado.nextLine());
         System.out.println("Ingrese el apellido:");
         this.setApellido(teclado.nextLine());
+        System.out.println("Ingrese el genero:");
+        this.setGenero(teclado.nextLine());
         System.out.println("Ingrese la edad:");
         this.setEdad(teclado.nextInt());
+
+
+
+
+
     }
     public void mostrarAlumno() {
         System.out.println("NIÑO REGISTRADO - "+ this.getNombre() + " " + this.getApellido() +" de " + this.getEdad() + " años de edad");
@@ -26,10 +34,13 @@ public class Persona {
     public void setNombre (String nombre) {this.nombre = nombre;}
     public void setApellido (String apellido) {this.apellido = apellido;}
     public void setEdad (int edad) {this.edad = edad;}
+    public void setGenero (String genero) {this.genero = genero;}
 
     public String getNombre () {return nombre;}
     public String getApellido () {return apellido;}
     public int getEdad () {return edad;}
+    public String getGenero () {return genero;}
+
 
 
 } // class Persona

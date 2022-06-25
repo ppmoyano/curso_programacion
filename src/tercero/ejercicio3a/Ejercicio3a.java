@@ -1,5 +1,6 @@
 package tercero.ejercicio3a;
 
+import java.util.Objects;
 import java.util.Scanner;
 
 /*
@@ -15,52 +16,14 @@ a) Cuando registramos una nueva persona queremos tambien guardar el genero - 'M'
 Mostrar al final de la ejecucion cuantos NIÑOS y NIÑAS se han registrado
  */
 public class Ejercicio3a {
-
-
     public static void main(String args[]) {
         Scanner teclado = new Scanner(System.in);
-        Persona[] alumno = new Persona[5];
-        int opcion = 0;
-        do {
-            for (int i = 0; i < 5 ; i++) {
-                System.out.println("Desea ingresar un niño: 1 - Si / 2 - Salir");
-                opcion = teclado.nextInt();
-                if (opcion == 2) {
-                    break;
-                }
-                alumno[i] = new Persona();
-                alumno[i].cargarAlumno();
-                if (alumno[i].getEdad() > 8 || alumno[i].getEdad() < 6) { //lo dejo asi nada mas para poder verificar despues si es 6 y 8 inclusive o si sólo pueden ir los de siete.
-                    System.out.println("El niño no cumple con la edad necesaria");
-                    i = i-1;
-                    continue;
-                }
-                alumno[i].mostrarAlumno();
-                if (i == 4) {
-                    System.out.println("CUPO COMPLETO");
-                    opcion=2;
-                }
-            }
-        } // cierre del do
-        while (opcion!=2);
+        cargarAlumno();
+        //cantidadSegunGenero(genero);
 
-          /* for (int i = 0; i < 5 ; i++) {
-               System.out.println("Desea ingresar un niño: 1 - Si / 2 - Salir");
-               opcion = teclado.nextInt();
-               if (opcion == 2) {
-                   break;
-               }
-               alumno [i] = new Persona();
-               alumno[i].cargarAlumno();
-               if (alumno[i].getEdad() > 8 || alumno[i].getEdad() < 6) { //lo dejo asi nada mas para poder verificar despues si es 6 y 8 inclusive o si sólo pueden ir los de siete.
-                   System.out.println("El niño no cumple con la edad necesaria");
-                   continue;
-               }
-                   alumno[i].mostrarAlumno();
-               if (i == 4) {
-                   System.out.println("CUPO COMPLETO");
-               }
-            }*/
+
+    }
+
 
 
 
@@ -136,8 +99,61 @@ Desea ingresar un niño: 1 - Si 2 - Salir
 2
 Fin del programa
  */
-        
+
+
+    private static void cargarAlumno() {
+        Scanner teclado = new Scanner(System.in);
+        Persona[] alumno = new Persona[5];
+        int opcion = 0;
+        int femenino = 0;
+        int masculino = 0;
+        do {
+            for (int i = 0; i < 5; i++) {
+                System.out.println("Desea ingresar un niño: 1 - Si / 2 - Salir");
+                opcion = teclado.nextInt();
+                if (opcion == 2) {
+                    break;
+                }
+                alumno[i] = new Persona();
+                alumno[i].cargarAlumno();
+                if (alumno[i].getEdad() > 8 || alumno[i].getEdad() < 6) { //lo dejo asi nada mas para poder verificar despues si es 6 y 8 inclusive o si sólo pueden ir los de siete.
+                    System.out.println("El niño no cumple con la edad necesaria");
+                    i = i - 1;
+                    continue;
+                }
+                if (Objects.equals(alumno[i].getGenero(), "F")) { //no es robado de internet, esto lo recomendó el programa
+                    femenino += 1;
+                }
+                else if (Objects.equals(alumno[i].getGenero(), "M")) {
+                    masculino += 1;
+                }
+
+                alumno[i].mostrarAlumno();
+                if (i == 4) {
+                    System.out.println("CUPO COMPLETO");
+                    opcion = 2;
+                    System.out.println("NIÑOS: " + masculino + " NIÑAS: " + femenino);
+                }
+
+
+            }
+        } // cierre del do
+        while (opcion != 2);
+    }
+
+/*
+    public static void cantidadSegunGenero(String genero) { //robando tu idea
+        int femenino = 0;
+        int masculino = 0;
+        if (genero == "F") {
+            femenino += 1;
         }
+        else if (genero == "M") {
+            masculino += 1;
+        }
+        System.out.println("NIÑOS: " + masculino + "NIÑAS: " + femenino);
+    }
+}
+*/
 
 }
-

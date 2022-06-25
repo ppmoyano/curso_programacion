@@ -8,9 +8,51 @@ Si hay mas impares que pares, muestre un mensaje GANARON LOS IMPARES
 Y si empataron, muestre un mensaje que diga EMPATE
 */
 
+import java.util.Arrays;
+import java.util.Scanner;
+
 public class EjercicioC {
     public static void main(String[] args) {
+            Scanner teclado = new Scanner(System.in);
+            int numeros = inserteNumeros();
+            sumaNumeros(numeros);
+        }
 
+
+    public static int inserteNumeros() {
+        Scanner teclado = new Scanner(System.in);
+        System.out.println("Cuántos números desea ingresar?");
+        int numeros = teclado.nextInt();
+        return numeros;
+    }
+    public static void sumaNumeros(int numeros) {
+        Scanner teclado = new Scanner(System.in);
+        int[] listaNum = new int[numeros];
+        int[] numerosPares = new int[numeros];
+        int[] numerosImpares = new int[numeros];
+        int i = 0;
+        for (i = 0; i < numeros; i++) {
+            System.out.println("Ingrese un número");
+            listaNum[i] = teclado.nextInt();
+            if (listaNum[i] < 1) {
+                System.out.println("No puede ingresar un valor menor a 1");
+                i--; //no me acuerdo una opción mejor para seguir sin que se termine el programa
+            } else if (listaNum[i] % 2 == 0) {
+                numerosPares[i] = listaNum[i];
+                System.out.println("NUMERO PAR");
+            } else {
+                numerosImpares[i] = listaNum[i];
+                System.out.println("NUMERO IMPAR");
+            }
+        }
+        System.out.println("La suma de numeros pares es:" + (Arrays.stream(numerosPares).sum()));
+        System.out.println("La suma de numeros impares es:" + (Arrays.stream(numerosImpares).sum()));
+        if (Arrays.stream(numerosImpares).sum() < Arrays.stream(numerosPares).sum()) {
+            System.out.println("GANARON LOS PARES");
+        }
+        else {
+            System.out.println("GANARON LOS IMPARES");
+        }
     }
 }
 /*
