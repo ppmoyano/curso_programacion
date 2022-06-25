@@ -20,26 +20,40 @@ public class Ejercicio3a {
         Scanner teclado = new Scanner(System.in);
         Persona[] alumnos = new Persona[5];
         cargarAlumnos(alumnos);
-        caluclarCantidadSegunGenero(alumnos);
+        System.out.println("Se registraron " + calcularCantdadSegundGenero(alumnos, 'M') +
+                " alumnos (MASCULINOS)");
+        System.out.println("Se registraron " + calcularCantdadSegundGenero(alumnos, 'F') +
+                " alumnas (FEMENINOS)");
     }
 
-    private static int caluclarCantidadSegunGenero(Persona[] alumnos) {
-        int cantidadDeMasculino = 0;
-        int cantidadDeFemenino = 0;
+    private static int calcularCantdadSegundGenero(Persona[] alumnos, char Genero) {
         int i = 0;
+        int cantidadGenero =0;
         for (i = 0; i < 5; i++) {
-            if (alumnos[i].getGenero() == 'M') {
-                cantidadDeMasculino += 1;
-            } else if (alumnos[i].getGenero() == 'F') {
-                cantidadDeFemenino += 1;
+            if (alumnos[i].getGenero() == Genero) {
+                cantidadGenero += 1;
             }
-        }
-        System.out.println("Se registraron " + cantidadDeMasculino + " alumnos (MASCULINOS)");
-        System.out.println("Se registraron " + cantidadDeFemenino + " alumnas (FEMENINOS)");
-        return 0;
-    }
+        }        return cantidadGenero;
 
-    private static void cargarAlumnos(Persona[] alumnos) {
+    }
+    /*  private static int caluclarCantidadSegunGenero(Persona[] alumnos) {
+          int cantidadDeMasculino = 0;
+          int cantidadDeFemenino = 0;
+          int i = 0;
+          for (i = 0; i < 5; i++) {
+              if (alumnos[i].getGenero() == 'M') {
+                  cantidadDeMasculino += 1;
+              } else if (alumnos[i].getGenero() == 'F') {
+                  cantidadDeFemenino += 1;
+              }
+          }
+          System.out.println("Se registraron " + cantidadDeMasculino + " alumnos (MASCULINOS)");
+          System.out.println("Se registraron " + cantidadDeFemenino + " alumnas (FEMENINOS)");
+          return 0;
+      }
+  */
+
+        private static void cargarAlumnos(Persona[] alumnos) {
         Scanner teclado = new Scanner(System.in);
         int opcion = 0;
         int i = 0;
