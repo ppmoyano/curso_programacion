@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b0db52c-3d49-46c8-9491-fbeaea55c38e" name="Changes" comment="EjercicioA y B resueltos, el B me parece que está lindo">
+    <list default="true" id="1b0db52c-3d49-46c8-9491-fbeaea55c38e" name="Changes" comment="Ejericios A y B hechos lindos.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/primero/ejercicios/EjercicioA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/primero/ejercicios/EjercicioA.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/primero/ejercicios/EjercicioB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/primero/ejercicios/EjercicioB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/primero/ejercicios/EjercicioC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/primero/ejercicios/EjercicioC.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +54,7 @@
       <recent name="segundo" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.EjercicioB">
+  <component name="RunManager" selected="Application.EjercicioC">
     <configuration name="Ejercicio3a" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="tercero.ejercicio3a.Ejercicio3a" />
       <module name="curso_programacion" />
@@ -124,10 +123,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.EjercicioC" />
         <item itemvalue="Application.EjercicioB" />
         <item itemvalue="Application.EjercicioA" />
         <item itemvalue="Application.Ejercicio3a" />
-        <item itemvalue="Application.EjercicioC" />
         <item itemvalue="Application.primero.primero" />
       </list>
     </recent_temporary>
@@ -183,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656150765844</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Ejericios A y B hechos lindos.">
+      <created>1656188041317</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1656188041317</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -201,6 +207,7 @@
     <MESSAGE value="Correccion del texto" />
     <MESSAGE value="Primer ejercicio" />
     <MESSAGE value="EjercicioA y B resueltos, el B me parece que está lindo" />
-    <option name="LAST_COMMIT_MESSAGE" value="EjercicioA y B resueltos, el B me parece que está lindo" />
+    <MESSAGE value="Ejericios A y B hechos lindos." />
+    <option name="LAST_COMMIT_MESSAGE" value="Ejericios A y B hechos lindos." />
   </component>
 </project>

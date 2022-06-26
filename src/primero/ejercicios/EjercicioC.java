@@ -15,25 +15,15 @@ public class EjercicioC {
     public static void main(String[] args) {
             Scanner teclado = new Scanner(System.in);
             int numeros = inserteNumeros();
-            sumaNumeros(numeros);
+            parOImpar(numeros,cargaNum(numeros));
         }
 
-
-    public static int inserteNumeros() {
+    private static void parOImpar(int numeros, int [] listaNum) {
         Scanner teclado = new Scanner(System.in);
-        System.out.println("Cuántos números desea ingresar?");
-        int numeros = teclado.nextInt();
-        return numeros;
-    }
-    public static void sumaNumeros(int numeros) {
-        Scanner teclado = new Scanner(System.in);
-        int[] listaNum = new int[numeros];
         int[] numerosPares = new int[numeros];
         int[] numerosImpares = new int[numeros];
         int i = 0;
         for (i = 0; i < numeros; i++) {
-            System.out.println("Ingrese un número");
-            listaNum[i] = teclado.nextInt();
             if (listaNum[i] < 1) {
                 System.out.println("No puede ingresar un valor menor a 1");
                 i--; //no me acuerdo una opción mejor para seguir sin que se termine el programa
@@ -49,12 +39,35 @@ public class EjercicioC {
         System.out.println("La suma de numeros impares es:" + (Arrays.stream(numerosImpares).sum()));
         if (Arrays.stream(numerosImpares).sum() < Arrays.stream(numerosPares).sum()) {
             System.out.println("GANARON LOS PARES");
-        }
-        else {
+        } else {
             System.out.println("GANARON LOS IMPARES");
         }
     }
-}
+
+
+    public static int inserteNumeros() {
+        Scanner teclado = new Scanner(System.in);
+        System.out.println("Cuántos números desea ingresar?");
+        int numeros = teclado.nextInt();
+        return numeros;
+    }
+    public static int[] cargaNum(int numeros) {
+        Scanner teclado = new Scanner(System.in);
+        int[] listaNum = new int[numeros];
+
+        int i = 0;
+        for (i = 0; i < numeros; i++) {
+            System.out.println("Ingrese un número");
+            listaNum[i] = teclado.nextInt();
+            if (listaNum[i] < 1) {
+                System.out.println("No puede ingresar un valor menor a 1");
+                i--; //no me acuerdo una opción mejor para seguir sin que se termine el programa
+            }
+        }
+        return listaNum;
+        }
+
+    }
 /*
 Ejemplo:
 Cuantos numeros desea ingresar?
