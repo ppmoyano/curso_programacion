@@ -7,7 +7,7 @@ Si hay mas pares que impares, muestre un mensaje GANARON LOS PARES
 Si hay mas impares que pares, muestre un mensaje GANARON LOS IMPARES
 Y si empataron, muestre un mensaje que diga EMPATE
 */
-
+// A ESTE HAY QUE TERMINARLO BIEN
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -15,26 +15,15 @@ public class EjercicioC {
     public static void main(String[] args) {
             Scanner teclado = new Scanner(System.in);
             int numeros = inserteNumeros();
-            parOImpar(numeros,cargaNum(numeros));
+            sumaDeParOImpar(cargaNum(numeros), numeros);
         }
 
-    private static void parOImpar(int numeros, int [] listaNum) {
+    private static void sumaDeParOImpar(int [] paroimpar, int numeros) {
         Scanner teclado = new Scanner(System.in);
         int[] numerosPares = new int[numeros];
         int[] numerosImpares = new int[numeros];
         int i = 0;
-        for (i = 0; i < numeros; i++) {
-            if (listaNum[i] < 1) {
-                System.out.println("No puede ingresar un valor menor a 1");
-                i--; //no me acuerdo una opción mejor para seguir sin que se termine el programa
-            } else if (listaNum[i] % 2 == 0) {
-                numerosPares[i] = listaNum[i];
-                System.out.println("NUMERO PAR");
-            } else {
-                numerosImpares[i] = listaNum[i];
-                System.out.println("NUMERO IMPAR");
-            }
-        }
+
         System.out.println("La suma de numeros pares es:" + (Arrays.stream(numerosPares).sum()));
         System.out.println("La suma de numeros impares es:" + (Arrays.stream(numerosImpares).sum()));
         if (Arrays.stream(numerosImpares).sum() < Arrays.stream(numerosPares).sum()) {
@@ -63,11 +52,29 @@ public class EjercicioC {
                 System.out.println("No puede ingresar un valor menor a 1");
                 i--; //no me acuerdo una opción mejor para seguir sin que se termine el programa
             }
+            else {
+                paroimpar(listaNum, numeros); // Me anda mal esta parte, lo sigo tocand y lo sigo rompiendo
+            }
         }
         return listaNum;
         }
 
+    private static void paroimpar(int[] listaNum, int numeros ) {
+        int[] numerosPares = new int[numeros];
+        int[] numerosImpares = new int[numeros];
+        int i = 0;
+        //for (i = 0; i < numeros; i++) {
+            if (listaNum[i] % 2 == 0) {
+                numerosPares[i] = listaNum[i];
+                System.out.println("NUMERO PAR");
+            } else {
+                numerosImpares[i] = listaNum[i];
+                System.out.println("NUMERO IMPAR");
+            }
+        //}
     }
+
+}
 /*
 Ejemplo:
 Cuantos numeros desea ingresar?
