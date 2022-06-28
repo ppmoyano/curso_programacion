@@ -12,6 +12,10 @@ public class Persona {
     String apellido;
     int edad;
 
+
+
+    char genero;
+
     public void cargarAlumno() {
         Scanner teclado = new Scanner(System.in);
         System.out.println("Ingrese el nombre del alumno");
@@ -20,7 +24,8 @@ public class Persona {
         this.setApellido(teclado.nextLine());
         System.out.println("Ingrese la edad del alumno");
         this.setEdad(Integer.parseInt(teclado.nextLine()));
-
+        System.out.println("Ingrese M si es masculino o F si es femenino");
+        this.setGenero(teclado.next().charAt(0));
     }
 
     public String getNombre() {
@@ -47,9 +52,17 @@ public class Persona {
         this.edad = edad;
     }
 
+    public char getGenero() {
+        return genero;
+    }
+
+    public void setGenero(char genero) {
+        this.genero = genero;
+    }
     public void mostrarAlumno() {
         System.out.println("Nombre: " + this.nombre);
         System.out.println("Apellido: " + this.apellido);
         System.out.println("Edad: " + this.edad);
+        System.out.println("Genero: " + this.genero);
     }
 }

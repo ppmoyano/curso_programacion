@@ -1,4 +1,9 @@
 package tercero.ejercicio3a;
+
+import tercero.ejercicio4.Alumno;
+
+import java.util.Scanner;
+
 /*
 Este es un programa para registar los alumnos para la escuela primaria Carlos Paz del año que viene.
 En la escuela vamos registatondo todos los niños que se vienen a anotar.
@@ -13,10 +18,57 @@ Mostrar al final de la ejecucion cuantos NIÑOS y NIÑAS se han registrado
  */
 public class Ejercicio3a {
 
-    public static void main(String args[]) {
 
-    }
-}
+    public static void main(String args[]) {
+        Scanner teclado = new Scanner(System.in);
+        Persona[] Alumnos = new Persona[5];
+        int opcion = 0;
+        int i = 0;
+
+        do {
+            System.out.println("Desea ingresar un niño: 1 - Si 2 - Salir");
+            opcion = teclado.nextInt();
+            if (opcion == 1) {
+                Alumnos[i] = new Persona();
+                Alumnos[i].cargarAlumno();
+                if (Alumnos[i].getEdad() < 6 || Alumnos[i].getEdad() > 8) {
+                    System.out.println("El niño no cumple con la edad necesaria");
+                    i = i - 1;
+                } else if (Alumnos[i].getEdad() >= 6 && Alumnos[i].getEdad() <= 8) {
+                    System.out.println("NIÑO REGISTRADO " + Alumnos[i].getNombre() + " " + Alumnos[i].getApellido() + " de " + Alumnos[i].getEdad() + " años de edad");
+                }
+            }
+            i++;
+        } while (i < 5 && opcion != 2);
+        if (i == 5) {
+            System.out.println("CUPO COMPLETO");
+        }
+        if (opcion == 2) {
+            System.out.println("FIN DEL PROGRAMA");
+        }
+        for (i = 0; i < 5; i++) {
+            Alumnos[i].mostrarAlumno();
+        }
+
+        int contadorM = 0;
+        int contadorF = 0;
+        for (i = 0; i < 5; i++) {
+            if (Alumnos[i].getGenero() == 'm' ) {
+                contadorM += 1;
+            } else if (Alumnos[i].getGenero() == 'f') {
+                contadorF += 1;
+            }
+        }
+            System.out.println("Se registraron " + contadorM + " alumnos masculinos");
+            System.out.println("Se registraron " + contadorF + " alumnos femeninos");
+
+}}
+
+
+
+
+
+
 
 
 
