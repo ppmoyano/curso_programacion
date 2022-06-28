@@ -1,7 +1,4 @@
 package tercero.ejercicio3a;
-
-import java.util.Scanner;
-
 /*
 Este es un programa para registar los alumnos para la escuela primaria Carlos Paz del año que viene.
 En la escuela vamos registatondo todos los niños que se vienen a anotar.
@@ -10,43 +7,13 @@ Si no cumple con esta condicion se le dice Que no cumple con la edad necaria.
 Una vez inscripto se muestra el mensaje - NIÑO REGISTRADO mas la informacion del niño.
 Y tenemos un cupo maximo de 5 alumnos, asi que si se llena ese cupo el programa termina con el mensaje "CUPO COMPLETO"
 Al finalizar el programa mostrar el mensaje "FIN DEL PROGRAMA"
-/*
+
+a) Cuando registramos una nueva persona queremos tambien guardar el genero - 'M' para masculino 'F' para femenino.
+Mostrar al final de la ejecucion cuantos NIÑOS y NIÑAS se han registrado
+ */
 public class Ejercicio3a {
 
-
     public static void main(String args[]) {
-        Scanner teclado = new Scanner(System.in);
-        Persona[] Alumnos = new Persona[5];
-
-        int opcion = 0;
-        int i = 0;
-        do {
-            System.out.println("Desea ingresar un niño: 1 - Si 2 - Salir");
-            opcion = teclado.nextInt();
-            if (opcion == 1) {
-
-                Alumnos[i] = new Persona();
-                Alumnos[i].cargarAlumno();
-                if (Alumnos[i].getEdad() < 6 || Alumnos[i].getEdad() > 8) {
-                    System.out.println("El niño no cumple con la edad necesaria");
-                    i = i - 1;
-                } else if (Alumnos[i].getEdad() >= 6 && Alumnos[i].getEdad() <= 8) {
-                    System.out.println("NIÑO REGISTRADO " + Alumnos[i].getNombre() + " " + Alumnos[i].getApellido() + " de " + Alumnos[i].getEdad() + " años de edad");
-                }
-            }
-            i++;
-        } while (i < 5 && opcion != 2);
-        if (i == 5) {
-            System.out.println("CUPO COMPLETO");
-        }
-        if (opcion == 2) {
-            System.out.println("FIN DEL PROGRAMA");
-        }
-        for (i = 0; i < 5; i++) {
-            Alumnos[i].mostrarAlumno();
-        }
-
-
 
     }
 }
@@ -63,7 +30,8 @@ Ingrese el apellido:
 Rizzo
 Ingrese la edad:
 7
-NIÑO REGISTRADO - Sabri Rizzo de 7 años de edad
+INGRESE EL SEXO: F
+NIÑO/A REGISTRADO/A - Sabri Rizzo de 7 años de edad
 Desea ingresar un niño: 1 - Si 2 - Salir
 1
 Ingrese el nombre:
@@ -72,6 +40,7 @@ Ingrese el apellido:
 Marmol
 Ingrese la edad:
 10
+INGRESE EL SEXO: M
 El niño no cumple con la edad necesaria
 Desea ingresar un niño: 1 - Si 2 - Salir
 1
@@ -81,7 +50,8 @@ Ingrese el apellido:
 Marmol
 Ingrese la edad:
 7
-NIÑO REGISTRADO - Pablo Marmol de 7 años de edad
+INGRESE EL SEXO: M
+NIÑO/A REGISTRADO/A - Pablo Marmol de 7 años de edad
 Desea ingresar un niño: 1 - Si 2 - Salir
 1
 Ingrese el nombre:
@@ -90,7 +60,8 @@ Ingrese el apellido:
 Picapiedra
 Ingrese la edad:
 7
-NIÑO REGISTRADO - Pedro Picapiedra de 7 años de edad
+INGRESE EL SEXO: M
+NIÑO/A REGISTRADO/A - Pedro Picapiedra de 7 años de edad
 Desea ingresar un niño: 1 - Si 2 - Salir
 1
 Ingrese el nombre:
@@ -98,8 +69,8 @@ Vilma
 Ingrese el apellido:
 Palma
 Ingrese la edad:
-7
-NIÑO REGISTRADO - Vilma Palma de 7 años de edad
+INGRESE EL SEXO: F
+NIÑO/A REGISTRADO/A - Vilma Palma de 7 años de edad
 Desea ingresar un niño: 1 - Si 2 - Salir
 1
 Ingrese el nombre:
@@ -108,8 +79,10 @@ Ingrese el apellido:
 Corazon
 Ingrese la edad:
 7
-NIÑO REGISTRADO - Leon Corazon de 7 años de edad
+INGRESE EL SEXO: F
+NIÑO/A REGISTRADO/A - Leon Corazon de 7 años de edad
 CUPO COMPLETO
+NIÑOS:3 NIÑAS:2
 Fin del programa
 
 
