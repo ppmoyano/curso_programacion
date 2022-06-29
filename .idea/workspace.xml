@@ -7,8 +7,9 @@
     <list default="true" id="1b0db52c-3d49-46c8-9491-fbeaea55c38e" name="Changes" comment="Ejericios A y B hechos lindos.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/curso_programacion/segundo/segundoA.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/curso_programacion/segundo/segundoA.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/curso_programacion/segundo/segundoB.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/curso_programacion/segundo/segundoB.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/primero/ejercicios/EjercicioC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/primero/ejercicios/EjercicioC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/segundo/segundoA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/segundo/segundoA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/segundo/segundoB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/segundo/segundoB.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,20 +57,7 @@
       <recent name="segundo" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.segundoA">
-    <configuration name="Ejercicio3a" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="tercero.ejercicio3a.Ejercicio3a" />
-      <module name="curso_programacion" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tercero.ejercicio3a.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.EjercicioC">
     <configuration name="EjercicioA" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="primero.ejercicios.EjercicioA" />
       <module name="curso_programacion" />
@@ -122,20 +110,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="segundoB" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="segundo.segundoB" />
+      <module name="curso_programacion" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="segundo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="Application.Ejercicio3a" />
       <item itemvalue="Application.EjercicioC" />
       <item itemvalue="Application.segundoA" />
+      <item itemvalue="Application.segundoB" />
       <item itemvalue="Application.EjercicioA" />
       <item itemvalue="Application.EjercicioB" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.segundoA" />
         <item itemvalue="Application.EjercicioC" />
+        <item itemvalue="Application.segundoB" />
+        <item itemvalue="Application.segundoA" />
         <item itemvalue="Application.EjercicioB" />
         <item itemvalue="Application.EjercicioA" />
-        <item itemvalue="Application.Ejercicio3a" />
       </list>
     </recent_temporary>
   </component>
@@ -204,7 +205,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656264718701</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Ejericios A y B hechos lindos.">
+      <created>1656354513370</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1656354513370</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

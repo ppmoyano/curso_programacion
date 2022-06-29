@@ -8,29 +8,67 @@ Si hay mas impares que pares, muestre un mensaje GANARON LOS IMPARES
 Y si empataron, muestre un mensaje que diga EMPATE
 */
 // A ESTE HAY QUE TERMINARLO BIEN
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class EjercicioC {
     public static void main(String[] args) {
-            Scanner teclado = new Scanner(System.in);
-            int numeros = inserteNumeros();
-            sumaDeParOImpar(cargaNum(numeros), numeros);
-        }
+        int numeros = inserteNumeros();
+        int num = 0;
+        cargaNum(numeros);
+        int sumarPares = saberSiEsPar(num);
+        int sumarImpares = saberSiEsImpar(num);
 
-    private static void sumaDeParOImpar(int [] paroimpar, int numeros) {
-        Scanner teclado = new Scanner(System.in);
-        int[] numerosPares = new int[numeros];
-        int[] numerosImpares = new int[numeros];
-        int i = 0;
+        sumarParOImpar(sumarPares, sumarImpares);
 
-        System.out.println("La suma de numeros pares es:" + (Arrays.stream(numerosPares).sum()));
-        System.out.println("La suma de numeros impares es:" + (Arrays.stream(numerosImpares).sum()));
-        if (Arrays.stream(numerosImpares).sum() < Arrays.stream(numerosPares).sum()) {
+    } // Cierre Main
+
+    private static void sumarParOImpar(int sumarPares, int sumarImpares) {
+
+        System.out.println("La suma de numeros pares es:" + sumarPares);
+        System.out.println("La suma de numeros impares es:" + sumarImpares);
+        if (sumarImpares < sumarPares) {
             System.out.println("GANARON LOS PARES");
-        } else {
+        } else if (sumarImpares > sumarPares) {
             System.out.println("GANARON LOS IMPARES");
+        } else {
+            System.out.println("ES UN EMPATE");
         }
+    }
+
+    private static void cargaNum(int numeros) {
+        Scanner teclado = new Scanner(System.in);
+        int num = 0;
+        int i = 0;
+        for (i = 0; i < numeros; i++) {
+            System.out.println("Ingrese un numero: ");
+            num = teclado.nextInt();
+            if (num < 1) {
+                System.out.println("No puede ingresar un valor menor a 1");
+                i--; //no me acuerdo una opción mejor para seguir sin que se termine el programa
+            } else {
+                saberSiEsPar(num);
+                saberSiEsImpar(num);
+            }
+        }
+
+    }
+
+    private static int saberSiEsImpar(int num) {
+        int sumarImpares = 0;
+        if (num % 2 != 0) {
+            System.out.println("ES IMPAR");
+            sumarImpares += num;
+        }
+        return sumarImpares;
+    }
+
+    private static int saberSiEsPar(int num) {
+        int sumarPares = 0;
+        if (num % 2 == 0) {
+            System.out.println("ES PAR");
+            sumarPares += num;
+        }
+        return sumarPares;
     }
 
 
@@ -40,82 +78,6 @@ public class EjercicioC {
         int numeros = teclado.nextInt();
         return numeros;
     }
-    public static int[] cargaNum(int numeros) {
-        Scanner teclado = new Scanner(System.in);
-        int[] listaNum = new int[numeros];
 
-        int i = 0;
-        for (i = 0; i < numeros; i++) {
-            System.out.println("Ingrese un número");
-            listaNum[i] = teclado.nextInt();
-            if (listaNum[i] < 1) {
-                System.out.println("No puede ingresar un valor menor a 1");
-                i--; //no me acuerdo una opción mejor para seguir sin que se termine el programa
-            }
-            else {
-                paroimpar(listaNum, numeros); // Me anda mal esta parte, lo sigo tocand y lo sigo rompiendo
-            }
-        }
-        return listaNum;
-        }
-
-    private static void paroimpar(int[] listaNum, int numeros ) {
-        int[] numerosPares = new int[numeros];
-        int[] numerosImpares = new int[numeros];
-        int i = 0;
-        //for (i = 0; i < numeros; i++) {
-            if (listaNum[i] % 2 == 0) {
-                numerosPares[i] = listaNum[i];
-                System.out.println("NUMERO PAR");
-            } else {
-                numerosImpares[i] = listaNum[i];
-                System.out.println("NUMERO IMPAR");
-            }
-        //}
-    }
 
 }
-/*
-Ejemplo:
-Cuantos numeros desea ingresar?
-6
-Ingrese un numero:
-2
-NUMERO PAR
-Ingrese un numero:
-7
-NUMERO IMPAR
-Ingrese un numero:
-4
-NUMERO PAR
-Ingrese un numero:
-5
-NUMERO IMPAR
-Ingrese un numero:
-12
-NUMERO PAR
-Ingrese un numero:
-9
-NUMERO IMPAR
-La suma de numeros pares es: 24
-La suma de numeros impares es: 21
-GANARON LOS PARES
-
-Ejemplo 2:
-Cuantos numeros desea ingresar?
-2
-Ingrese un numero:
-2
-NUMERO PAR
-Ingrese un numero:
-3
-NUMERO IMPAR
-La suma de numeros pares es: 2
-La suma de numeros impares es: 3
-GANARON LOS IMPARES
-
-Ejemplo 2:
-Cuantos numeros desea ingresar?
-0
-No puede ingresar un valor menor a 1
- */

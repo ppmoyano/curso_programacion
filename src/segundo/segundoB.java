@@ -19,10 +19,11 @@ public class segundoB {
         String nombreLargo= null;
         String nombreCorto= null;
         String nombreConA= null;
-        ArrayList empiezanconA = new ArrayList();
+        int cantidadAlumnos = 0;
+        String empiezanconA[] = new String [cantidadAlumnos];
 
         System.out.println("Cuántos alumnos desea ingresar?");
-        int cantidadAlumnos = teclado.nextInt();
+        cantidadAlumnos = teclado.nextInt();
         for(int i=1; i<=cantidadAlumnos; i++) {
             System.out.print("Ingresar nombre #" + i + ":");
             nombre = teclado.next();
@@ -34,14 +35,14 @@ public class segundoB {
                 nombreCorto = nombre;
             }
             if (nombre.startsWith("a")) {
-                empiezanconA.add(nombre);
+                empiezanconA[i] = nombre;
             }
         }
         System.out.println(nombreLargo + " es el nombre mas largo");
         System.out.println(nombreCorto + " es el nombre mas corto");
-
-        for(int i = 0; i < empiezanconA.size(); i++) {
-            System.out.println(empiezanconA.get(i));
-        }
+//
+  //      do {
+    //        System.out.println(empiezanconA[i]);
+      //  }
     } //public static void main(String[] args)
 } // class segundoB
