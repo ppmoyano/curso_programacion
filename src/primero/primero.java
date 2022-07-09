@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class primero {
-
+//ESTE ANDA PERO HAY QUE DEJARLO LINDO
     public static void main(String[] args) {
         //Ejercicio 1 - Hola Mundo
 

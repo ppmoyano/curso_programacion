@@ -10,6 +10,7 @@ import java.util.Scanner;
 
  */
 public class segundoD {
+    // REVISAR CÓMO QUEDÓ.
     public static void main(String[] args) {
 
         String nombreA = ingresarNombre();

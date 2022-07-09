@@ -6,7 +6,8 @@ import java.util.Objects;
 import java.util.Scanner;
 
 /*
-- ESTE SUPUESTAMENTE YA ESTÁ, Realice un programa donde ingrese todos los nombres de un curso y al final nos muestre el nombre mas largo
+ESTE SUPUESTAMENTE YA ESTÁ, TENGO QUE DEJARLO LINDO NADA MÁS
+- Realice un programa donde ingrese todos los nombres de un curso y al final nos muestre el nombre mas largo
 - Nos muestre el nombre mas corto
 - Nos muestre todos los nombres que empiezan con la letra A
 

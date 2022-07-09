@@ -3,30 +3,18 @@ package primero.ejercicios;
 Realice un programa donde ingrese X numeros, y que nos muestre el promedio de todos los numeros pares
 */
 
+
+//FUNCIONA, PERO EL CÓDIGO NO TERMINA DE ESTAR LINDO AUNQUE LE DE VUELTAS.
 import java.util.Arrays;
 import java.util.Scanner;
 
 public class EjercicioB {
     public static void main(String[] args) {
         int numeros = inserteNumeros();
-        sumaYPromedioPares(numeros, sumaNumeros(numeros));
-    }
-
-    private static void sumaYPromedioPares(int numeros, int[] sumaNumeros) {
-        //Acá va a revisar los números cargados, sumar los que sean pares y mostrar el promedio
-        int i = 0;
-        int[] numerosPares = new int[numeros];
-        for (i = 0; i < numeros; i++) {
-            if (sumaNumeros[i] % 2 == 0) {
-                numerosPares[i] = sumaNumeros[i];
-            }
-        }
-        double sumaPares = Arrays.stream(numerosPares).sum();
-        System.out.println("El promedio de los numeros pares es "+(sumaPares /numerosPares.length));
-    }
+        sumarNumeros(numeros);
 
 
-
+    } //public static void main(String[] args)
 
     public static int inserteNumeros() {
         Scanner teclado = new Scanner(System.in);
@@ -35,21 +23,29 @@ public class EjercicioB {
         return numeros;
     }
 
-    public static int[] sumaNumeros(int numeros) {
+    public static void sumarNumeros(int numeros) {
         Scanner teclado = new Scanner(System.in);
-        int[] sumaNumeros = new int[numeros];
         int i = 0;
+        int numASumar = 0;
+        double sumaPares= 0;
+        int n = 0;
         for (i = 0; i < numeros; i++) {
             System.out.println("Ingrese un número");
-            sumaNumeros[i] = teclado.nextInt();
-            if (sumaNumeros[i] < 1) {
+            numASumar = teclado.nextInt();
+            if (numASumar < 1) {
                 System.out.println("No puede ingresar un valor menor a 1");
                 i--; //no me acuerdo una opción mejor para seguir sin que se termine el programa
             }
+            if (numASumar % 2 == 0) {
+                n++;
+                sumaPares += numASumar;
+            }
         }
-        return sumaNumeros;
+        int[] cantidadPares = new int[n];
+        System.out.println("El promedio de los numeros pares es "+(sumaPares/ cantidadPares.length));
     }
-}
+
+} // class EjercicioB
 /*
 Ejemplo:
 Cuantos numeros desea ingresar?

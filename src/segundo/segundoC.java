@@ -7,6 +7,7 @@ import java.util.Scanner;
 - Realice un programa donde ingrese X numeros, muestre el promedio, y cual  el numero mas ingresado y cuantas veces se ingreso
  */
 public class segundoC {
+    //CREO QUE ESTE ANDA TAMBIÉN
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
 
@@ -33,7 +34,7 @@ public class segundoC {
          */
         return cantidad;
     }
-//CREO QUE ESTE ANDA TAMBIÉN
+
     private static int[] cargarNumeros(int cantidad) {
         Scanner teclado = new Scanner(System.in);
         int[] numerosAuxiliar = new int[cantidad];

@@ -7,7 +7,7 @@ Si hay mas pares que impares, muestre un mensaje GANARON LOS PARES
 Si hay mas impares que pares, muestre un mensaje GANARON LOS IMPARES
 Y si empataron, muestre un mensaje que diga EMPATE
 */
-// A ESTE HAY QUE TERMINARLO BIEN
+// ANDA PERO ESTÁ FEO, LO DEJÉ BASTANTE COMENTADO PARA METERLE MANO CUANDO EL CEREBRO ME ANDE MEJOR.
 import java.util.Scanner;
 
 public class EjercicioC {
@@ -15,10 +15,10 @@ public class EjercicioC {
         int numeros = inserteNumeros();
         int num = 0;
         cargaNum(numeros);
-        int sumarPares = saberSiEsPar(num);
-        int sumarImpares = saberSiEsImpar(num);
+        //int sumarPares = saberSiEsPar(num);
+        //int sumarImpares = saberSiEsImpar(num);
 
-        sumarParOImpar(sumarPares, sumarImpares);
+        //sumarParOImpar(sumarPares, sumarImpares);
 
     } // Cierre Main
 
@@ -37,6 +37,8 @@ public class EjercicioC {
 
     private static void cargaNum(int numeros) {
         Scanner teclado = new Scanner(System.in);
+        int sumarImpares = 0;
+        int sumarPares = 0;
         int num = 0;
         int i = 0;
         for (i = 0; i < numeros; i++) {
@@ -45,12 +47,28 @@ public class EjercicioC {
             if (num < 1) {
                 System.out.println("No puede ingresar un valor menor a 1");
                 i--; //no me acuerdo una opción mejor para seguir sin que se termine el programa
-            } else {
-                saberSiEsPar(num);
-                saberSiEsImpar(num);
+            } //else {
+              //  saberSiEsPar(num);
+             //   saberSiEsImpar(num);
+           // }
+            if (num % 2 != 0) {
+                System.out.println("ES IMPAR");
+                sumarImpares += num;
+            }
+            if (num % 2 == 0) {
+                System.out.println("ES PAR");
+                sumarPares += num;
             }
         }
-
+        System.out.println("La suma de numeros pares es:" + sumarPares);
+        System.out.println("La suma de numeros impares es:" + sumarImpares);
+        if (sumarImpares < sumarPares) {
+            System.out.println("GANARON LOS PARES");
+        } else if (sumarImpares > sumarPares) {
+            System.out.println("GANARON LOS IMPARES");
+        } else {
+            System.out.println("ES UN EMPATE");
+        }
     }
 
     private static int saberSiEsImpar(int num) {

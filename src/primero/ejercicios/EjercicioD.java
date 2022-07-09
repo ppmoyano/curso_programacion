@@ -5,12 +5,65 @@ Realice un programa donde ingrese un numero, y el programa muestre todos los num
 Ejemplis de numeros primos hasta 20:
 2,3,5,7,11,13,17
  */
+//ESTE TODAVÍA NO ME ANDA, ES UN FALLO DE CONCEPTO MÍO MÁS QUE DE PROGRAMACIÓN
 
+import java.util.Scanner;
 
 public class EjercicioD {
+    public static void main(String[] args) {
+        int num = ingresarNumero();
+        String resultado = "";
+        int i = 2;
+        int contador = 0;
+        while (contador < 10) {
+            if (esPrimo(num)) {
+                resultado += num + ", ";
+
+            }
+            contador++;
+            num++;
+        }
+        System.out.println("Los numeros primos son" + resultado);
+
+        /*
+        String resultado = "";
+        int i = 2;
+        int contador = 0;
+        while (contador < 10) {
+            //for (i = 2; i < num; i++) {
+
+          //  }
+            if (esPrimo(num)) {
+                resultado += num + ", ";
+                contador++;
+            }
+            num++;
+        }
+        System.out.println("Los numeros primos son" + resultado);
+        */
+    }
+
+    private static Boolean esPrimo(int num) {
+        Boolean elNumeroEsPrimo = true;
+        for (int i = 2; i < num; i++) {
+            if (num % i == 0) {
+                elNumeroEsPrimo = false;
+            }
+        }
+        return elNumeroEsPrimo;
+    }
 
 
+    public static int ingresarNumero() {
+        Scanner teclado = new Scanner(System.in);
+        System.out.println("Ingrese un numero:");
+        int num = teclado.nextInt();
+        return num;
+    }
+    
+    
 }
+
 /*
 EJEMPLOS DE EJECUCION 1:
 Ingrese un numero:

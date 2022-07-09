@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class segundoA {
+    //ESTE SUPUESTAMENTE ANDA BIEN PERO ME ZARPÉ EN LO CHIQUITO QUE QUEDÓ EL CÓDIGO, QUE ME PARECE QUE NO ESTÁ BUENO
 /*
 a)Realice un programa donde ingrese un numero y se muestre todo los numeros desde 0 hasta el mismo numero inclusive.
 b)Si el numero ingresado es menor a 0 mostrar un mensaje de error
