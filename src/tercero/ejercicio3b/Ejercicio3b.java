@@ -9,9 +9,154 @@ Los clientes vip pueden comprar dolares desde su cuenta corriente a cuentaEnDola
  */
 
 
-public class Ejercicio3b {
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
 
+public class Ejercicio3b {
+    static List<Clientes> clientes = new ArrayList<>();
+
+    public static void main(String[] args) {
+        mostrarMenuBienvenida();
+
+    }
+
+    private static void mostrarMenuBienvenida() {
+        Scanner teclado = new Scanner(System.in);
+
+        int opcion = menuBienvenida();
+        if (opcion == 1) {cargarClientes();}
+        if (opcion == 2) {ingresarAOpcionesDeClientes();}
+        if (opcion == 3) { int clienteBuscado = bucarPorDNI();
+                               mostrarCliente(clienteBuscado);}
+        if (opcion == 0) {System.out.println("BANCO CAIXA LE DESEA UN BUEN DIA." +
+                    "  FIN DE EJECUCION");}
+
+    }
+
+    private static void mostrarCliente(int clienteBuscado) {
+        System.out.println(clientes.get(clienteBuscado).getNombre() + " " + clientes.get(clienteBuscado).getApellido() + " DNI: "
+                + clientes.get(clienteBuscado).getDni() + " Cuenta Corriente pesos $ " + clientes.get(clienteBuscado).getCuentaCorriente()
+        );
+    }
+
+    private static int bucarPorDNI() {
+        Scanner teclado = new Scanner(System.in);
+        System.out.println("Ingrese DNI del Cliente");
+        int dni = 0;
+        dni = teclado.nextInt();
+        int clienteBuscado=0;
+        for (int i = 0; i < clientes.size(); i++) {
+            if (dni == clientes.get(i).getDni()) {
+                i= clienteBuscado;
+            }
+            }
+
+        return clienteBuscado;
+    }
+
+    private static void ingresarAOpcionesDeClientes() {
+        Scanner teclado = new Scanner(System.in);
+        int dni = 0;
+        System.out.println("Ingrese DNI del Cliente");
+        dni = teclado.nextInt();
+        for (int i = 0; i < clientes.size(); i++) {
+            if (dni == clientes.get(i).getDni()) {
+                System.out.println("BIENVENIDO  " + clientes.get(i).getNombre());
+                int opcionAcciones;
+                int clienteBuscado= i;
+                do {
+                    opcionAcciones = menuAcciones();
+
+                    if (opcionAcciones == 1) {
+                        clientes.get(i).setCuentaCorriente(clientes.get(i).getCuentaCorriente() + ingresarDinero());
+                    } mostrarCliente(clienteBuscado);
+                    if (opcionAcciones == 2) {
+                        clientes.get(i).setCuentaCorriente(clientes.get(i).getCuentaCorriente()-retirarDinero());
+                    }mostrarCliente(clienteBuscado);
+                    if (opcionAcciones == 3) {
+                        mostrarCliente(clienteBuscado);
+                    }
+                    if (opcionAcciones == 0) {
+                        mostrarMenuBienvenida();
+                    }
+                } while (opcionAcciones !=0 );
+            }
+        }
+    }
+
+
+    private static int retirarDinero() {
+       Scanner teclado = new Scanner(System.in);
+        System.out.println("Ingrese el monto q desea retirar : ");
+            int retiraMonto = teclado.nextInt();
+            System.out.println("MONTO ACTUALIZADO");
+
+        return retiraMonto;
+    }
+
+
+    private static int ingresarDinero() {
+        Scanner teclado = new Scanner(System.in);
+        System.out.println("Ingrese el monto q desea ingresar : ");
+        int nuevoMonto = teclado.nextInt();
+        System.out.println("MONTO ACTUALIZADO");
+
+        return nuevoMonto;
+    }
+
+
+    private static int menuAcciones() {
+        Scanner teclado = new Scanner(System.in);
+        int opcionAcciones = 0;
+        System.out.println(" QUE OPERACION DESEA REALIZAR? 1- Ingresar Dinero 2-" +
+                " Retirar Dinero 3- Consultar Montos 4- COMPRAR DOLARES 0 - Volver");
+        opcionAcciones = teclado.nextInt();
+        return opcionAcciones;
+    }
+
+    private static int menuBienvenida() {
+        Scanner teclado = new Scanner(System.in);
+
+        int opcion = 0;
+        System.out.println("BIENVENIDO AL BANCO CAIXA BANK, QUE OPERACIÓN DESEA REALIZAR: " +
+                "1- REGISTRAR NUEVO CLIENTE   2- INGRESAR A OPCIONES DE CLIENTE  3- MOSTRAR CLIENTE  0- SALIR");
+        opcion = teclado.nextInt();
+
+        return opcion;
+    }
+
+    private static void cargarClientes() {
+        Clientes datosCliente = null;
+        System.out.println("Seleccione tipo de datosCliente: 1 - Standar 2- VIP");
+        Scanner teclado = new Scanner(System.in);
+        int respuesta = teclado.nextInt();
+        if (respuesta == 1) {
+            datosCliente = new Clientes();
+        } else {
+            datosCliente = new ClienteVIP();
+        }
+        datosCliente.cargar();
+        System.out.println("CLIENTE REGISTRADO");
+        if (respuesta == 1) {
+            System.out.println("CLIENTE STANDAR " + datosCliente.getNombre() + " " + datosCliente.getApellido() + " DNI: "
+                    + datosCliente.getDni() + " Cuenta Corriente pesos $ " + datosCliente.getCuentaCorriente());
+        }
+
+        if (respuesta == 2) {
+            ClienteVIP datosClienteVIP = (ClienteVIP) datosCliente;
+            System.out.println("CLIENTE VIP " + datosCliente.getNombre() + " " + datosCliente.getApellido() + " DNI: "
+                    + datosCliente.getDni() + " Cuenta Corriente pesos $ " + datosCliente.getCuentaCorriente() +
+                    " LUGAR DE TRABAJO: " + datosClienteVIP.lugarDeTrabajo + "  cuenta en dolares " + datosClienteVIP.cuentaDolares);
+        }
+
+        clientes.add(datosCliente);
+        mostrarMenuBienvenida();
+    }
 }
+
+
+
 /*
 EJEMPLO DE EJECUCION 1:
 BIENVENIDO AL BANCO CadaUnoElijaUnNombre, QUE OPERACION DESEA REALIZAR:
