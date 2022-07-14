@@ -19,7 +19,9 @@ public class Clientes {
             this.dni = teclado.nextInt();
             this.cuentaCorriente = 0;
         }
+
     }
+
 
     public String getNombre() {
         return nombre;
@@ -61,6 +63,20 @@ public class Clientes {
         this.cuentaCorriente = cuentaCorriente;
     }
 
+
+    public void mostrarClientes() {
+
+        System.out.println("CLIENTE STANDAR " + this.getNombre() + " " + this.getApellido() + " DNI: "  + this.getDni() + " Cuenta Corriente pesos $ " + this.getCuentaCorriente());
+    }
+
+    public int menuAcciones() {
+        Scanner teclado = new Scanner(System.in);
+        int opcionAcciones = 0;
+        System.out.println("  1- Ingresar Dinero 2-" +
+                " Retirar Dinero 3- Consultar Montos  0 - Volver");
+        opcionAcciones = teclado.nextInt();
+        return opcionAcciones;
+    }
 
 
 

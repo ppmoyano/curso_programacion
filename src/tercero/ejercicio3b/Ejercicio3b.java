@@ -18,26 +18,29 @@ public class Ejercicio3b {
 
     public static void main(String[] args) {
         mostrarMenuBienvenida();
-
     }
 
     private static void mostrarMenuBienvenida() {
         Scanner teclado = new Scanner(System.in);
 
         int opcion = menuBienvenida();
-        if (opcion == 1) {cargarClientes();}
-        if (opcion == 2) {ingresarAOpcionesDeClientes();}
-        if (opcion == 3) { int clienteBuscado = bucarPorDNI();
-                               mostrarCliente(clienteBuscado);}
-        if (opcion == 0) {System.out.println("BANCO CAIXA LE DESEA UN BUEN DIA." +
-                    "  FIN DE EJECUCION");}
+        if (opcion == 1) {
+            cargarClientes();
+        }
+        if (opcion == 2) {
+            ingresarAOpcionesDeClientes();
 
-    }
+        }
+        if (opcion == 3) {
+            int clienteBuscado = bucarPorDNI();
+            clientes.get(clienteBuscado).mostrarClientes();
+            mostrarMenuBienvenida();
+        }
+        if (opcion == 0) {
+            System.out.println("BANCO CAIXA LE DESEA UN BUEN DIA." +
+                    "  FIN DE EJECUCION");
+        }
 
-    private static void mostrarCliente(int clienteBuscado) {
-        System.out.println(clientes.get(clienteBuscado).getNombre() + " " + clientes.get(clienteBuscado).getApellido() + " DNI: "
-                + clientes.get(clienteBuscado).getDni() + " Cuenta Corriente pesos $ " + clientes.get(clienteBuscado).getCuentaCorriente()
-        );
     }
 
     private static int bucarPorDNI() {
@@ -45,12 +48,12 @@ public class Ejercicio3b {
         System.out.println("Ingrese DNI del Cliente");
         int dni = 0;
         dni = teclado.nextInt();
-        int clienteBuscado=0;
+        int clienteBuscado = 0;
         for (int i = 0; i < clientes.size(); i++) {
             if (dni == clientes.get(i).getDni()) {
-                i= clienteBuscado;
+                i = clienteBuscado;
             }
-            }
+        }
 
         return clienteBuscado;
     }
@@ -63,38 +66,63 @@ public class Ejercicio3b {
         for (int i = 0; i < clientes.size(); i++) {
             if (dni == clientes.get(i).getDni()) {
                 System.out.println("BIENVENIDO  " + clientes.get(i).getNombre());
+                System.out.println("QUE OPERACION DESEA REALIZAR? : ");
                 int opcionAcciones;
-                int clienteBuscado= i;
+                int clienteBuscado = i;
                 do {
-                    opcionAcciones = menuAcciones();
+                    opcionAcciones = clientes.get(clienteBuscado).menuAcciones();
 
                     if (opcionAcciones == 1) {
                         clientes.get(i).setCuentaCorriente(clientes.get(i).getCuentaCorriente() + ingresarDinero());
-                    } mostrarCliente(clienteBuscado);
+                        clientes.get(clienteBuscado).mostrarClientes();
+                    }
                     if (opcionAcciones == 2) {
-                        clientes.get(i).setCuentaCorriente(clientes.get(i).getCuentaCorriente()-retirarDinero());
-                    }mostrarCliente(clienteBuscado);
+                        clientes.get(i).setCuentaCorriente(clientes.get(i).getCuentaCorriente() - retirarDinero());
+                        clientes.get(clienteBuscado).mostrarClientes();
+                    }
                     if (opcionAcciones == 3) {
-                        mostrarCliente(clienteBuscado);
+                        clientes.get(clienteBuscado).mostrarClientes();
+                    }
+
+                    if (opcionAcciones == 4) {
+                        int montoComprado = comprarDolares();
+                        if (montoComprado * 100 <= clientes.get(i).cuentaCorriente) {
+                            ((ClienteVIP) clientes.get(i)).setCuentaDolares(
+                                    ((ClienteVIP) clientes.get(i)).getCuentaDolares() + montoComprado);
+                            clientes.get(i).setCuentaCorriente(clientes.get(i).getCuentaCorriente() -
+                                    (montoComprado * 100));
+                            System.out.println("COMPRA REALIZADA");
+                        } else {
+                            System.out.println("SALDO INSUFICIENTE");
+                        }
+                        clientes.get(clienteBuscado).mostrarClientes();
                     }
                     if (opcionAcciones == 0) {
                         mostrarMenuBienvenida();
                     }
-                } while (opcionAcciones !=0 );
+                    System.out.println("DESEA REALIZAR OTRA OPERACION? : ");
+                } while (opcionAcciones != 0);
             }
         }
     }
 
+    private static int comprarDolares() {
+        Scanner teclado = new Scanner(System.in);
+        System.out.println("Ingrese la cantidad de dolares que desea comprar (1 peso = 100 dolares):  ");
+        int montoComprado = teclado.nextInt();
+        return montoComprado;
+
+    }
+
 
     private static int retirarDinero() {
-       Scanner teclado = new Scanner(System.in);
+        Scanner teclado = new Scanner(System.in);
         System.out.println("Ingrese el monto q desea retirar : ");
-            int retiraMonto = teclado.nextInt();
-            System.out.println("MONTO ACTUALIZADO");
+        int retiraMonto = teclado.nextInt();
+        System.out.println("MONTO ACTUALIZADO");
 
         return retiraMonto;
     }
-
 
     private static int ingresarDinero() {
         Scanner teclado = new Scanner(System.in);
@@ -103,16 +131,6 @@ public class Ejercicio3b {
         System.out.println("MONTO ACTUALIZADO");
 
         return nuevoMonto;
-    }
-
-
-    private static int menuAcciones() {
-        Scanner teclado = new Scanner(System.in);
-        int opcionAcciones = 0;
-        System.out.println(" QUE OPERACION DESEA REALIZAR? 1- Ingresar Dinero 2-" +
-                " Retirar Dinero 3- Consultar Montos 4- COMPRAR DOLARES 0 - Volver");
-        opcionAcciones = teclado.nextInt();
-        return opcionAcciones;
     }
 
     private static int menuBienvenida() {
@@ -128,7 +146,7 @@ public class Ejercicio3b {
 
     private static void cargarClientes() {
         Clientes datosCliente = null;
-        System.out.println("Seleccione tipo de datosCliente: 1 - Standar 2- VIP");
+        System.out.println("Seleccione tipo de datosCliente: 1-Standar   2-VIP");
         Scanner teclado = new Scanner(System.in);
         int respuesta = teclado.nextInt();
         if (respuesta == 1) {
@@ -138,18 +156,7 @@ public class Ejercicio3b {
         }
         datosCliente.cargar();
         System.out.println("CLIENTE REGISTRADO");
-        if (respuesta == 1) {
-            System.out.println("CLIENTE STANDAR " + datosCliente.getNombre() + " " + datosCliente.getApellido() + " DNI: "
-                    + datosCliente.getDni() + " Cuenta Corriente pesos $ " + datosCliente.getCuentaCorriente());
-        }
-
-        if (respuesta == 2) {
-            ClienteVIP datosClienteVIP = (ClienteVIP) datosCliente;
-            System.out.println("CLIENTE VIP " + datosCliente.getNombre() + " " + datosCliente.getApellido() + " DNI: "
-                    + datosCliente.getDni() + " Cuenta Corriente pesos $ " + datosCliente.getCuentaCorriente() +
-                    " LUGAR DE TRABAJO: " + datosClienteVIP.lugarDeTrabajo + "  cuenta en dolares " + datosClienteVIP.cuentaDolares);
-        }
-
+        datosCliente.mostrarClientes();
         clientes.add(datosCliente);
         mostrarMenuBienvenida();
     }
