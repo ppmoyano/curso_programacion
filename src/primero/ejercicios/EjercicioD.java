@@ -5,8 +5,7 @@ Realice un programa donde ingrese un numero, y el programa muestre todos los num
 Ejemplis de numeros primos hasta 20:
 2,3,5,7,11,13,17
  */
-//ESTE TODAVÍA NO ME ANDA, ES UN FALLO DE CONCEPTO MÍO MÁS QUE DE PROGRAMACIÓN
-
+//ESTE TODAVÍA NO ME ANDA, LE COPIÉ A LUCAS LA FÓRMULA PERO NO LA PUEDO TRADUCIR PARA QUE ME MUESTRE LA CANTIDAD QUE QUIERO
 import java.util.Scanner;
 
 public class EjercicioD {

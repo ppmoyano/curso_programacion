@@ -9,7 +9,79 @@ Los clientes vip pueden comprar dolares desde su cuenta corriente a cuentaEnDola
  */
 
 
+import java.util.Scanner;
+
 public class Ejercicio3b {
+    public static void main(String args[]) {
+        Scanner teclado = new Scanner(System.in);
+        Cliente[] clientes = new Cliente[10];
+        int i = 0;
+        int opcion = 1;
+        do {
+            opcion = cargaInicial();
+            nuevoCliente(opcion);
+
+            if (opcion == 2) {
+                System.out.println("INGRESE EL DNI DEL CLIENTE:");
+                int dniDelCliente = teclado.nextInt();
+                do {
+                    if (dniDelCliente == clientes[i].getDni()) {
+                        System.out.println("BIENVENIDO RAUL, QUE OPERACION DESEA REALIZAR?");
+
+                    }
+
+                }
+                while (dniDelCliente == clientes[i].getDni());
+            }
+        }
+        while (opcion == 0);
+    }
+
+    private static void ingresarCliente(int opcion) {
+        Scanner teclado = new Scanner(System.in);
+        if (opcion == 2) {
+            System.out.println("INGRESE EL DNI DEL CLIENTE:");
+            int dniDelCliente = teclado.nextInt();
+            //clientes[0].mostrarPelicula();
+        }
+    }
+
+    private static void nuevoCliente(int opcion) { // SOLO TENGO QUE SOLUCIONAR UN NULL DE MAS Q APARECE
+        Scanner teclado = new Scanner(System.in);
+        int vipONo = 0;
+        int i = 0;
+        Cliente[] clientes = new Cliente[10];
+        Vip[] clienteVip = new Vip[10];
+        if (opcion == 1) {
+            System.out.println("EL CLIENTE SERA STANDARD O VIP? 1 - STANDARD 2 - VIP");
+            vipONo = teclado.nextInt();
+        }
+        if (vipONo == 1) {
+                clientes[i] = new Cliente();
+                clientes[i].cargarCliente();
+            System.out.println("CLIENTE REGISTRADO");
+            System.out.println(clientes[i].cargaClienteInicial());
+                i++;
+        }
+        if (vipONo == 2) {
+            clienteVip[i] = new Vip();
+            clienteVip[i].cargarClienteVip();
+            System.out.println("CLIENTE REGISTRADO");
+            System.out.println(clienteVip[i].cargaClienteInicialVip());
+            i++;
+        }
+    }
+
+    private static int cargaInicial() { //ESTO YA ESTA
+        Scanner teclado = new Scanner(System.in);
+
+        System.out.println("BIENVENIDO AL BANCO MOYANO, QUE OPERACION DESEA REALIZAR:");
+        System.out.println("1 - REGISTRAR NUEVO CLIENTE 2 - INGRESAR A CLIENTE 3 - MOSTRAR CLIENTE 0 - SALIR");
+        int opcion = teclado.nextInt();
+
+
+        return opcion;
+    }
 
 }
 /*

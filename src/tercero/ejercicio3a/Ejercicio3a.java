@@ -127,6 +127,12 @@ Fin del programa
                 else if (Objects.equals(alumno[i].getGenero(), "M")) {
                     masculino += 1;
                 }
+                if (Objects.equals(alumno[i].getGenero(), "f")) { //no es robado de internet, esto lo recomendó el programa
+                    femenino += 1;
+                }
+                else if (Objects.equals(alumno[i].getGenero(), "m")) {
+                    masculino += 1;
+                }
 
                 alumno[i].mostrarAlumno();
                 if (i == 4) {

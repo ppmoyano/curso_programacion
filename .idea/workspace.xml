@@ -4,19 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b0db52c-3d49-46c8-9491-fbeaea55c38e" name="Changes" comment="Ejericios A y B hechos lindos.">
+    <list default="true" id="1b0db52c-3d49-46c8-9491-fbeaea55c38e" name="Changes" comment="Poniéndome al día">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tercero/ejercicio3b/Cliente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tercero/ejercicio3b/Vip.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/curso_programacion/segundo/segundoA.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/curso_programacion/segundo/segundoA.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/curso_programacion/segundo/segundoB.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/curso_programacion/segundo/segundoB.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/primero/ejercicios/EjercicioB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/primero/ejercicios/EjercicioB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/primero/ejercicios/EjercicioC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/primero/ejercicios/EjercicioC.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/primero/ejercicios/EjercicioD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/primero/ejercicios/EjercicioD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/primero/primero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/primero/primero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/segundo/Pruebas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/segundo/Pruebas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/segundo/segundoA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/segundo/segundoA.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/segundo/segundoB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/segundo/segundoB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/segundo/segundoC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/segundo/segundoC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/segundo/segundoD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/segundo/segundoD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tercero/ejercicio3a/Ejercicio3a.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tercero/ejercicio3a/Ejercicio3a.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tercero/ejercicio3b/Ejercicio3b.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tercero/ejercicio3b/Ejercicio3b.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,13 +61,13 @@
       <recent name="segundo" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.EjercicioD">
-    <configuration name="EjercicioB" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="primero.ejercicios.EjercicioB" />
+  <component name="RunManager" selected="Application.Ejercicio3b">
+    <configuration name="Ejercicio3a" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tercero.ejercicio3a.Ejercicio3a" />
       <module name="curso_programacion" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="primero.ejercicios.*" />
+          <option name="PATTERN" value="tercero.ejercicio3a.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -78,12 +75,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EjercicioC" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="primero.ejercicios.EjercicioC" />
+    <configuration name="Ejercicio3b" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tercero.ejercicio3b.Ejercicio3b" />
       <module name="curso_programacion" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="primero.ejercicios.*" />
+          <option name="PATTERN" value="tercero.ejercicio3b.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -104,19 +101,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Pruebas" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="segundo.Pruebas" />
-      <module name="curso_programacion" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="segundo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="primero" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="primero.primero" />
       <module name="curso_programacion" />
@@ -130,20 +114,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="segundoB" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="segundo.segundoB" />
+      <module name="curso_programacion" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="segundo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="Application.EjercicioC" />
+      <item itemvalue="Application.Ejercicio3a" />
+      <item itemvalue="Application.Ejercicio3b" />
       <item itemvalue="Application.EjercicioD" />
-      <item itemvalue="Application.Pruebas" />
       <item itemvalue="Application.primero" />
-      <item itemvalue="Application.EjercicioB" />
+      <item itemvalue="Application.segundoB" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Ejercicio3b" />
+        <item itemvalue="Application.Ejercicio3a" />
+        <item itemvalue="Application.segundoB" />
         <item itemvalue="Application.EjercicioD" />
         <item itemvalue="Application.primero" />
-        <item itemvalue="Application.EjercicioC" />
-        <item itemvalue="Application.Pruebas" />
-        <item itemvalue="Application.EjercicioB" />
       </list>
     </recent_temporary>
   </component>
@@ -226,7 +223,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656538055444</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Poniéndome al día">
+      <created>1657400745162</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1657400745162</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -245,6 +249,7 @@
     <MESSAGE value="Primer ejercicio" />
     <MESSAGE value="EjercicioA y B resueltos, el B me parece que está lindo" />
     <MESSAGE value="Ejericios A y B hechos lindos." />
-    <option name="LAST_COMMIT_MESSAGE" value="Ejericios A y B hechos lindos." />
+    <MESSAGE value="Poniéndome al día" />
+    <option name="LAST_COMMIT_MESSAGE" value="Poniéndome al día" />
   </component>
 </project>
