@@ -13,10 +13,12 @@ import java.util.Scanner;
 
 public class Ejercicio3b {
     public static void main(String args[]) {
+
+
         Scanner teclado = new Scanner(System.in);
         Cliente[] clientes = new Cliente[10];
         int i = 0;
-        int opcion = 1;
+        int opcion = 9;
         do {
             opcion = cargaInicial();
             nuevoCliente(opcion);
@@ -24,17 +26,22 @@ public class Ejercicio3b {
             if (opcion == 2) {
                 System.out.println("INGRESE EL DNI DEL CLIENTE:");
                 int dniDelCliente = teclado.nextInt();
-                do {
-                    if (dniDelCliente == clientes[i].getDni()) {
-                        System.out.println("BIENVENIDO RAUL, QUE OPERACION DESEA REALIZAR?");
-
+                    for (i = 0; i < clientes.length; i++) {
+                        if (dniDelCliente == clientes[i].getDni()) {
+                            System.out.println("BIENVENIDO RAUL, QUE OPERACION DESEA REALIZAR?");
                     }
-
+                    }
+            }
+            if (opcion == 3) {
+                System.out.println("INGRESE EL DNI DEL CLIENTE:");
+                int dniDelCliente = teclado.nextInt();
+                if (dniDelCliente == clientes[i].getDni()) {
+                    System.out.println("BIENVENIDO RAUL, QUE OPERACION DESEA REALIZAR?");
+                    clientes[i].mostrarCliente();
                 }
-                while (dniDelCliente == clientes[i].getDni());
             }
         }
-        while (opcion == 0);
+        while (opcion != 0);
     }
 
     private static void ingresarCliente(int opcion) {
@@ -42,7 +49,7 @@ public class Ejercicio3b {
         if (opcion == 2) {
             System.out.println("INGRESE EL DNI DEL CLIENTE:");
             int dniDelCliente = teclado.nextInt();
-            //clientes[0].mostrarPelicula();
+            //clientes[0].mostrarCliente();
         }
     }
 
