@@ -26,19 +26,23 @@ public class Ejercicio3b {
             if (opcion == 2) {
                 System.out.println("INGRESE EL DNI DEL CLIENTE:");
                 int dniDelCliente = teclado.nextInt();
+                boolean clienteEncontrado = false;
+                do {
                     for (i = 0; i < clientes.length; i++) {
-                        if (dniDelCliente == clientes[i].getDni()) {
+                        if (clientes[i] != null && clientes[i].getDni() == dniDelCliente) {
                             System.out.println("BIENVENIDO RAUL, QUE OPERACION DESEA REALIZAR?");
+                            //clienteEncontrado = true;
+                        }
+                        else {
+                            System.out.println("NO EXISTE UN CLIENTE CON ESE DNI");
+
+                        }
                     }
-                    }
+                }
+                    while (clienteEncontrado);
             }
             if (opcion == 3) {
-                System.out.println("INGRESE EL DNI DEL CLIENTE:");
-                int dniDelCliente = teclado.nextInt();
-                if (dniDelCliente == clientes[i].getDni()) {
-                    System.out.println("BIENVENIDO RAUL, QUE OPERACION DESEA REALIZAR?");
-                    clientes[i].mostrarCliente();
-                }
+
             }
         }
         while (opcion != 0);
