@@ -24,21 +24,18 @@ public class Ejercicio3b {
         Scanner teclado = new Scanner(System.in);
 
         int opcion = menuBienvenida();
-        if (opcion == 1) {
-            cargarClientes();
-        }
-        if (opcion == 2) {
-            ingresarAOpcionesDeClientes();
-
-        }
-        if (opcion == 3) {
-            int clienteBuscado = bucarPorDNI();
-            clientes.get(clienteBuscado).mostrarClientes();
-            mostrarMenuBienvenida();
-        }
-        if (opcion == 0) {
-            System.out.println("BANCO CAIXA LE DESEA UN BUEN DIA." +
-                    "  FIN DE EJECUCION");
+        switch (opcion) {
+            case 1:
+                cargarClientes();
+            case 2:
+                ingresarAOpcionesDeClientes();
+            case 3:
+                int clienteBuscado = bucarPorDNI();
+                clientes.get(clienteBuscado).mostrarClientes();
+                mostrarMenuBienvenida();
+            case 0:
+                System.out.println("BANCO CAIXA LE DESEA UN BUEN DIA." +
+                        "  FIN DE EJECUCION");
         }
 
     }
@@ -46,8 +43,7 @@ public class Ejercicio3b {
     private static int bucarPorDNI() {
         Scanner teclado = new Scanner(System.in);
         System.out.println("Ingrese DNI del Cliente");
-        int dni = 0;
-        dni = teclado.nextInt();
+        int dni = teclado.nextInt();
         int clienteBuscado = 0;
         for (int i = 0; i < clientes.size(); i++) {
             if (dni == clientes.get(i).getDni()) {
@@ -71,34 +67,34 @@ public class Ejercicio3b {
                 int clienteBuscado = i;
                 do {
                     opcionAcciones = clientes.get(clienteBuscado).menuAcciones();
+                    switch (opcionAcciones) {
+                        case 1:
+                            clientes.get(i).setCuentaCorriente(clientes.get(i).getCuentaCorriente() + ingresarDinero());
+                            clientes.get(clienteBuscado).mostrarClientes();
 
-                    if (opcionAcciones == 1) {
-                        clientes.get(i).setCuentaCorriente(clientes.get(i).getCuentaCorriente() + ingresarDinero());
-                        clientes.get(clienteBuscado).mostrarClientes();
-                    }
-                    if (opcionAcciones == 2) {
-                        clientes.get(i).setCuentaCorriente(clientes.get(i).getCuentaCorriente() - retirarDinero());
-                        clientes.get(clienteBuscado).mostrarClientes();
-                    }
-                    if (opcionAcciones == 3) {
-                        clientes.get(clienteBuscado).mostrarClientes();
-                    }
+                        case 2:
+                            clientes.get(i).setCuentaCorriente(clientes.get(i).getCuentaCorriente() - retirarDinero());
+                            clientes.get(clienteBuscado).mostrarClientes();
 
-                    if (opcionAcciones == 4) {
-                        int montoComprado = comprarDolares();
-                        if (montoComprado * 100 <= clientes.get(i).cuentaCorriente) {
-                            ((ClienteVIP) clientes.get(i)).setCuentaDolares(
-                                    ((ClienteVIP) clientes.get(i)).getCuentaDolares() + montoComprado);
-                            clientes.get(i).setCuentaCorriente(clientes.get(i).getCuentaCorriente() -
-                                    (montoComprado * 100));
-                            System.out.println("COMPRA REALIZADA");
-                        } else {
-                            System.out.println("SALDO INSUFICIENTE");
-                        }
-                        clientes.get(clienteBuscado).mostrarClientes();
-                    }
-                    if (opcionAcciones == 0) {
-                        mostrarMenuBienvenida();
+                        case 3:
+                            clientes.get(clienteBuscado).mostrarClientes();
+
+                        case 4:
+                            int montoComprado = comprarDolares();
+                            if (montoComprado * 100 <= clientes.get(i).cuentaCorriente) {
+                                ((ClienteVIP) clientes.get(i)).setCuentaDolares(
+                                        ((ClienteVIP) clientes.get(i)).getCuentaDolares() + montoComprado);
+                                clientes.get(i).setCuentaCorriente(clientes.get(i).getCuentaCorriente() -
+                                        (montoComprado * 100));
+                                System.out.println("COMPRA REALIZADA");
+                            } else {
+                                System.out.println("SALDO INSUFICIENTE");
+                            }
+                            clientes.get(clienteBuscado).mostrarClientes();
+
+                        case 0:
+                            mostrarMenuBienvenida();
+
                     }
                     System.out.println("DESEA REALIZAR OTRA OPERACION? : ");
                 } while (opcionAcciones != 0);
@@ -108,12 +104,11 @@ public class Ejercicio3b {
 
     private static int comprarDolares() {
         Scanner teclado = new Scanner(System.in);
-        System.out.println("Ingrese la cantidad de dolares que desea comprar (1 peso = 100 dolares):  ");
+        System.out.println("Ingrese la cantidad de dolares que desea comprar (100 pesos = 1 dolar):  ");
         int montoComprado = teclado.nextInt();
         return montoComprado;
 
     }
-
 
     private static int retirarDinero() {
         Scanner teclado = new Scanner(System.in);
