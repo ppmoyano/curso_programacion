@@ -9,9 +9,91 @@ Los clientes vip pueden comprar dolares desde su cuenta corriente a cuentaEnDola
  */
 
 
+import java.util.Scanner;
+
 public class Ejercicio3b {
 
-}
+    public static void main(String args[]){
+        Scanner teclado = new Scanner(System.in);
+        mostrarMenuInicio();
+
+
+    }
+
+
+    private static void mostrarMenuInicio() {
+        Scanner teclado = new Scanner(System.in);
+        int opcion = menuInicio();
+        
+    }
+
+
+    private static int menuInicio() {
+        Scanner teclado = new Scanner(System.in);
+        int opcion = 0;
+        System.out.println("BIENVENIDO AL BANCO ARGENTINA, QUE OPERACION DESEA REALIZAR:" + "1-REGISTRAR NUEVO CLIENTE  2-INGRESAR A CLIENTE  3-MOSTRAR CLIENTE  0-SALIR");
+        opcion = teclado.nextInt();
+        switch (opcion) {
+            case 1:
+                registrarNuevoCliente();
+                break;
+            case 2:
+                ingresarACliente();
+                break;
+
+            case 3:
+                mostrarCliente();
+                break;
+            /*case 0:
+                salir();
+                break;
+            default:
+                opcionNoValida();
+                break;*/
+
+        }
+        return opcion;
+    }
+
+    private static void mostrarCliente() {
+
+    }
+
+    private static void ingresarACliente() {
+        Cliente[] clientes = new Cliente[20];
+        boolean clienteRegistrado = false;
+        Scanner teclado = new Scanner(System.in);
+        int dni = 0;
+        System.out.println("INGRESE EL DNI DEL CLIENTE");
+        dni = teclado.nextInt();
+        for (int i = 0; i < clientes.length; i++) {
+            if (clientes[i] != null && clientes[i].getDni() == dni) {
+                System.out.println("BIENVENIDO NUEVAMENTE, QUE OPERACION DESEA REALIZAR?");
+            } else {
+                System.out.println("NO EXISTE NINGUN CLIENTE CON ESE DNI");
+            }
+        }
+    }
+
+
+            private static void registrarNuevoCliente () {
+                Cliente datosCliente = null;
+                System.out.println("SELECCIONE EL TIPO DE CLIENTE: 1-STANDAR  2-VIP");
+                Scanner teclado = new Scanner(System.in);
+                int eleccion = teclado.nextInt();
+                if (eleccion == 1) {
+                    datosCliente = new Cliente();
+                } else {
+                    datosCliente = new Vip();
+                }
+                datosCliente.cargaClienteStandart();
+                System.out.println("CLIENTE REGISTRADO");
+                datosCliente.mostrarCliente();
+                mostrarMenuInicio();
+            }
+        }
+
+
 /*
 EJEMPLO DE EJECUCION 1:
 BIENVENIDO AL BANCO CadaUnoElijaUnNombre, QUE OPERACION DESEA REALIZAR:

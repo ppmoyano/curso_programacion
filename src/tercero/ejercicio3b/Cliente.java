@@ -1,11 +1,43 @@
 package tercero.ejercicio3b;
 
+import java.util.Scanner;
+
 public class Cliente {
-       String nombre;
+    String nombre;
     String apellido;
     int dni;
-    String tipoCliente;
+
     String cuentaCorriente;
+
+    public void cargaClienteStandart() {
+        Scanner teclado = new Scanner(System.in);
+        System.out.println("Ingrese el nombre: ");
+        this.setNombre(teclado.nextLine());
+        System.out.println("Ingrese el apellido: ");
+        this.setApellido(teclado.nextLine());
+        System.out.println("Ingrese el DNI: ");
+        this.setDni(teclado.nextInt());
+
+    }
+
+
+    public String mostrarCliente() {
+        System.out.println(this.nombre + " " + this.apellido + " " + "Standart" + "Cuenta corriente $0");
+        return null;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
     public String getNombre() {
         return nombre;
     }
@@ -30,13 +62,7 @@ public class Cliente {
         this.dni = dni;
     }
 
-    public String getTipoCliente() {
-        return tipoCliente;
-    }
 
-    public void setTipoCliente(String tipoCliente) {
-        this.tipoCliente = tipoCliente;
-    }
 
     public String getCuentaCorriente() {
         return cuentaCorriente;
@@ -45,4 +71,6 @@ public class Cliente {
     public void setCuentaCorriente(String cuentaCorriente) {
         this.cuentaCorriente = cuentaCorriente;
     }
+
+
 }
