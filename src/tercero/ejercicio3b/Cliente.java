@@ -43,7 +43,7 @@ public class Cliente {
     public int getDni() {
         return dni;
     }
-    public void setCC(int cc) {
+    public void setCC() {
         this.cc = cc;
     }
 
@@ -52,14 +52,10 @@ public class Cliente {
     }
 
     public String cargaClienteInicial() {
-        System.out.println(this.nombre + " " + this.apellido + " - " + "Standard" + " - " + "Cuenta Corriente: $0" + this.dni);
-        return null;
+        return this.nombre + " " + this.apellido + " - " + "Standard" + " - " + "Cuenta Corriente: " + this.cc;
     }
 
-    public String cargaClienteInicialVip() {
-        System.out.println(this.nombre + " " + this.apellido + " - " + "VIP" + " - " + "Cuenta Corriente: $0");
-        return null;
-    }
+
 
     public String mostrarCliente() {
         System.out.println(this.nombre + " " + this.apellido + " - " + "Standard" + " - " + "Cuenta Corriente: $0");

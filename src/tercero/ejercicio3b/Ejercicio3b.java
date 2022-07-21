@@ -9,6 +9,8 @@ Los clientes vip pueden comprar dolares desde su cuenta corriente a cuentaEnDola
  */
 
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Ejercicio3b {
@@ -16,74 +18,97 @@ public class Ejercicio3b {
 
 
         Scanner teclado = new Scanner(System.in);
-        Cliente[] clientes = new Cliente[10];
+        List <Cliente> clientes = new ArrayList<>();
         int i = 0;
         int opcion = 9;
         do {
-            opcion = cargaInicial();
-            nuevoCliente(opcion);
+            opcion = menuInicial();
 
-            if (opcion == 2) {
-                System.out.println("INGRESE EL DNI DEL CLIENTE:");
-                int dniDelCliente = teclado.nextInt();
-                boolean clienteEncontrado = false;
-                do {
-                    for (i = 0; i < clientes.length; i++) {
-                        if (clientes[i] != null && clientes[i].getDni() == dniDelCliente) {
-                            System.out.println("BIENVENIDO RAUL, QUE OPERACION DESEA REALIZAR?");
-                            //clienteEncontrado = true;
-                        }
-                        else {
-                            System.out.println("NO EXISTE UN CLIENTE CON ESE DNI");
-
-                        }
-                    }
-                }
-                    while (clienteEncontrado);
-            }
-            if (opcion == 3) {
-
+            switch (opcion) {
+                case 1:
+                    clientes.add(registrarCliente(opcion));
+                    break;
+                case 2:
+                    ingresarCliente(opcion, clientes);
+                    break;
+                    case 3:
+                        break;
             }
         }
         while (opcion != 0);
     }
 
-    private static void ingresarCliente(int opcion) {
+    private static void ingresarCliente(int opcion, List<Cliente>clientes) {
         Scanner teclado = new Scanner(System.in);
-        if (opcion == 2) {
-            System.out.println("INGRESE EL DNI DEL CLIENTE:");
-            int dniDelCliente = teclado.nextInt();
-            //clientes[0].mostrarCliente();
+        int i = 0;
+        System.out.println("INGRESE EL DNI DEL CLIENTE:");
+        int dniDelCliente = teclado.nextInt();
+        boolean clienteEncontrado = false;
+        //do { SACO EL DO PRQUE NO LO PUEDO FRENAR
+        for (i = 0; i < clientes.size(); i++) {
+            if (clientes.get(i) != null && clientes.get(i).getDni() == dniDelCliente) {
+                System.out.println("BIENVENIDO " + clientes.get(i).getNombre() + " QUE OPERACION DESEA REALIZAR?");
+                int opcionMenuCliente = menuCliente();
+                accionesMenuCliente(opcionMenuCliente, clientes);
+             //   clienteEncontrado = true;
+            }
+        }
+        // }
+        //      while (clienteEncontrado);
+    }
+
+    private static void accionesMenuCliente(int opcionMenuCliente, List<Cliente>clientes) {
+        int i = 0;
+        Scanner teclado = new Scanner(System.in);
+
+        switch (opcionMenuCliente) {
+            case 1:
+                System.out.println("INGRESE EL MONTO QUE DESEA INGRESAR:");
+                int ingresarDinero = teclado.nextInt();
+                clientes.get(i).cc += ingresarDinero;
+                System.out.println("MONTO ACTUALIZADO");
+                break;
+            case 2:
+                System.out.println("INGRESE EL MONTO A RETIRAR:");
+                int extraerDinero = teclado.nextInt();
+                clientes.get(i).cc -= extraerDinero;
+                System.out.println("MONTO ACTUALIZADO");
+                break;
+            case 3:
+                System.out.println(clientes.get(i).cargaClienteInicial());
+                break;
         }
     }
 
-    private static void nuevoCliente(int opcion) { // SOLO TENGO QUE SOLUCIONAR UN NULL DE MAS Q APARECE
+    private static Cliente registrarCliente(int opcion) {
         Scanner teclado = new Scanner(System.in);
         int vipONo = 0;
         int i = 0;
-        Cliente[] clientes = new Cliente[10];
-        Vip[] clienteVip = new Vip[10];
-        if (opcion == 1) {
-            System.out.println("EL CLIENTE SERA STANDARD O VIP? 1 - STANDARD 2 - VIP");
-            vipONo = teclado.nextInt();
+        Cliente cliente = new Cliente();
+
+        switch (opcion) {
+            case 1:
+                System.out.println("EL CLIENTE SERA STANDARD O VIP? 1 - STANDARD 2 - VIP");
+                vipONo = teclado.nextInt();
+                break;
         }
-        if (vipONo == 1) {
-                clientes[i] = new Cliente();
-                clientes[i].cargarCliente();
-            System.out.println("CLIENTE REGISTRADO");
-            System.out.println(clientes[i].cargaClienteInicial());
-                i++;
+        switch (vipONo) {
+            case 1:
+                cliente.cargarCliente();
+                System.out.println("CLIENTE REGISTRADO");
+                System.out.println(cliente.cargaClienteInicial());
+                break;
+            case 2: // NO PUEDO CARGAR EL TRABAJOOOOOOOOOOOOOOOOO
+                cliente = new Vip();
+                cliente.cargarCliente();
+                System.out.println("CLIENTE REGISTRADO");
+                System.out.println(((Vip) cliente).cargaClienteInicialVip());
+                break;
         }
-        if (vipONo == 2) {
-            clienteVip[i] = new Vip();
-            clienteVip[i].cargarClienteVip();
-            System.out.println("CLIENTE REGISTRADO");
-            System.out.println(clienteVip[i].cargaClienteInicialVip());
-            i++;
-        }
+        return cliente;
     }
 
-    private static int cargaInicial() { //ESTO YA ESTA
+    private static int menuInicial() { //ESTO YA ESTA
         Scanner teclado = new Scanner(System.in);
 
         System.out.println("BIENVENIDO AL BANCO MOYANO, QUE OPERACION DESEA REALIZAR:");
@@ -92,6 +117,16 @@ public class Ejercicio3b {
 
 
         return opcion;
+    }
+
+    private static int menuCliente() { //ESTO YA ESTA
+        Scanner teclado = new Scanner(System.in);
+
+        System.out.println("1- Ingresar Dinero 2- Retirar Dinero 3- Consultar Montos 0 - Volver");
+        int opcionMenuCliente = teclado.nextInt();
+
+
+        return opcionMenuCliente;
     }
 
 }

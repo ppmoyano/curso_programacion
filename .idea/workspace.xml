@@ -8,6 +8,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/tercero/ejercicio3b/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tercero/ejercicio3b/Cliente.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/tercero/ejercicio3b/Ejercicio3b.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tercero/ejercicio3b/Ejercicio3b.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tercero/ejercicio3b/Vip.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tercero/ejercicio3b/Vip.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -245,7 +246,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657985126727</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Poniéndome al día">
+      <created>1658163648961</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1658163648961</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

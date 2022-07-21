@@ -4,9 +4,10 @@ import java.util.Scanner;
 
 public class Vip extends Cliente {
     String trabajo;
+    int ccdolares;
 
 
-    public void cargarClienteVip() {
+    public void cargarCliente() {
         Scanner teclado = new Scanner(System.in);
         System.out.println("INGRESE EL NOMBRE:");
         this.setNombre(teclado.nextLine());
@@ -20,4 +21,15 @@ public class Vip extends Cliente {
 
     public void setTrabajo(String trabajo) {
         this.trabajo = trabajo;
-    }}
+    }
+
+    public void setCcdolares(int ccdolares) {
+        this.ccdolares = ccdolares;
+    }
+
+    public String cargaClienteInicialVip() {
+        return this.nombre + " " + this.apellido + " - " + "VIP" + " - " + "Cuenta Corriente: " + this.cc + " Cuenta en dolares: " + this.ccdolares ;
+    }
+
+}
+
