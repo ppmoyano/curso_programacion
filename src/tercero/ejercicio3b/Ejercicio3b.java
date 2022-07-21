@@ -44,10 +44,10 @@ public class Ejercicio3b {
         Scanner teclado = new Scanner(System.in);
         System.out.println("Ingrese DNI del Cliente");
         int dni = teclado.nextInt();
-        int clienteBuscado = 0;
+        int clienteBuscado=0;
         for (int i = 0; i < clientes.size(); i++) {
             if (dni == clientes.get(i).getDni()) {
-                clienteBuscado= i ;
+                clienteBuscado = i;
             }
         }
 
@@ -71,13 +71,18 @@ public class Ejercicio3b {
                         case 1:
                             clientes.get(i).setCuentaCorriente(clientes.get(i).getCuentaCorriente() + ingresarDinero());
                             clientes.get(clienteBuscado).mostrarClientes();
-break;
+                            break;
                         case 2:
-                            clientes.get(i).setCuentaCorriente(clientes.get(i).getCuentaCorriente() - retirarDinero());
-                            clientes.get(clienteBuscado).mostrarClientes();
+                            int montoARetirar = retirarDinero();
+                            if (montoARetirar <= clientes.get(i).getCuentaCorriente()) {
+                                clientes.get(i).setCuentaCorriente(clientes.get(i).getCuentaCorriente() - montoARetirar);
+                                System.out.println("MONTO ACTUALIZADO");
+                                clientes.get(i).mostrarClientes();
+                            } else System.out.println("SALDO INSUFICIENTE. INGRESE UN MONTO MENOR");
                             break;
                         case 3:
                             clientes.get(clienteBuscado).mostrarClientes();
+
                             break;
                         case 4:
                             int montoComprado = comprarDolares();
@@ -114,7 +119,6 @@ break;
         Scanner teclado = new Scanner(System.in);
         System.out.println("Ingrese el monto q desea retirar : ");
         int retiraMonto = teclado.nextInt();
-        System.out.println("MONTO ACTUALIZADO");
 
         return retiraMonto;
     }
