@@ -47,7 +47,7 @@ public class Ejercicio3b {
         int clienteBuscado = 0;
         for (int i = 0; i < clientes.size(); i++) {
             if (dni == clientes.get(i).getDni()) {
-                i = clienteBuscado;
+                clienteBuscado= i ;
             }
         }
 
@@ -71,14 +71,14 @@ public class Ejercicio3b {
                         case 1:
                             clientes.get(i).setCuentaCorriente(clientes.get(i).getCuentaCorriente() + ingresarDinero());
                             clientes.get(clienteBuscado).mostrarClientes();
-
+break;
                         case 2:
                             clientes.get(i).setCuentaCorriente(clientes.get(i).getCuentaCorriente() - retirarDinero());
                             clientes.get(clienteBuscado).mostrarClientes();
-
+                            break;
                         case 3:
                             clientes.get(clienteBuscado).mostrarClientes();
-
+                            break;
                         case 4:
                             int montoComprado = comprarDolares();
                             if (montoComprado * 100 <= clientes.get(i).cuentaCorriente) {
@@ -91,10 +91,10 @@ public class Ejercicio3b {
                                 System.out.println("SALDO INSUFICIENTE");
                             }
                             clientes.get(clienteBuscado).mostrarClientes();
-
+                            break;
                         case 0:
                             mostrarMenuBienvenida();
-
+                            break;
                     }
                     System.out.println("DESEA REALIZAR OTRA OPERACION? : ");
                 } while (opcionAcciones != 0);
