@@ -17,6 +17,7 @@ public class Vip extends Cliente {
         this.setDni(teclado.nextInt());
         System.out.println("INGRESE EL TRABAJO:");
         this.setTrabajo(teclado.nextLine());
+        tipoDeCliente = "VIP";
     }
 
     public void setTrabajo(String trabajo) {
@@ -28,8 +29,10 @@ public class Vip extends Cliente {
     }
 
     public String cargaClienteInicialVip() {
-        return this.nombre + " " + this.apellido + " - " + "VIP" + " - " + "Cuenta Corriente: " + this.cc + " Cuenta en dolares: " + this.ccdolares ;
+        return this.nombre + " " + this.apellido + " - " + this.tipoDeCliente + " - " + "Cuenta Corriente: " + this.cc + " Cuenta en dolares: " + this.ccdolares ;
     }
-
+    public int getCcdolares() {
+        return ccdolares;
+    }
 }
 

@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b0db52c-3d49-46c8-9491-fbeaea55c38e" name="Changes" comment="Poniéndome al día">
+    <list default="true" id="1b0db52c-3d49-46c8-9491-fbeaea55c38e" name="Changes" comment="Falta el VIP del banco y ver usabilidad">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/tercero/ejercicio3b/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tercero/ejercicio3b/Cliente.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/tercero/ejercicio3b/Ejercicio3b.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tercero/ejercicio3b/Ejercicio3b.java" afterDir="false" />
@@ -253,7 +253,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658163648961</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Falta el VIP del banco y ver usabilidad">
+      <created>1658426559414</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1658426559414</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -273,6 +280,7 @@
     <MESSAGE value="EjercicioA y B resueltos, el B me parece que está lindo" />
     <MESSAGE value="Ejericios A y B hechos lindos." />
     <MESSAGE value="Poniéndome al día" />
-    <option name="LAST_COMMIT_MESSAGE" value="Poniéndome al día" />
+    <MESSAGE value="Falta el VIP del banco y ver usabilidad" />
+    <option name="LAST_COMMIT_MESSAGE" value="Falta el VIP del banco y ver usabilidad" />
   </component>
 </project>

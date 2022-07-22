@@ -8,6 +8,8 @@ public class Cliente {
     int dni;
     int cc;
 
+    String tipoDeCliente;
+
 
     public void cargarCliente() {
         Scanner teclado = new Scanner(System.in);
@@ -17,6 +19,7 @@ public class Cliente {
         this.setApellido(teclado.nextLine());
         System.out.println("INGRESE EL DNI:");
         this.setDni(teclado.nextInt());
+        tipoDeCliente = "Standard";
     }
 
 
@@ -28,9 +31,12 @@ public class Cliente {
         return nombre;
     }
 
-    public void setApellido(String apellido) {
-        this.apellido = apellido;
+    public void setTipoDeCliente(String tipoDeCliente) { this.tipoDeCliente = tipoDeCliente; }
+
+    public String getTipoDeCliente() {
+        return tipoDeCliente;
     }
+    public void setApellido(String apellido) { this.apellido = apellido; }
 
     public String getApellido() {
         return apellido;
@@ -52,7 +58,7 @@ public class Cliente {
     }
 
     public String cargaClienteInicial() {
-        return this.nombre + " " + this.apellido + " - " + "Standard" + " - " + "Cuenta Corriente: " + this.cc;
+        return this.nombre + " " + this.apellido + " - " + this.tipoDeCliente + " - " + "Cuenta Corriente: " + this.cc;
     }
 
 

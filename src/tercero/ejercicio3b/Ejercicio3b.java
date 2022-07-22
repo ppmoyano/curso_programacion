@@ -11,10 +11,12 @@ Los clientes vip pueden comprar dolares desde su cuenta corriente a cuentaEnDola
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 import java.util.Scanner;
 
 public class Ejercicio3b {
     public static void main(String args[]) {
+        int cotizacionDolar = 320;
 
 
         Scanner teclado = new Scanner(System.in);
@@ -29,10 +31,11 @@ public class Ejercicio3b {
                     clientes.add(registrarCliente(opcion));
                     break;
                 case 2:
-                    ingresarCliente(opcion, clientes);
+                        ingresarCliente(opcion, clientes);
+                    
                     break;
-                    case 3:
-                        break;
+                case 3:
+                    break;
             }
         }
         while (opcion != 0);
@@ -46,21 +49,58 @@ public class Ejercicio3b {
         boolean clienteEncontrado = false;
         //do { SACO EL DO PRQUE NO LO PUEDO FRENAR
         for (i = 0; i < clientes.size(); i++) {
-            if (clientes.get(i) != null && clientes.get(i).getDni() == dniDelCliente) {
-                System.out.println("BIENVENIDO " + clientes.get(i).getNombre() + " QUE OPERACION DESEA REALIZAR?");
-                int opcionMenuCliente = menuCliente();
+            if (clientes.get(i) != null && clientes.get(i).getDni() == dniDelCliente && Objects.equals(clientes.get(i).getTipoDeCliente(), "Standard")) {
+                    int opcionMenuCliente = menuCliente();
+                    accionesMenuCliente(opcionMenuCliente, clientes);
+
+                    System.out.println("BIENVENIDO " + clientes.get(i).getNombre() + " QUE OPERACION DESEA REALIZAR?");
+                    ingresarCliente(opcion, clientes);
                 accionesMenuCliente(opcionMenuCliente, clientes);
-             //   clienteEncontrado = true;
+            }
+            if (clientes.get(i) != null && clientes.get(i).getDni() == dniDelCliente && Objects.equals(clientes.get(i).getTipoDeCliente(), "VIP")) {
+                System.out.println("EL CLIENTE ES VIP");
             }
         }
-        // }
-        //      while (clienteEncontrado);
+    }
+
+
+    private static void accionesMenuClienteVip(int cotizacionDolar, int opcionMenuClienteVip, List<Cliente>clientes) {
+        int i = 0;
+        Scanner teclado = new Scanner(System.in);
+
+        switch (opcionMenuClienteVip) {
+            case 1:
+                System.out.println("INGRESE EL MONTO QUE DESEA INGRESAR:");
+                int ingresarDinero = teclado.nextInt();
+                clientes.get(i).cc += ingresarDinero;
+                System.out.println("MONTO ACTUALIZADO");
+                break;
+            case 2:
+                System.out.println("INGRESE EL MONTO A RETIRAR:");
+                int extraerDinero = teclado.nextInt();
+                clientes.get(i).cc -= extraerDinero;
+                System.out.println("MONTO ACTUALIZADO");
+                break;
+            case 3:
+                System.out.println(clientes.get(i).cargaClienteInicial());
+                break;
+            case 4:
+                comprarDolares(cotizacionDolar, clientes);
+        }
+    }
+
+    private static void comprarDolares(int cotizacionDolar, List<Cliente>clientes) {
+        int i = 0;
+        Scanner teclado = new Scanner(System.in);
+        System.out.println("CUANTOS DOLARES DESEA COMPRAR?");
+        int dolaresAComprar = teclado.nextInt();
+        clientes.get(i).cc += dolaresAComprar / cotizacionDolar; //ESTO ES LO QUE TENGO QUE ARREGLAR, aca tiene que ser ccdolares
     }
 
     private static void accionesMenuCliente(int opcionMenuCliente, List<Cliente>clientes) {
         int i = 0;
+        System.out.println("INGRESE EL MONTO A RETIRAR:");
         Scanner teclado = new Scanner(System.in);
-
         switch (opcionMenuCliente) {
             case 1:
                 System.out.println("INGRESE EL MONTO QUE DESEA INGRESAR:");
@@ -127,6 +167,16 @@ public class Ejercicio3b {
 
 
         return opcionMenuCliente;
+    }
+
+    private static int menuClienteVip() { //ESTO YA ESTA
+        Scanner teclado = new Scanner(System.in);
+
+        System.out.println("1- Ingresar Dinero 2- Retirar Dinero 3- Consultar Montons 4- COMPRAR DOLARES 0 - Volver");
+        int opcionMenuClienteVip = teclado.nextInt();
+
+
+        return opcionMenuClienteVip;
     }
 
 }
