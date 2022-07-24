@@ -283,4 +283,16 @@
     <MESSAGE value="Falta el VIP del banco y ver usabilidad" />
     <option name="LAST_COMMIT_MESSAGE" value="Falta el VIP del banco y ver usabilidad" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/src/tercero/ejercicio3b/Cliente.java</url>
+          <line>7</line>
+          <properties field="dni" class="tercero.ejercicio3b.Cliente" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
 </project>

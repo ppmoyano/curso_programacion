@@ -61,8 +61,6 @@ public class Cliente {
         return this.nombre + " " + this.apellido + " - " + this.tipoDeCliente + " - " + "Cuenta Corriente: " + this.cc;
     }
 
-
-
     public String mostrarCliente() {
         System.out.println(this.nombre + " " + this.apellido + " - " + "Standard" + " - " + "Cuenta Corriente: $0");
         return null;
