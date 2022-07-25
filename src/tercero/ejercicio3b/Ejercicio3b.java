@@ -17,34 +17,35 @@ public class Ejercicio3b {
     static List<Clientes> clientes = new ArrayList<>();
 
     public static void main(String[] args) {
-        mostrarMenuBienvenida();
-    }
 
-    private static void mostrarMenuBienvenida() {
         Scanner teclado = new Scanner(System.in);
-
-        int opcion = menuBienvenida();
-        switch (opcion) {
-            case 1:
-                cargarClientes();
-            case 2:
-                ingresarAOpcionesDeClientes();
-            case 3:
-                int clienteBuscado = bucarPorDNI();
-                clientes.get(clienteBuscado).mostrarClientes();
-                mostrarMenuBienvenida();
-            case 0:
-                System.out.println("BANCO CAIXA LE DESEA UN BUEN DIA." +
-                        "  FIN DE EJECUCION");
-        }
-
+        int opcion;
+        do {
+            opcion = menuBienvenida();
+            switch (opcion) {
+                case 1:
+                    cargarClientes();
+                    break;
+                case 2:
+                    ingresarAOpcionesDeClientes();
+                    break;
+                case 3:
+                    int clienteBuscado = bucarPorDNI();
+                    clientes.get(clienteBuscado).mostrarClientes();
+                    break;
+                case 0:
+                    System.out.println("BANCO CAIXA LE DESEA UN BUEN DIA." +
+                            "  FIN DE EJECUCION");
+                    break;
+            }
+        } while (opcion != 0);
     }
 
     private static int bucarPorDNI() {
         Scanner teclado = new Scanner(System.in);
         System.out.println("Ingrese DNI del Cliente");
         int dni = teclado.nextInt();
-        int clienteBuscado=0;
+        int clienteBuscado = 0;
         for (int i = 0; i < clientes.size(); i++) {
             if (dni == clientes.get(i).getDni()) {
                 clienteBuscado = i;
@@ -71,6 +72,7 @@ public class Ejercicio3b {
                         case 1:
                             clientes.get(i).setCuentaCorriente(clientes.get(i).getCuentaCorriente() + ingresarDinero());
                             clientes.get(clienteBuscado).mostrarClientes();
+                            System.out.println("DESEA REALIZAR OTRA OPERACION? : ");
                             break;
                         case 2:
                             int montoARetirar = retirarDinero();
@@ -78,11 +80,12 @@ public class Ejercicio3b {
                                 clientes.get(i).setCuentaCorriente(clientes.get(i).getCuentaCorriente() - montoARetirar);
                                 System.out.println("MONTO ACTUALIZADO");
                                 clientes.get(i).mostrarClientes();
-                            } else System.out.println("SALDO INSUFICIENTE. INGRESE UN MONTO MENOR");
+                            } else System.out.println("SALDO INSUFICIENTE");
+                            System.out.println("DESEA REALIZAR OTRA OPERACION? : ");
                             break;
                         case 3:
                             clientes.get(clienteBuscado).mostrarClientes();
-
+                            System.out.println("DESEA REALIZAR OTRA OPERACION? : ");
                             break;
                         case 4:
                             int montoComprado = comprarDolares();
@@ -96,12 +99,12 @@ public class Ejercicio3b {
                                 System.out.println("SALDO INSUFICIENTE");
                             }
                             clientes.get(clienteBuscado).mostrarClientes();
+                            System.out.println("DESEA REALIZAR OTRA OPERACION? : ");
                             break;
                         case 0:
-                            mostrarMenuBienvenida();
                             break;
                     }
-                    System.out.println("DESEA REALIZAR OTRA OPERACION? : ");
+
                 } while (opcionAcciones != 0);
             }
         }
@@ -157,7 +160,6 @@ public class Ejercicio3b {
         System.out.println("CLIENTE REGISTRADO");
         datosCliente.mostrarClientes();
         clientes.add(datosCliente);
-        mostrarMenuBienvenida();
     }
 }
 
