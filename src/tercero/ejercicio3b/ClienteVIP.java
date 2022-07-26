@@ -14,6 +14,7 @@ public class ClienteVIP extends Clientes{
         System.out.println("Ingrese lugar de trabajo:");
         this.lugarDeTrabajo = teclado.next();
         this.cuentaDolares = 0;
+        this.tipoDeCliente = 2;
 
     }
 

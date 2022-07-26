@@ -18,6 +18,7 @@ public class Clientes {
             System.out.println("Ingrese numero de dni:");
             this.dni = teclado.nextInt();
             this.cuentaCorriente = 0;
+            this.tipoDeCliente = 1;
         }
 
     }

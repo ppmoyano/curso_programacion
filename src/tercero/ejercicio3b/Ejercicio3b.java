@@ -88,22 +88,23 @@ public class Ejercicio3b {
                             System.out.println("DESEA REALIZAR OTRA OPERACION? : ");
                             break;
                         case 4:
-                            int montoComprado = comprarDolares();
-                            if (montoComprado * 100 <= clientes.get(i).cuentaCorriente) {
-                                ((ClienteVIP) clientes.get(i)).setCuentaDolares(
-                                        ((ClienteVIP) clientes.get(i)).getCuentaDolares() + montoComprado);
-                                clientes.get(i).setCuentaCorriente(clientes.get(i).getCuentaCorriente() -
-                                        (montoComprado * 100));
-                                System.out.println("COMPRA REALIZADA");
-                            } else {
-                                System.out.println("SALDO INSUFICIENTE");
+                            if (clientes.get(i).tipoDeCliente == 2) {
+                                int montoComprado = comprarDolares();
+                                if (montoComprado * 100 <= clientes.get(i).cuentaCorriente) {
+                                    ((ClienteVIP) clientes.get(i)).setCuentaDolares(
+                                            ((ClienteVIP) clientes.get(i)).getCuentaDolares() + montoComprado);
+                                    clientes.get(i).setCuentaCorriente(clientes.get(i).getCuentaCorriente() -
+                                            (montoComprado * 100));
+                                    System.out.println("COMPRA REALIZADA");
+                                } else {
+                                    System.out.println("SALDO INSUFICIENTE");
+                                }
+                                clientes.get(clienteBuscado).mostrarClientes();
+                                System.out.println("DESEA REALIZAR OTRA OPERACION? : "); }
+                                break;
+                                case 0:
+                                    break;
                             }
-                            clientes.get(clienteBuscado).mostrarClientes();
-                            System.out.println("DESEA REALIZAR OTRA OPERACION? : ");
-                            break;
-                        case 0:
-                            break;
-                    }
 
                 } while (opcionAcciones != 0);
             }
@@ -153,6 +154,7 @@ public class Ejercicio3b {
         int respuesta = teclado.nextInt();
         if (respuesta == 1) {
             datosCliente = new Clientes();
+
         } else {
             datosCliente = new ClienteVIP();
         }

@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="1b0db52c-3d49-46c8-9491-fbeaea55c38e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tercero/ejercicio3b/ClienteVIP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tercero/ejercicio3b/ClienteVIP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tercero/ejercicio3b/Clientes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tercero/ejercicio3b/Clientes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/tercero/ejercicio3b/Ejercicio3b.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tercero/ejercicio3b/Ejercicio3b.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -244,7 +246,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658403247942</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="3b">
+      <created>1658745076247</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1658745076247</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -281,11 +290,6 @@
           <line>17</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/tercero/ejercicio3b/Ejercicio3b.java</url>
-          <line>58</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
           <option name="timeStamp" value="2" />
@@ -301,7 +305,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/tercero/ejercicio3b/Ejercicio3b.java</url>
-          <line>148</line>
+          <line>149</line>
           <properties class="tercero.ejercicio3b.Ejercicio3b" method="cargarClientes">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
